@@ -171,9 +171,9 @@ project/
 
 ## License
 
-该项目基于 PolarDB for PostgreSQL 11，由德哥（Digoal）在 GitHub 上提供的仓库进行改动。更多信息请访问：  
+该项目基于 PolarDB for PostgreSQL 11，由德哥（Digoal）在 Gitee 上提供的仓库进行改动。更多信息请访问：  
 [PolarDB-for-PostgreSQL on Gitee](https://gitee.com/digoal/PolarDB-for-PostgreSQL)。
 
-特别感谢中国人民大学卞老师、张老师，阿里云专家德哥的支持与指导。
+特别感谢中国人民大学卞昊穹老师、张静老师，阿里云专家德哥的支持与指导。
 
 该项目遵循 Apache 2.0 协议开源。有关更多信息，请参阅 LICENSE。
