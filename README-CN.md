@@ -45,12 +45,15 @@
 - 一台 8 核 16GB 内存的虚拟机或服务器，使用 Ubuntu 操作系统，磁盘容量不少于 100GB。
 - 安装并配置 Docker、Git 等常用工具，具体步骤省略。
 
-### 2. 下载数据库开发镜像, 启动容器, 进入容器
+### 2. 下载数据库开发镜像, 启动容器, 进入容器，拉取代码
 
 ```bash
 docker pull registry.cn-hangzhou.aliyuncs.com/polardb_pg/polardb_pg_devel:ubuntu20.04
 docker run -d -it -P --shm-size=1g --cap-add=SYS_PTRACE --cap-add SYS_ADMIN --privileged=true --name my_new registry.cn-hangzhou.aliyuncs.com/polardb_pg/polardb_pg_devel:ubuntu20.04 bash
 docker exec -ti my_new bash
+cd polardb_pg
+git clone https://github.com/2022201318/Self-Optimizing-Database-System
+mv Self-Optimizing-Database-System PolarDB-for-PostgreSQL
 ```
 
 ### 3. 环境及安装包准备
