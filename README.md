@@ -7,7 +7,7 @@
 
 ---
 
-### [English](README.md) | 中文
+### [English](README.md) | [中文](README-CN.md)
 
 [![github-license](https://img.shields.io/github/license/2022201318/Self-Optimizing-Database-System?style=for-the-badge&logo=github)](LICENSE)
 [![github-issues](https://img.shields.io/github/issues/2022201318/Self-Optimizing-Database-System?style=for-the-badge&logo=github)](https://github.com/2022201318/Self-Optimizing-Database-System/issues)
