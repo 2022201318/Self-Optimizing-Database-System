@@ -140,7 +140,7 @@ project/
 ├── tpch_copy.sh                 # Data loading script
 ├── tpch-dbgen/                  # TPCH test data generation tool
 ├── README-CN.md                 # Project documentation in Chinese
-├── README-CN.md                 # Project documentation in English
+├── README.md                 # Project documentation in English
 ├── LICENSE                      # Open-source license
 ├── system_metrics.json          # System performance data
 ├── pg_settings.json             # Database configuration data
