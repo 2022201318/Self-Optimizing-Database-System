@@ -9,9 +9,9 @@
 
 ### [English](README.md) | [中文](README-CN.md)
 
-[![github-license](https://img.shields.io/github/license/polardbpg/polardb-self-optimizer?style=for-the-badge&logo=github)](LICENSE)
-[![github-issues](https://img.shields.io/github/issues/polardbpg/polardb-self-optimizer?style=for-the-badge&logo=github)](https://github.com/polardbpg/polardb-self-optimizer/issues)
-[![github-stars](https://img.shields.io/github/stars/polardbpg/polardb-self-optimizer?style=for-the-badge&logo=github)](https://github.com/polardbpg/polardb-self-optimizer/stargazers)
+[![github-license](https://img.shields.io/github/license/2022201318/Self-Optimizing-Database-System?style=for-the-badge&logo=github)](LICENSE)
+[![github-issues](https://img.shields.io/github/issues/2022201318/Self-Optimizing-Database-System?style=for-the-badge&logo=github)](https://github.com/2022201318/Self-Optimizing-Database-System/issues)
+[![github-stars](https://img.shields.io/github/stars/2022201318/Self-Optimizing-Database-System?style=for-the-badge&logo=github)](https://github.com/p2022201318/Self-Optimizing-Database-System/stargazers)
 
 </div>
 
