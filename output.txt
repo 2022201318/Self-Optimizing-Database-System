@@ -1,0 +1,33 @@
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+Cancel request sent
+Cancel request sent
+Cancel request sent
+FATAL:  terminating connection due to administrator command
+CONTEXT:  COPY orders, line 1635820: "6543268|120379|F|35211.37|1993-04-09|3-MEDIUM|Clerk#000000480|0|ng the special, perma"
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+connection to server was lost
+FATAL:  terminating connection due to administrator command
+CONTEXT:  COPY lineitem, line 1068322: "1068198|290092|121|2|13|14067.04|0.10|0.08|A|F|1992-11-03|1993-01-08|1992-11-23|DELIVER IN PERSON|RE..."
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+connection to server was lost
+FATAL:  terminating connection due to administrator command
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+connection to server was lost

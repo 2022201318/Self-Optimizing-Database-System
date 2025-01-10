@@ -1,0 +1,710 @@
+2025-01-10 17:27:31.719 CST [122350] [122350] LOG:  /home/postgres/tmp_master_dir_polardb_pg_1100_bld/polar_node_static.conf does not exist, we create it, This is best done on the first boot and not on restart
+2025-01-10 17:27:31.721 CST [122350] [122350] LOG:  polardb read control file "global/pg_control" success
+2025-01-10 17:27:31.721 CST [122350] [122350] LOG:  polardb load and check controlfile success
+2025-01-10 17:27:31.721 CST [122350] [122350] LOG:  recovery.conf not exist, polardb in readwrite mode
+2025-01-10 17:27:31.722 CST [122350] [122350] LOG:  polar_vfs loaded in postmaster 122350
+2025-01-10 17:27:31.724 CST [122350] [122350] WARNING:  could not access file "polar_resource_group": No such file or directory
+2025-01-10 17:27:31.727 CST [122350] [122350] LOG:  Auto detecting polar_stat_sql.linux_hz parameter...
+2025-01-10 17:27:31.727 CST [122350] [122350] LOG:  polar_stat_sql.linux_hz is set to 500000
+2025-01-10 17:27:31.729 CST [122350] [122350] LOG:  listening on IPv6 address "::1", port 5432
+2025-01-10 17:27:31.729 CST [122350] [122350] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-01-10 17:27:31.733 CST [122350] [122350] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-01-10 17:27:31.735 CST [122350] [122350] LOG:  The total log index memory table size is 402525536
+2025-01-10 17:27:31.735 CST [122350] [122350] LOG:  The total log index memory table size is 133987136
+2025-01-10 17:27:31.737 CST [122350] [122350] LOG:  init vfs_mount_state done
+2025-01-10 17:27:31.737 CST [122350] [122350] LOG:  PolarIOStatArray share memory total size is 659880
+2025-01-10 17:27:31.738 CST [122350] [122350] LOG:  PolarGlobalIOReadStats share memory size is 176
+2025-01-10 17:27:31.738 CST [122350] [122350] LOG:  polar_vfs init done
+2025-01-10 17:27:31.738 CST [122350] [122350] LOG:  polar_lwlocks_stat_array share memory total size is 716800
+2025-01-10 17:27:31.738 CST [122350] [122350] LOG:  polar_locks_stat_array share memory total size is 448000
+2025-01-10 17:27:31.738 CST [122350] [122350] LOG:  polar_network_stat_array share memory total size is 13536
+2025-01-10 17:27:31.746 CST [122350] [122350] LOG:  The total log index memory table size is 402525536
+2025-01-10 17:27:32.126 CST [122350] [122350] LOG:  rename pg_logindex to local cache trash polar_cache_trash/pg_logindex_0001, errno=39
+2025-01-10 17:27:32.126 CST [122350] [122350] LOG:  The total log index memory table size is 133987136
+2025-01-10 17:27:32.126 CST [122350] [122350] LOG:  rename polar_fullpage to local cache trash polar_cache_trash/polar_fullpage_0001, errno=39
+2025-01-10 17:27:32.139 CST [122350] [122350] LOG:  removing file "pg_notify/0000"
+2025-01-10 17:27:32.143 CST [122350] [122350] LOG:  server cannot reuse buffer pool due to polar_shmem_reused is false, start to reset buffer pool
+2025-01-10 17:27:32.143 CST [122350] [122350] LOG:  server cannot reuse buffer pool, start to reset it, pid=122350
+2025-01-10 17:27:32.146 CST [122350] [122350] LOG:  forked new process, pid is 122351, true pid is 122351
+2025-01-10 17:27:32.146 CST [122350] [122350] LOG:  postmaster is in PM_STARTUP state.
+2025-01-10 17:27:32.146 CST [122351] [122351] LOG:  database system was shut down at 2025-01-10 17:27:16 CST
+2025-01-10 17:27:32.146 CST [122350] [122350] LOG:  forked new process, pid is 122352, true pid is 122352
+2025-01-10 17:27:32.146 CST [122351] [122351] WARNING:  could not open directory "polar_fra": No such file or directory
+2025-01-10 17:27:32.146 CST [122351] [122351] LOG:  database system was not properly shut down; automatic recovery in progress
+2025-01-10 17:27:32.149 CST [122351] [122351] LOG:  polar_logindex_snapshot_base_init logindex meta: magic=0 version=0 max_table_id=0 seg.no=0 seg.max_lsn=0 seg.max_id=0 seg.min_id=0 start_lsn=0 max_lsn=0 crc=0
+	
+2025-01-10 17:27:32.432 CST [122351] [122351] LOG:  Init pg_logindex succeed
+2025-01-10 17:27:32.432 CST [122351] [122351] LOG:  polar_logindex_snapshot_base_init logindex meta: magic=0 version=0 max_table_id=0 seg.no=0 seg.max_lsn=0 seg.max_id=0 seg.min_id=0 start_lsn=0 max_lsn=0 crc=0
+	
+2025-01-10 17:27:32.526 CST [122351] [122351] LOG:  Init polar_fullpage succeed
+2025-01-10 17:27:32.526 CST [122351] [122351] LOG:  polar logindex change from 165ae30 to 165ae30
+2025-01-10 17:27:32.526 CST [122351] [122351] LOG:  invalid record length at 0/165AE30: wanted 24, got 0
+2025-01-10 17:27:32.526 CST [122351] [122351] LOG:  redo is not required
+2025-01-10 17:27:32.542 CST [122351] [122351] LOG:  startup process Total IO follows:open 0.000000 s, count 0, write 0.000000 s, count 0, read 0.000000 s, count 0, lseek 0.000000 s, count 0,fsync 0.000000 s, count 0
+2025-01-10 17:27:32.542 CST [122351] [122351] LOG:  startup process WAL IO follows:open 0.000000 s, count 0, write 0.000000 s, count 0, read 0.000000 s, count 0, lseek 0.000000 s, count 0,fsync 0.000000 s, count 0
+2025-01-10 17:27:32.542 CST [122351] [122351] LOG:  startup process DATA IO follows:open 0.000000 s, count 0, write 0.000000 s, count 0, read 0.000000 s, count 0, lseek 0.000000 s, count 0,fsync 0.000000 s, count 0
+2025-01-10 17:27:32.557 CST [122350] [122350] LOG:  postmaster is in PM_RUN state.
+2025-01-10 17:27:32.558 CST [122350] [122350] LOG:  forked new process, pid is 122353, true pid is 122353
+2025-01-10 17:27:32.559 CST [122350] [122350] LOG:  forked new process, pid is 122354, true pid is 122354
+2025-01-10 17:27:32.559 CST [122350] [122350] LOG:  forked new process, pid is 122355, true pid is 122355
+2025-01-10 17:27:32.560 CST [122350] [122350] LOG:  forked new process, pid is 122356, true pid is 122356
+2025-01-10 17:27:32.560 CST [122355] [122355] LOG:  create reference for rw_xlog_queue_record_pop
+2025-01-10 17:27:32.560 CST [122355] [122355] LOG:  create reference for xlog_queue_data_keep
+2025-01-10 17:27:32.560 CST [122356] [122356] LOG:  Start logindex background worker
+2025-01-10 17:27:32.560 CST [122350] [122350] LOG:  forked new process, pid is 122357, true pid is 122357
+2025-01-10 17:27:32.561 CST [122350] [122350] LOG:  forked new process, pid is 122358, true pid is 122358
+2025-01-10 17:27:32.561 CST [122350] [122350] LOG:  forked new process, pid is 122359, true pid is 122359
+2025-01-10 17:27:32.561 CST [122350] [122350] LOG:  database system is ready to accept connections
+2025-01-10 17:27:37.147 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:27:37.230 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:27:37.313 CST [122352] [122352] LOG:  creating and filling new FULLPAGE file
+2025-01-10 17:27:38.586 CST [122352] [122352] LOG:  done creating and filling new FULLPAGE file /home/postgres/tmp_master_dir_polardb_pg_1100_bld/polar_fullpage/00000000.fp
+2025-01-10 17:27:38.586 CST [122352] [122352] LOG:  creating and filling new FULLPAGE file
+2025-01-10 17:27:40.813 CST [122352] [122352] LOG:  done creating and filling new FULLPAGE file /home/postgres/tmp_master_dir_polardb_pg_1100_bld/polar_fullpage/00000001.fp
+2025-01-10 17:27:40.813 CST [122352] [122352] LOG:  creating and filling new FULLPAGE file
+2025-01-10 17:27:43.043 CST [122352] [122352] LOG:  done creating and filling new FULLPAGE file /home/postgres/tmp_master_dir_polardb_pg_1100_bld/polar_fullpage/00000002.fp
+2025-01-10 17:27:46.519 CST [122350] [122350] LOG:  forked new process, pid is 122362, true pid is 122362
+2025-01-10 17:27:46.527 CST [122355] [122355] LOG:  pg_logindex log index is insert from 165ae80
+2025-01-10 17:27:46.549 CST [122350] [122350] LOG:  forked new process, pid is 122387, true pid is 122387
+2025-01-10 17:27:46.550 CST [122350] [122350] LOG:  forked new process, pid is 122392, true pid is 122392
+2025-01-10 17:27:46.552 CST [122350] [122350] LOG:  forked new process, pid is 122398, true pid is 122398
+2025-01-10 17:27:46.554 CST [122350] [122350] LOG:  forked new process, pid is 122399, true pid is 122399
+2025-01-10 17:27:46.557 CST [122350] [122350] LOG:  forked new process, pid is 122405, true pid is 122405
+2025-01-10 17:27:46.561 CST [122350] [122350] LOG:  forked new process, pid is 122408, true pid is 122408
+2025-01-10 17:27:46.562 CST [122350] [122350] LOG:  forked new process, pid is 122409, true pid is 122409
+2025-01-10 17:27:46.566 CST [122350] [122350] LOG:  forked new process, pid is 122410, true pid is 122410
+2025-01-10 17:27:46.800 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:46.984 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:47.161 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:47.342 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:47.524 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:47.707 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:47.887 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:48.044 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:27:48.123 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:48.198 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:27:48.655 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:48.942 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:49.216 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:49.388 CST [122350] [122350] LOG:  forked new process, pid is 122411, true pid is 122411
+2025-01-10 17:27:49.425 CST [122350] [122350] LOG:  forked new process, pid is 122412, true pid is 122412
+2025-01-10 17:27:49.502 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:49.841 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:50.194 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:50.476 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:50.753 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:51.040 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:51.311 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:51.595 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:51.879 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:52.159 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:52.439 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:52.712 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:52.998 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:53.043 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:27:53.310 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:27:53.844 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:54.121 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:54.407 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:54.688 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:54.968 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:55.248 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:55.525 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:55.805 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:56.084 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:56.371 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:56.651 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:56.931 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:56.931 CST [122353] [122353] LOG:  checkpoints are occurring too frequently (24 seconds apart)
+2025-01-10 17:27:56.931 CST [122353] [122353] HINT:  Consider increasing the configuration parameter "max_wal_size".
+2025-01-10 17:27:57.216 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:57.245 CST [122350] [122350] LOG:  forked new process, pid is 122413, true pid is 122413
+2025-01-10 17:27:57.558 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:57.846 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:58.053 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:27:58.057 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:58.338 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:27:59.231 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:59.503 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:27:59.780 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:28:00.060 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:28:00.343 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:28:00.625 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:28:00.904 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:28:01.180 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:28:01.475 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:28:01.751 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:28:02.032 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:28:02.300 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:28:02.581 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:28:02.876 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:28:03.044 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:28:03.219 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:28:08.044 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:28:09.561 CST [122350] [122350] LOG:  forked new process, pid is 122414, true pid is 122414
+2025-01-10 17:28:13.044 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:28:13.914 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:28:14.113 CST [122353] [122353] LOG:  Truncate relation size cache from 2B0AA6A8
+2025-01-10 17:28:14.113 CST [122353] [122353] LOG:  Truncate logindex pg_logindex from lsn=2B0AA6A8
+2025-01-10 17:28:14.113 CST [122353] [122353] LOG:  Truncate logindex polar_fullpage from lsn=2B0AA6A8
+2025-01-10 17:28:14.113 CST [122353] [122353] LOG:  attempting to remove WAL segments older than log file 00000000000000000000002A
+2025-01-10 17:28:14.127 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000022"
+2025-01-10 17:28:14.147 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000019"
+2025-01-10 17:28:14.157 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000001"
+2025-01-10 17:28:14.166 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000009"
+2025-01-10 17:28:14.178 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000000F"
+2025-01-10 17:28:14.184 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000016"
+2025-01-10 17:28:14.201 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000018"
+2025-01-10 17:28:14.209 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000026"
+2025-01-10 17:28:14.215 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000023"
+2025-01-10 17:28:14.224 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000011"
+2025-01-10 17:28:14.233 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000020"
+2025-01-10 17:28:14.242 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000006"
+2025-01-10 17:28:14.246 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000013"
+2025-01-10 17:28:14.255 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000001A"
+2025-01-10 17:28:14.265 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000021"
+2025-01-10 17:28:14.274 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000007"
+2025-01-10 17:28:14.283 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000001B"
+2025-01-10 17:28:14.296 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000025"
+2025-01-10 17:28:14.305 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000002A"
+2025-01-10 17:28:14.316 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000003"
+2025-01-10 17:28:14.324 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000002"
+2025-01-10 17:28:14.354 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000012"
+2025-01-10 17:28:14.363 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000014"
+2025-01-10 17:28:14.367 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000000B"
+2025-01-10 17:28:14.376 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000001F"
+2025-01-10 17:28:14.385 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000000A"
+2025-01-10 17:28:14.406 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000008"
+2025-01-10 17:28:14.414 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000004"
+2025-01-10 17:28:14.426 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000001D"
+2025-01-10 17:28:14.437 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000010"
+2025-01-10 17:28:14.446 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000017"
+2025-01-10 17:28:14.455 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000000E"
+2025-01-10 17:28:14.473 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000001E"
+2025-01-10 17:28:14.494 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000024"
+2025-01-10 17:28:14.504 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000001C"
+2025-01-10 17:28:14.514 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000029"
+2025-01-10 17:28:14.524 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000000D"
+2025-01-10 17:28:14.534 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000005"
+2025-01-10 17:28:14.534 CST [122353] [122353] LOG:  removing write-ahead log file "000000010000000000000015"
+2025-01-10 17:28:14.544 CST [122353] [122353] LOG:  removing write-ahead log file "000000010000000000000028"
+2025-01-10 17:28:14.554 CST [122353] [122353] LOG:  removing write-ahead log file "00000001000000000000000C"
+2025-01-10 17:28:14.565 CST [122353] [122353] LOG:  removing write-ahead log file "000000010000000000000027"
+2025-01-10 17:28:22.881 CST [122353] [122353] LOG:  checkpoints are occurring too frequently (26 seconds apart)
+2025-01-10 17:28:22.881 CST [122353] [122353] HINT:  Consider increasing the configuration parameter "max_wal_size".
+2025-01-10 17:28:33.044 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:28:33.564 CST [122350] [122350] LOG:  forked new process, pid is 122415, true pid is 122415
+2025-01-10 17:28:34.198 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:28:34.669 CST [122353] [122353] LOG:  Truncate relation size cache from 5503BD38
+2025-01-10 17:28:34.669 CST [122353] [122353] LOG:  Truncate logindex pg_logindex from lsn=5503BD38
+2025-01-10 17:28:34.669 CST [122353] [122353] LOG:  Truncate logindex polar_fullpage from lsn=5503BD38
+2025-01-10 17:28:34.669 CST [122353] [122353] LOG:  attempting to remove WAL segments older than log file 000000000000000000000054
+2025-01-10 17:28:34.672 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000041"
+2025-01-10 17:28:34.675 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000003A"
+2025-01-10 17:28:34.678 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000034"
+2025-01-10 17:28:34.681 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000047"
+2025-01-10 17:28:34.684 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000040"
+2025-01-10 17:28:34.687 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000043"
+2025-01-10 17:28:34.690 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000039"
+2025-01-10 17:28:34.698 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000042"
+2025-01-10 17:28:34.701 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000002F"
+2025-01-10 17:28:34.704 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000003C"
+2025-01-10 17:28:34.708 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000038"
+2025-01-10 17:28:34.711 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000004F"
+2025-01-10 17:28:34.714 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000049"
+2025-01-10 17:28:34.717 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000003F"
+2025-01-10 17:28:34.724 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000044"
+2025-01-10 17:28:34.727 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000030"
+2025-01-10 17:28:34.730 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000036"
+2025-01-10 17:28:34.733 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000002E"
+2025-01-10 17:28:34.736 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000033"
+2025-01-10 17:28:34.739 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000003B"
+2025-01-10 17:28:34.742 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000003D"
+2025-01-10 17:28:34.745 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000031"
+2025-01-10 17:28:34.748 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000054"
+2025-01-10 17:28:34.756 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000004D"
+2025-01-10 17:28:34.759 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000053"
+2025-01-10 17:28:34.762 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000004C"
+2025-01-10 17:28:34.765 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000052"
+2025-01-10 17:28:34.768 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000004A"
+2025-01-10 17:28:34.771 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000002D"
+2025-01-10 17:28:34.774 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000046"
+2025-01-10 17:28:34.777 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000037"
+2025-01-10 17:28:34.781 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000002C"
+2025-01-10 17:28:34.788 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000002B"
+2025-01-10 17:28:34.792 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000035"
+2025-01-10 17:28:34.796 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000004B"
+2025-01-10 17:28:34.799 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000032"
+2025-01-10 17:28:34.803 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000050"
+2025-01-10 17:28:34.806 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000004E"
+2025-01-10 17:28:34.808 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000045"
+2025-01-10 17:28:34.811 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000051"
+2025-01-10 17:28:34.811 CST [122353] [122353] LOG:  removing write-ahead log file "00000001000000000000003E"
+2025-01-10 17:28:34.815 CST [122353] [122353] LOG:  removing write-ahead log file "000000010000000000000048"
+2025-01-10 17:28:42.526 CST [122353] [122353] LOG:  checkpoints are occurring too frequently (20 seconds apart)
+2025-01-10 17:28:42.526 CST [122353] [122353] HINT:  Consider increasing the configuration parameter "max_wal_size".
+2025-01-10 17:28:49.383 CST [122350] [122350] LOG:  forked new process, pid is 122416, true pid is 122416
+2025-01-10 17:28:54.876 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:28:58.043 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:28:59.399 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:28:59.797 CST [122353] [122353] LOG:  Truncate relation size cache from 7F045B88
+2025-01-10 17:28:59.808 CST [122353] [122353] LOG:  logindex truncate bloom id=64 page=31
+2025-01-10 17:28:59.817 CST [122353] [122353] LOG:  logindex rename /home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_logindex/0000.tbl to /home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_logindex/0002.tbl
+2025-01-10 17:28:59.817 CST [122353] [122353] LOG:  Truncate logindex pg_logindex from lsn=7F045B88
+2025-01-10 17:28:59.817 CST [122353] [122353] LOG:  Truncate logindex polar_fullpage from lsn=7F045B88
+2025-01-10 17:28:59.817 CST [122353] [122353] LOG:  attempting to remove WAL segments older than log file 00000000000000000000007E
+2025-01-10 17:28:59.826 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000005F"
+2025-01-10 17:28:59.839 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000066"
+2025-01-10 17:28:59.876 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000069"
+2025-01-10 17:28:59.887 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000067"
+2025-01-10 17:28:59.908 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000076"
+2025-01-10 17:28:59.916 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000070"
+2025-01-10 17:28:59.919 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000057"
+2025-01-10 17:28:59.927 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000077"
+2025-01-10 17:28:59.930 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000006B"
+2025-01-10 17:28:59.948 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000055"
+2025-01-10 17:28:59.976 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000005B"
+2025-01-10 17:29:00.016 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000063"
+2025-01-10 17:29:00.026 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000073"
+2025-01-10 17:29:00.030 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000059"
+2025-01-10 17:29:00.038 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000075"
+2025-01-10 17:29:00.047 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000072"
+2025-01-10 17:29:00.068 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000071"
+2025-01-10 17:29:00.077 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000007C"
+2025-01-10 17:29:00.098 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000060"
+2025-01-10 17:29:00.109 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000006A"
+2025-01-10 17:29:00.129 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000005C"
+2025-01-10 17:29:00.136 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000006D"
+2025-01-10 17:29:00.144 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000006C"
+2025-01-10 17:29:00.159 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000007B"
+2025-01-10 17:29:00.186 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000074"
+2025-01-10 17:29:00.188 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000065"
+2025-01-10 17:29:00.190 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000062"
+2025-01-10 17:29:00.193 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000007E"
+2025-01-10 17:29:00.197 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000061"
+2025-01-10 17:29:00.210 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000078"
+2025-01-10 17:29:00.216 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000079"
+2025-01-10 17:29:00.226 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000056"
+2025-01-10 17:29:00.246 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000007A"
+2025-01-10 17:29:00.277 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000068"
+2025-01-10 17:29:00.279 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000005D"
+2025-01-10 17:29:00.281 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000007D"
+2025-01-10 17:29:00.307 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000005A"
+2025-01-10 17:29:00.319 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000005E"
+2025-01-10 17:29:00.328 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000006F"
+2025-01-10 17:29:00.328 CST [122353] [122353] LOG:  removing write-ahead log file "00000001000000000000006E"
+2025-01-10 17:29:00.341 CST [122353] [122353] LOG:  removing write-ahead log file "000000010000000000000058"
+2025-01-10 17:29:00.349 CST [122353] [122353] LOG:  removing write-ahead log file "000000010000000000000064"
+2025-01-10 17:29:03.358 CST [122350] [122350] LOG:  forked new process, pid is 122440, true pid is 122440
+2025-01-10 17:29:03.360 CST [122350] [122350] LOG:  forked new process, pid is 122442, true pid is 122442
+2025-01-10 17:29:03.364 CST [122350] [122350] LOG:  forked new process, pid is 122452, true pid is 122452
+2025-01-10 17:29:03.366 CST [122350] [122350] LOG:  forked new process, pid is 122458, true pid is 122458
+2025-01-10 17:29:03.369 CST [122350] [122350] LOG:  forked new process, pid is 122461, true pid is 122461
+2025-01-10 17:29:03.370 CST [122350] [122350] LOG:  forked new process, pid is 122462, true pid is 122462
+2025-01-10 17:29:03.373 CST [122350] [122350] LOG:  forked new process, pid is 122463, true pid is 122463
+2025-01-10 17:29:03.375 CST [122350] [122350] LOG:  forked new process, pid is 122464, true pid is 122464
+2025-01-10 17:29:04.361 CST [122415] [122415] ERROR:  canceling autovacuum task
+2025-01-10 17:29:04.361 CST [122415] [122415] CONTEXT:  automatic analyze of table "postgres.public.partsupp"
+2025-01-10 17:29:26.737 CST [122350] [122350] LOG:  forked new process, pid is 123439, true pid is 123439
+2025-01-10 17:29:27.741 CST [122415] [122415] ERROR:  canceling autovacuum task
+2025-01-10 17:29:27.741 CST [122415] [122415] CONTEXT:  automatic analyze of table "postgres.public.orders"
+2025-01-10 17:29:27.764 CST [122350] [122350] LOG:  forked new process, pid is 123441, true pid is 123441
+2025-01-10 17:29:28.039 CST [122350] [122350] LOG:  forked new process, pid is 123443, true pid is 123443
+2025-01-10 17:29:28.052 CST [122350] [122350] LOG:  forked new process, pid is 123445, true pid is 123445
+2025-01-10 17:29:28.129 CST [122350] [122350] LOG:  forked new process, pid is 123447, true pid is 123447
+2025-01-10 17:29:28.154 CST [122350] [122350] LOG:  forked new process, pid is 123449, true pid is 123449
+2025-01-10 17:29:28.208 CST [122350] [122350] LOG:  forked new process, pid is 123451, true pid is 123451
+2025-01-10 17:29:28.221 CST [122350] [122350] LOG:  forked new process, pid is 123453, true pid is 123453
+2025-01-10 17:29:33.579 CST [122350] [122350] LOG:  forked new process, pid is 123454, true pid is 123454
+2025-01-10 17:29:42.277 CST [122350] [122350] LOG:  forked new process, pid is 123461, true pid is 123461
+2025-01-10 17:29:42.372 CST [122350] [122350] LOG:  forked new process, pid is 123468, true pid is 123468
+2025-01-10 17:29:42.400 CST [122350] [122350] LOG:  forked new process, pid is 123492, true pid is 123492
+2025-01-10 17:29:42.403 CST [122350] [122350] LOG:  forked new process, pid is 123498, true pid is 123498
+2025-01-10 17:29:42.404 CST [122350] [122350] LOG:  forked new process, pid is 123499, true pid is 123499
+2025-01-10 17:29:42.406 CST [122350] [122350] LOG:  forked new process, pid is 123503, true pid is 123503
+2025-01-10 17:29:42.409 CST [122350] [122350] LOG:  forked new process, pid is 123509, true pid is 123509
+2025-01-10 17:29:42.415 CST [122350] [122350] LOG:  forked new process, pid is 123514, true pid is 123514
+2025-01-10 17:29:42.416 CST [122350] [122350] LOG:  forked new process, pid is 123515, true pid is 123515
+2025-01-10 17:29:42.420 CST [122350] [122350] LOG:  forked new process, pid is 123516, true pid is 123516
+2025-01-10 17:29:43.852 CST [122350] [122350] LOG:  forked new process, pid is 123517, true pid is 123517
+2025-01-10 17:29:43.862 CST [122350] [122350] LOG:  forked new process, pid is 123518, true pid is 123518
+2025-01-10 17:29:46.222 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:29:47.917 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:29:48.041 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:29:48.956 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:29:51.355 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:29:52.797 CST [122353] [122353] LOG:  Truncate relation size cache from A9249528
+2025-01-10 17:29:52.797 CST [122353] [122353] LOG:  Truncate logindex pg_logindex from lsn=A9249528
+2025-01-10 17:29:52.797 CST [122353] [122353] LOG:  Truncate logindex polar_fullpage from lsn=A9249528
+2025-01-10 17:29:52.797 CST [122353] [122353] LOG:  attempting to remove WAL segments older than log file 0000000000000000000000A8
+2025-01-10 17:29:52.806 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000085"
+2025-01-10 17:29:52.809 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000095"
+2025-01-10 17:29:52.813 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000A8"
+2025-01-10 17:29:52.820 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000008E"
+2025-01-10 17:29:52.828 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000090"
+2025-01-10 17:29:52.836 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000008A"
+2025-01-10 17:29:52.839 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000A0"
+2025-01-10 17:29:52.847 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000099"
+2025-01-10 17:29:52.851 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000094"
+2025-01-10 17:29:52.859 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000A3"
+2025-01-10 17:29:52.867 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000A6"
+2025-01-10 17:29:52.879 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000009C"
+2025-01-10 17:29:52.889 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000082"
+2025-01-10 17:29:52.894 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000009D"
+2025-01-10 17:29:52.909 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000088"
+2025-01-10 17:29:52.924 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000007F"
+2025-01-10 17:29:52.937 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000009E"
+2025-01-10 17:29:52.946 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000093"
+2025-01-10 17:29:52.949 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000092"
+2025-01-10 17:29:52.957 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000097"
+2025-01-10 17:29:52.960 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000009F"
+2025-01-10 17:29:52.968 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000091"
+2025-01-10 17:29:52.972 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000A5"
+2025-01-10 17:29:52.979 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000083"
+2025-01-10 17:29:52.988 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000081"
+2025-01-10 17:29:52.995 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000A2"
+2025-01-10 17:29:53.000 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000080"
+2025-01-10 17:29:53.008 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000A4"
+2025-01-10 17:29:53.012 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000009A"
+2025-01-10 17:29:53.019 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000A1"
+2025-01-10 17:29:53.023 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000008C"
+2025-01-10 17:29:53.031 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000087"
+2025-01-10 17:29:53.038 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000096"
+2025-01-10 17:29:53.047 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000000000086"
+2025-01-10 17:29:53.051 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000008D"
+2025-01-10 17:29:53.061 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000008B"
+2025-01-10 17:29:53.069 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000000000008F"
+2025-01-10 17:29:53.070 CST [122353] [122353] LOG:  removing write-ahead log file "0000000100000000000000A7"
+2025-01-10 17:29:53.074 CST [122353] [122353] LOG:  removing write-ahead log file "000000010000000000000098"
+2025-01-10 17:29:53.079 CST [122353] [122353] LOG:  removing write-ahead log file "00000001000000000000009B"
+2025-01-10 17:29:53.086 CST [122353] [122353] LOG:  removing write-ahead log file "000000010000000000000084"
+2025-01-10 17:29:53.095 CST [122353] [122353] LOG:  removing write-ahead log file "000000010000000000000089"
+2025-01-10 17:29:53.301 CST [122350] [122350] LOG:  forked new process, pid is 123519, true pid is 123519
+2025-01-10 17:29:55.375 CST [122353] [122353] LOG:  checkpoints are occurring too frequently (12 seconds apart)
+2025-01-10 17:29:55.375 CST [122353] [122353] HINT:  Consider increasing the configuration parameter "max_wal_size".
+2025-01-10 17:29:56.910 CST [122350] [122350] LOG:  forked new process, pid is 123520, true pid is 123520
+2025-01-10 17:30:02.602 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:30:03.041 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:30:03.685 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:30:06.053 CST [122353] [122353] LOG:  Truncate relation size cache from D30935E0
+2025-01-10 17:30:06.053 CST [122353] [122353] LOG:  Truncate logindex pg_logindex from lsn=D30935E0
+2025-01-10 17:30:06.053 CST [122353] [122353] LOG:  Truncate logindex polar_fullpage from lsn=D30935E0
+2025-01-10 17:30:06.053 CST [122353] [122353] LOG:  attempting to remove WAL segments older than log file 0000000000000000000000D2
+2025-01-10 17:30:06.056 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000BF"
+2025-01-10 17:30:06.059 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000CC"
+2025-01-10 17:30:06.064 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000D0"
+2025-01-10 17:30:06.067 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000B6"
+2025-01-10 17:30:06.071 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000A9"
+2025-01-10 17:30:06.074 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000C2"
+2025-01-10 17:30:06.081 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000C7"
+2025-01-10 17:30:06.083 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000AA"
+2025-01-10 17:30:06.086 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000AE"
+2025-01-10 17:30:06.090 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000C5"
+2025-01-10 17:30:06.093 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000BD"
+2025-01-10 17:30:06.096 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000BC"
+2025-01-10 17:30:06.098 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000D1"
+2025-01-10 17:30:06.102 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000C1"
+2025-01-10 17:30:06.108 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000B2"
+2025-01-10 17:30:06.112 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000B4"
+2025-01-10 17:30:06.115 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000B5"
+2025-01-10 17:30:06.118 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000BE"
+2025-01-10 17:30:06.121 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000B8"
+2025-01-10 17:30:06.124 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000B0"
+2025-01-10 17:30:06.127 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000CE"
+2025-01-10 17:30:06.130 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000BA"
+2025-01-10 17:30:06.136 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000D2"
+2025-01-10 17:30:06.139 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000AF"
+2025-01-10 17:30:06.142 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000AD"
+2025-01-10 17:30:06.145 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000BB"
+2025-01-10 17:30:06.148 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000C8"
+2025-01-10 17:30:06.151 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000B7"
+2025-01-10 17:30:06.155 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000B9"
+2025-01-10 17:30:06.158 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000C0"
+2025-01-10 17:30:06.164 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000CB"
+2025-01-10 17:30:06.167 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000CD"
+2025-01-10 17:30:06.170 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000C4"
+2025-01-10 17:30:06.173 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000AC"
+2025-01-10 17:30:06.177 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000AB"
+2025-01-10 17:30:06.180 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000C3"
+2025-01-10 17:30:06.183 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000C6"
+2025-01-10 17:30:06.186 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000C9"
+2025-01-10 17:30:06.192 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000B1"
+2025-01-10 17:30:06.193 CST [122353] [122353] LOG:  removing write-ahead log file "0000000100000000000000CF"
+2025-01-10 17:30:06.196 CST [122353] [122353] LOG:  removing write-ahead log file "0000000100000000000000B3"
+2025-01-10 17:30:06.203 CST [122353] [122353] LOG:  removing write-ahead log file "0000000100000000000000CA"
+2025-01-10 17:30:15.677 CST [122353] [122353] LOG:  checkpoints are occurring too frequently (20 seconds apart)
+2025-01-10 17:30:15.677 CST [122353] [122353] HINT:  Consider increasing the configuration parameter "max_wal_size".
+2025-01-10 17:30:26.667 CST [122355] [122355] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122355 time=0.000 s
+2025-01-10 17:30:26.849 CST [122353] [122353] LOG:  Truncate relation size cache from FD03DF38
+2025-01-10 17:30:26.851 CST [122353] [122353] LOG:  logindex truncate bloom id=128 page=63
+2025-01-10 17:30:26.851 CST [122353] [122353] LOG:  removing file "pg_logindex/0000"
+2025-01-10 17:30:26.859 CST [122353] [122353] LOG:  logindex rename /home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_logindex/0001.tbl to /home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_logindex/0003.tbl
+2025-01-10 17:30:26.859 CST [122353] [122353] LOG:  Truncate logindex pg_logindex from lsn=FD03DF38
+2025-01-10 17:30:26.859 CST [122353] [122353] LOG:  Truncate logindex polar_fullpage from lsn=FD03DF38
+2025-01-10 17:30:26.859 CST [122353] [122353] LOG:  attempting to remove WAL segments older than log file 0000000000000000000000FC
+2025-01-10 17:30:26.862 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000DC"
+2025-01-10 17:30:26.865 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000F7"
+2025-01-10 17:30:26.869 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000FC"
+2025-01-10 17:30:26.872 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000D3"
+2025-01-10 17:30:26.875 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000DA"
+2025-01-10 17:30:26.878 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000EC"
+2025-01-10 17:30:26.881 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000D7"
+2025-01-10 17:30:26.889 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000DF"
+2025-01-10 17:30:26.892 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000EE"
+2025-01-10 17:30:26.895 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000D9"
+2025-01-10 17:30:26.898 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000E9"
+2025-01-10 17:30:26.901 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000DD"
+2025-01-10 17:30:26.904 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000F3"
+2025-01-10 17:30:26.906 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000E1"
+2025-01-10 17:30:26.910 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000E3"
+2025-01-10 17:30:26.917 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000EB"
+2025-01-10 17:30:26.920 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000EA"
+2025-01-10 17:30:26.922 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000FA"
+2025-01-10 17:30:26.925 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000ED"
+2025-01-10 17:30:26.929 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000DE"
+2025-01-10 17:30:26.932 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000FB"
+2025-01-10 17:30:26.935 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000D4"
+2025-01-10 17:30:26.942 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000E5"
+2025-01-10 17:30:26.945 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000E7"
+2025-01-10 17:30:26.948 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000D5"
+2025-01-10 17:30:26.951 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000F2"
+2025-01-10 17:30:26.954 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000D6"
+2025-01-10 17:30:26.957 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000F5"
+2025-01-10 17:30:26.960 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000F6"
+2025-01-10 17:30:26.963 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000F9"
+2025-01-10 17:30:26.971 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000F8"
+2025-01-10 17:30:26.975 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000E8"
+2025-01-10 17:30:26.978 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000F4"
+2025-01-10 17:30:26.981 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000E4"
+2025-01-10 17:30:26.984 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000F1"
+2025-01-10 17:30:26.987 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000E6"
+2025-01-10 17:30:26.991 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000F0"
+2025-01-10 17:30:26.998 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000E0"
+2025-01-10 17:30:27.002 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000E2"
+2025-01-10 17:30:27.004 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000DB"
+2025-01-10 17:30:27.008 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000D8"
+2025-01-10 17:30:27.008 CST [122353] [122353] LOG:  removing write-ahead log file "0000000100000000000000EF"
+2025-01-10 17:30:33.634 CST [122350] [122350] LOG:  forked new process, pid is 123521, true pid is 123521
+2025-01-10 17:30:34.394 CST [122353] [122353] LOG:  checkpoints are occurring too frequently (19 seconds apart)
+2025-01-10 17:30:34.394 CST [122353] [122353] HINT:  Consider increasing the configuration parameter "max_wal_size".
+2025-01-10 17:30:36.925 CST [122350] [122350] LOG:  forked new process, pid is 123522, true pid is 123522
+2025-01-10 17:30:43.041 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:30:45.250 CST [122350] [122350] LOG:  forked new process, pid is 123544, true pid is 123544
+2025-01-10 17:30:45.252 CST [122350] [122350] LOG:  forked new process, pid is 123548, true pid is 123548
+2025-01-10 17:30:45.254 CST [122350] [122350] LOG:  forked new process, pid is 123553, true pid is 123553
+2025-01-10 17:30:45.257 CST [122350] [122350] LOG:  forked new process, pid is 123560, true pid is 123560
+2025-01-10 17:30:45.259 CST [122350] [122350] LOG:  forked new process, pid is 123565, true pid is 123565
+2025-01-10 17:30:45.262 CST [122350] [122350] LOG:  forked new process, pid is 123568, true pid is 123568
+2025-01-10 17:30:45.265 CST [122350] [122350] LOG:  forked new process, pid is 123569, true pid is 123569
+2025-01-10 17:30:45.267 CST [122350] [122350] LOG:  forked new process, pid is 123570, true pid is 123570
+2025-01-10 17:30:46.420 CST [122352] [122352] LOG:  done fallocate tmp WAL file pg_wal/xlogtemp.122352 time=0.000 s
+2025-01-10 17:30:48.206 CST [123521] [123521] ERROR:  canceling autovacuum task
+2025-01-10 17:30:48.206 CST [123521] [123521] CONTEXT:  automatic analyze of table "postgres.public.part"
+2025-01-10 17:30:48.586 CST [122353] [122353] LOG:  Truncate relation size cache from 127047060
+2025-01-10 17:30:48.586 CST [122353] [122353] LOG:  Truncate logindex pg_logindex from lsn=127047060
+2025-01-10 17:30:48.586 CST [122353] [122353] LOG:  Truncate logindex polar_fullpage from lsn=127047060
+2025-01-10 17:30:48.586 CST [122353] [122353] LOG:  attempting to remove WAL segments older than log file 000000000000000100000026
+2025-01-10 17:30:48.587 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000000A"
+2025-01-10 17:30:48.589 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000011"
+2025-01-10 17:30:48.591 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000009"
+2025-01-10 17:30:48.592 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000FF"
+2025-01-10 17:30:48.594 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000001A"
+2025-01-10 17:30:48.595 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000026"
+2025-01-10 17:30:48.597 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000FE"
+2025-01-10 17:30:48.599 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000012"
+2025-01-10 17:30:48.600 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000000"
+2025-01-10 17:30:48.603 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000001B"
+2025-01-10 17:30:48.605 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000016"
+2025-01-10 17:30:48.607 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000001D"
+2025-01-10 17:30:48.608 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000000F"
+2025-01-10 17:30:48.610 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000014"
+2025-01-10 17:30:48.611 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000017"
+2025-01-10 17:30:48.613 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000022"
+2025-01-10 17:30:48.614 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000024"
+2025-01-10 17:30:48.616 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000001C"
+2025-01-10 17:30:48.618 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000000C"
+2025-01-10 17:30:48.619 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000018"
+2025-01-10 17:30:48.621 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000004"
+2025-01-10 17:30:48.622 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000006"
+2025-01-10 17:30:48.625 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000000D"
+2025-01-10 17:30:48.627 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000025"
+2025-01-10 17:30:48.628 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000020"
+2025-01-10 17:30:48.630 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000005"
+2025-01-10 17:30:48.631 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000000E"
+2025-01-10 17:30:48.633 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000003"
+2025-01-10 17:30:48.635 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000000B"
+2025-01-10 17:30:48.636 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000007"
+2025-01-10 17:30:48.638 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000015"
+2025-01-10 17:30:48.639 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000008"
+2025-01-10 17:30:48.641 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000002"
+2025-01-10 17:30:48.643 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000001E"
+2025-01-10 17:30:48.646 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000001F"
+2025-01-10 17:30:48.648 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000010"
+2025-01-10 17:30:48.649 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000021"
+2025-01-10 17:30:48.651 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000023"
+2025-01-10 17:30:48.653 CST [122353] [122353] LOG:  recycled write-ahead log file "0000000100000000000000FD"
+2025-01-10 17:30:48.654 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000001"
+2025-01-10 17:30:48.654 CST [122353] [122353] LOG:  removing write-ahead log file "000000010000000100000013"
+2025-01-10 17:30:48.658 CST [122353] [122353] LOG:  removing write-ahead log file "000000010000000100000019"
+2025-01-10 17:31:33.693 CST [122350] [122350] LOG:  forked new process, pid is 123573, true pid is 123573
+2025-01-10 17:31:36.301 CST [122350] [122350] LOG:  received SIGHUP, reloading configuration files
+2025-01-10 17:31:36.302 CST [122350] [122350] LOG:  parameter "shared_buffers" cannot be changed without restarting the server
+2025-01-10 17:31:36.302 CST [122350] [122350] LOG:  parameter "work_mem" changed to "65536"
+2025-01-10 17:31:36.302 CST [122350] [122350] LOG:  parameter "maintenance_work_mem" changed to "262144"
+2025-01-10 17:31:36.302 CST [122350] [122350] LOG:  parameter "effective_cache_size" changed to "2097152"
+2025-01-10 17:31:36.302 CST [122350] [122350] LOG:  parameter "random_page_cost" changed to "2.0"
+2025-01-10 17:31:36.302 CST [122350] [122350] LOG:  parameter "seq_page_cost" changed to "0.5"
+2025-01-10 17:31:36.302 CST [122350] [122350] LOG:  parameter "max_parallel_workers_per_gather" changed to "4"
+2025-01-10 17:31:36.302 CST [122350] [122350] LOG:  parameter "max_parallel_workers" changed to "8"
+2025-01-10 17:31:36.302 CST [122350] [122350] LOG:  parameter "max_worker_processes" cannot be changed without restarting the server
+2025-01-10 17:31:36.302 CST [122350] [122350] LOG:  configuration file "/home/postgres/tmp_master_dir_polardb_pg_1100_bld/postgresql.conf" contains errors; unaffected changes were applied
+2025-01-10 17:31:36.303 CST [122350] [122350] LOG:  received fast shutdown request
+2025-01-10 17:31:36.305 CST [122350] [122350] LOG:  aborting any active transactions
+2025-01-10 17:31:36.305 CST [122356] [122356] LOG:  Exit logindex background worker
+2025-01-10 17:31:36.306 CST [122350] [122350] LOG:  postmaster is in PM_WAIT_BACKENDS state.
+2025-01-10 17:31:36.308 CST [122350] [122350] LOG:  background worker "logical replication launcher" (PID 122359) exited with exit code 1
+2025-01-10 17:31:36.308 CST [123573] [123573] FATAL:  terminating autovacuum process due to administrator command
+2025-01-10 17:31:36.308 CST [123573] [123573] BACKTRACE:  
+	postgres(5432): autovacuum worker  postgres(+0x128e9d) [0x621aa4c9de9d]
+	postgres(5432): autovacuum worker  postgres(+0x2ad50d) [0x621aa4e2250d]
+	postgres(5432): autovacuum worker  postgres(+0x2b02a5) [0x621aa4e252a5]
+	postgres(5432): autovacuum worker  postgres(analyze_rel+0x27e) [0x621aa4e2690e]
+	postgres(5432): autovacuum worker  postgres(vacuum+0x439) [0x621aa4e936b9]
+	postgres(5432): autovacuum worker  postgres(+0x44f6df) [0x621aa4fc46df]
+	postgres(5432): autovacuum worker  postgres(+0x44fcc6) [0x621aa4fc4cc6]
+	postgres(5432): autovacuum worker  postgres(+0x450fa5) [0x621aa4fc5fa5]
+	postgres(5432): autovacuum worker  postgres(+0x4671c3) [0x621aa4fdc1c3]
+	/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420) [0x709fb0771420]
+	/lib/x86_64-linux-gnu/libc.so.6(__select+0x1a) [0x709fafa4419a]
+	postgres(5432): autovacuum worker  postgres(+0x467c07) [0x621aa4fdcc07]
+	postgres(5432): autovacuum worker  postgres(PostmasterMain+0xd66) [0x621aa4fde926]
+	postgres(5432): autovacuum worker  postgres(main+0x842) [0x621aa4cbeab2]
+	/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x709faf953083]
+	postgres(5432): autovacuum worker  postgres(_start+0x2e) [0x621aa4cbeb5e]
+2025-01-10 17:31:36.308 CST [123521] [123521] FATAL:  terminating autovacuum process due to administrator command
+2025-01-10 17:31:36.308 CST [123521] [123521] BACKTRACE:  
+	postgres(5432): autovacuum worker  postgres(+0x128e9d) [0x621aa4c9de9d]
+	postgres(5432): autovacuum worker  postgres(+0x2ad50d) [0x621aa4e2250d]
+	postgres(5432): autovacuum worker  postgres(+0x2b02a5) [0x621aa4e252a5]
+	postgres(5432): autovacuum worker  postgres(analyze_rel+0x27e) [0x621aa4e2690e]
+	postgres(5432): autovacuum worker  postgres(vacuum+0x439) [0x621aa4e936b9]
+	postgres(5432): autovacuum worker  postgres(+0x44f6df) [0x621aa4fc46df]
+	postgres(5432): autovacuum worker  postgres(+0x44fcc6) [0x621aa4fc4cc6]
+	postgres(5432): autovacuum worker  postgres(+0x450fa5) [0x621aa4fc5fa5]
+	postgres(5432): autovacuum worker  postgres(+0x4671c3) [0x621aa4fdc1c3]
+	/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420) [0x709fb0771420]
+	/lib/x86_64-linux-gnu/libc.so.6(__select+0x1a) [0x709fafa4419a]
+	postgres(5432): autovacuum worker  postgres(+0x467c07) [0x621aa4fdcc07]
+	postgres(5432): autovacuum worker  postgres(PostmasterMain+0xd66) [0x621aa4fde926]
+	postgres(5432): autovacuum worker  postgres(main+0x842) [0x621aa4cbeab2]
+	/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x709faf953083]
+	postgres(5432): autovacuum worker  postgres(_start+0x2e) [0x621aa4cbeb5e]
+2025-01-10 17:31:36.313 CST [122350] [122350] LOG:  postmaster is in PM_SHUTDOWN state.
+2025-01-10 17:31:36.313 CST [122353] [122353] LOG:  shutting down
+2025-01-10 17:31:36.883 CST [122353] [122353] LOG:  Truncate relation size cache from 13BE910A8
+2025-01-10 17:31:36.883 CST [122353] [122353] LOG:  Truncate logindex pg_logindex from lsn=13BE910A8
+2025-01-10 17:31:36.883 CST [122353] [122353] LOG:  Truncate logindex polar_fullpage from lsn=13BE910A8
+2025-01-10 17:31:36.883 CST [122353] [122353] LOG:  attempting to remove WAL segments older than log file 00000000000000010000003A
+2025-01-10 17:31:36.885 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000027"
+2025-01-10 17:31:36.887 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000030"
+2025-01-10 17:31:36.889 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000035"
+2025-01-10 17:31:36.891 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000029"
+2025-01-10 17:31:36.892 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000002C"
+2025-01-10 17:31:36.894 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000034"
+2025-01-10 17:31:36.896 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000002E"
+2025-01-10 17:31:36.897 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000002B"
+2025-01-10 17:31:36.899 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000032"
+2025-01-10 17:31:36.901 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000003A"
+2025-01-10 17:31:36.902 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000033"
+2025-01-10 17:31:36.905 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000002F"
+2025-01-10 17:31:36.906 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000038"
+2025-01-10 17:31:36.908 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000036"
+2025-01-10 17:31:36.910 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000037"
+2025-01-10 17:31:36.911 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000002D"
+2025-01-10 17:31:36.913 CST [122353] [122353] LOG:  recycled write-ahead log file "00000001000000010000002A"
+2025-01-10 17:31:36.915 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000031"
+2025-01-10 17:31:36.917 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000028"
+2025-01-10 17:31:36.918 CST [122353] [122353] LOG:  recycled write-ahead log file "000000010000000100000039"
+2025-01-10 17:31:36.925 CST [122350] [122350] LOG:  postmaster is in PM_SHUTDOWN_2 state.
+2025-01-10 17:31:36.925 CST [122350] [122350] LOG:  postmaster is in PM_WAIT_DEAD_END state.
+2025-01-10 17:31:36.927 CST [122350] [122350] LOG:  postmaster is in PM_NO_CHILDREN state.
+2025-01-10 17:31:37.062 CST [122350] [122350] LOG:  database system is shut down
+2025-01-10 17:38:22.294 CST [140578] [140578] LOG:  /home/postgres/tmp_master_dir_polardb_pg_1100_bld/polar_node_static.conf does not exist, we create it, This is best done on the first boot and not on restart
+2025-01-10 17:38:22.297 CST [140578] [140578] LOG:  polardb read control file "global/pg_control" success
+2025-01-10 17:38:22.297 CST [140578] [140578] LOG:  polardb load and check controlfile success
+2025-01-10 17:38:22.297 CST [140578] [140578] LOG:  recovery.conf not exist, polardb in readwrite mode
+2025-01-10 17:38:22.298 CST [140578] [140578] LOG:  polar_vfs loaded in postmaster 140578
+2025-01-10 17:38:22.301 CST [140578] [140578] WARNING:  could not access file "polar_resource_group": No such file or directory
+2025-01-10 17:38:22.305 CST [140578] [140578] LOG:  Auto detecting polar_stat_sql.linux_hz parameter...
+2025-01-10 17:38:22.305 CST [140578] [140578] LOG:  polar_stat_sql.linux_hz is set to 500000
+2025-01-10 17:38:22.308 CST [140578] [140578] LOG:  could not bind IPv6 address "::1": Address already in use
+2025-01-10 17:38:22.308 CST [140578] [140578] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-01-10 17:38:22.308 CST [140578] [140578] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2025-01-10 17:38:22.308 CST [140578] [140578] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-01-10 17:38:22.308 CST [140578] [140578] WARNING:  could not create listen socket for "localhost"
+2025-01-10 17:38:22.308 CST [140578] [140578] FATAL:  could not create any TCP/IP sockets
+2025-01-10 17:38:22.308 CST [140578] [140578] BACKTRACE:  
+	/home/postgres/tmp_basedir_polardb_pg_1100_bld/bin/postgres(+0x11ecee) [0x5d05e7f92cee]
+	/home/postgres/tmp_basedir_polardb_pg_1100_bld/bin/postgres(main+0x842) [0x5d05e7fbdab2]
+	/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7e7df77ea083]
+	/home/postgres/tmp_basedir_polardb_pg_1100_bld/bin/postgres(_start+0x2e) [0x5d05e7fbdb5e]
+2025-01-10 17:38:22.309 CST [140578] [140578] LOG:  database system is shut down
+2025-01-10 17:50:36.588 CST [156507] [156507] LOG:  /home/postgres/tmp_master_dir_polardb_pg_1100_bld/polar_node_static.conf does not exist, we create it, This is best done on the first boot and not on restart
+2025-01-10 17:50:36.590 CST [156507] [156507] LOG:  polardb read control file "global/pg_control" success
+2025-01-10 17:50:36.590 CST [156507] [156507] LOG:  polardb load and check controlfile success
+2025-01-10 17:50:36.590 CST [156507] [156507] LOG:  recovery.conf not exist, polardb in readwrite mode
+2025-01-10 17:50:36.592 CST [156507] [156507] LOG:  polar_vfs loaded in postmaster 156507
+2025-01-10 17:50:36.594 CST [156507] [156507] WARNING:  could not access file "polar_resource_group": No such file or directory
+2025-01-10 17:50:36.597 CST [156507] [156507] LOG:  Auto detecting polar_stat_sql.linux_hz parameter...
+2025-01-10 17:50:36.597 CST [156507] [156507] LOG:  polar_stat_sql.linux_hz is set to 1000000
+2025-01-10 17:50:36.599 CST [156507] [156507] LOG:  could not bind IPv6 address "::1": Address already in use
+2025-01-10 17:50:36.599 CST [156507] [156507] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-01-10 17:50:36.599 CST [156507] [156507] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2025-01-10 17:50:36.599 CST [156507] [156507] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-01-10 17:50:36.599 CST [156507] [156507] WARNING:  could not create listen socket for "localhost"
+2025-01-10 17:50:36.600 CST [156507] [156507] FATAL:  could not create any TCP/IP sockets
+2025-01-10 17:50:36.600 CST [156507] [156507] BACKTRACE:  
+	/home/postgres/tmp_basedir_polardb_pg_1100_bld/bin/postgres(+0x11ecee) [0x5e788a327cee]
+	/home/postgres/tmp_basedir_polardb_pg_1100_bld/bin/postgres(main+0x842) [0x5e788a352ab2]
+	/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7b0606b46083]
+	/home/postgres/tmp_basedir_polardb_pg_1100_bld/bin/postgres(_start+0x2e) [0x5e788a352b5e]
+2025-01-10 17:50:36.600 CST [156507] [156507] LOG:  database system is shut down
+2025-01-10 17:51:20.549 CST [156511] [156511] LOG:  polardb read control file "global/pg_control" success
+2025-01-10 17:51:20.549 CST [156511] [156511] LOG:  polardb load and check controlfile success
+2025-01-10 17:51:20.549 CST [156511] [156511] LOG:  recovery.conf not exist, polardb in readwrite mode
+2025-01-10 17:51:20.550 CST [156511] [156511] LOG:  polar_vfs loaded in postmaster 156511
+2025-01-10 17:51:20.552 CST [156511] [156511] WARNING:  could not access file "polar_resource_group": No such file or directory
+2025-01-10 17:51:20.555 CST [156511] [156511] LOG:  Auto detecting polar_stat_sql.linux_hz parameter...
+2025-01-10 17:51:20.555 CST [156511] [156511] LOG:  polar_stat_sql.linux_hz is set to 1000000
+2025-01-10 17:51:20.557 CST [156511] [156511] LOG:  could not bind IPv6 address "::1": Address already in use
+2025-01-10 17:51:20.557 CST [156511] [156511] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-01-10 17:51:20.557 CST [156511] [156511] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2025-01-10 17:51:20.557 CST [156511] [156511] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-01-10 17:51:20.557 CST [156511] [156511] WARNING:  could not create listen socket for "localhost"
+2025-01-10 17:51:20.557 CST [156511] [156511] FATAL:  could not create any TCP/IP sockets
+2025-01-10 17:51:20.557 CST [156511] [156511] BACKTRACE:  
+	/home/postgres/tmp_basedir_polardb_pg_1100_bld/bin/postgres(+0x11ecee) [0x64ea489e1cee]
+	/home/postgres/tmp_basedir_polardb_pg_1100_bld/bin/postgres(main+0x842) [0x64ea48a0cab2]
+	/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7b5872ad8083]
+	/home/postgres/tmp_basedir_polardb_pg_1100_bld/bin/postgres(_start+0x2e) [0x64ea48a0cb5e]
+2025-01-10 17:51:20.557 CST [156511] [156511] LOG:  database system is shut down
+2025-01-10 17:56:43.276 CST [172435] [172435] LOG:  /home/postgres/tmp_master_dir_polardb_pg_1100_bld/polar_node_static.conf does not exist, we create it, This is best done on the first boot and not on restart
+2025-01-10 17:56:43.286 CST [172435] [172435] LOG:  polardb read control file "global/pg_control" success
+2025-01-10 17:56:43.287 CST [172435] [172435] LOG:  polardb load and check controlfile success
+2025-01-10 17:56:43.287 CST [172435] [172435] LOG:  recovery.conf not exist, polardb in readwrite mode
+2025-01-10 17:56:43.288 CST [172435] [172435] LOG:  polar_vfs loaded in postmaster 172435
+2025-01-10 17:56:43.290 CST [172435] [172435] WARNING:  could not access file "polar_resource_group": No such file or directory
+2025-01-10 17:56:43.294 CST [172435] [172435] LOG:  Auto detecting polar_stat_sql.linux_hz parameter...
+2025-01-10 17:56:43.294 CST [172435] [172435] LOG:  polar_stat_sql.linux_hz is set to 500000
+2025-01-10 17:56:43.295 CST [172435] [172435] LOG:  could not bind IPv6 address "::1": Address already in use
+2025-01-10 17:56:43.295 CST [172435] [172435] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-01-10 17:56:43.295 CST [172435] [172435] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2025-01-10 17:56:43.295 CST [172435] [172435] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-01-10 17:56:43.295 CST [172435] [172435] WARNING:  could not create listen socket for "localhost"
+2025-01-10 17:56:43.296 CST [172435] [172435] FATAL:  could not create any TCP/IP sockets
+2025-01-10 17:56:43.296 CST [172435] [172435] BACKTRACE:  
+	/home/postgres/tmp_basedir_polardb_pg_1100_bld/bin/postgres(+0x11ecee) [0x5e2d48c25cee]
+	/home/postgres/tmp_basedir_polardb_pg_1100_bld/bin/postgres(main+0x842) [0x5e2d48c50ab2]
+	/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f8d44d37083]
+	/home/postgres/tmp_basedir_polardb_pg_1100_bld/bin/postgres(_start+0x2e) [0x5e2d48c50b5e]
+2025-01-10 17:56:43.296 CST [172435] [172435] LOG:  database system is shut down

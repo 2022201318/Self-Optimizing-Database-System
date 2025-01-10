@@ -1,0 +1,4020 @@
+[
+    {
+        "name": "allow_system_table_mods",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Allows modifications of the structure of system tables.",
+        "reset_val": "off"
+    },
+    {
+        "name": "application_name",
+        "setting": "psql",
+        "unit": "",
+        "short_desc": "Sets the application name to be reported in statistics and logs.",
+        "reset_val": "psql"
+    },
+    {
+        "name": "archive_command",
+        "setting": "(disabled)",
+        "unit": "",
+        "short_desc": "Sets the shell command that will be called to archive a WAL file.",
+        "reset_val": ""
+    },
+    {
+        "name": "archive_mode",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Allows archiving of WAL files using archive_command.",
+        "reset_val": "off"
+    },
+    {
+        "name": "archive_timeout",
+        "setting": "0",
+        "unit": "s",
+        "short_desc": "Forces a switch to the next WAL file if a new file has not been started within N seconds.",
+        "reset_val": "0"
+    },
+    {
+        "name": "array_nulls",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enable input of NULL elements in arrays.",
+        "reset_val": "on"
+    },
+    {
+        "name": "authentication_timeout",
+        "setting": "60",
+        "unit": "s",
+        "short_desc": "Sets the maximum allowed time to complete client authentication.",
+        "reset_val": "60"
+    },
+    {
+        "name": "autovacuum",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Starts the autovacuum subprocess.",
+        "reset_val": "on"
+    },
+    {
+        "name": "autovacuum_analyze_scale_factor",
+        "setting": "0.1",
+        "unit": "",
+        "short_desc": "Number of tuple inserts, updates, or deletes prior to analyze as a fraction of reltuples.",
+        "reset_val": "0.1"
+    },
+    {
+        "name": "autovacuum_analyze_threshold",
+        "setting": "50",
+        "unit": "",
+        "short_desc": "Minimum number of tuple inserts, updates, or deletes prior to analyze.",
+        "reset_val": "50"
+    },
+    {
+        "name": "autovacuum_freeze_max_age",
+        "setting": "200000000",
+        "unit": "",
+        "short_desc": "Age at which to autovacuum a table to prevent transaction ID wraparound.",
+        "reset_val": "200000000"
+    },
+    {
+        "name": "autovacuum_max_workers",
+        "setting": "4",
+        "unit": "",
+        "short_desc": "Sets the maximum number of simultaneously running autovacuum worker processes.",
+        "reset_val": "4"
+    },
+    {
+        "name": "autovacuum_multixact_freeze_max_age",
+        "setting": "400000000",
+        "unit": "",
+        "short_desc": "Multixact age at which to autovacuum a table to prevent multixact wraparound.",
+        "reset_val": "400000000"
+    },
+    {
+        "name": "autovacuum_naptime",
+        "setting": "60",
+        "unit": "s",
+        "short_desc": "Time to sleep between autovacuum runs.",
+        "reset_val": "60"
+    },
+    {
+        "name": "autovacuum_vacuum_cost_delay",
+        "setting": "20",
+        "unit": "ms",
+        "short_desc": "Vacuum cost delay in milliseconds, for autovacuum.",
+        "reset_val": "20"
+    },
+    {
+        "name": "autovacuum_vacuum_cost_limit",
+        "setting": "-1",
+        "unit": "",
+        "short_desc": "Vacuum cost amount available before napping, for autovacuum.",
+        "reset_val": "-1"
+    },
+    {
+        "name": "autovacuum_vacuum_scale_factor",
+        "setting": "0.2",
+        "unit": "",
+        "short_desc": "Number of tuple updates or deletes prior to vacuum as a fraction of reltuples.",
+        "reset_val": "0.2"
+    },
+    {
+        "name": "autovacuum_vacuum_threshold",
+        "setting": "50",
+        "unit": "",
+        "short_desc": "Minimum number of tuple updates or deletes prior to vacuum.",
+        "reset_val": "50"
+    },
+    {
+        "name": "autovacuum_work_mem",
+        "setting": "-1",
+        "unit": "kB",
+        "short_desc": "Sets the maximum memory to be used by each autovacuum worker process.",
+        "reset_val": "-1"
+    },
+    {
+        "name": "backend_flush_after",
+        "setting": "0",
+        "unit": "8kB",
+        "short_desc": "Number of pages after which previously performed writes are flushed to disk.",
+        "reset_val": "0"
+    },
+    {
+        "name": "backslash_quote",
+        "setting": "safe_encoding",
+        "unit": "",
+        "short_desc": "Sets whether \"\\'\" is allowed in string literals.",
+        "reset_val": "safe_encoding"
+    },
+    {
+        "name": "bgwriter_delay",
+        "setting": "50",
+        "unit": "ms",
+        "short_desc": "Background writer sleep time between rounds.",
+        "reset_val": "50"
+    },
+    {
+        "name": "bgwriter_flush_after",
+        "setting": "64",
+        "unit": "8kB",
+        "short_desc": "Number of pages after which previously performed writes are flushed to disk.",
+        "reset_val": "64"
+    },
+    {
+        "name": "bgwriter_lru_maxpages",
+        "setting": "100",
+        "unit": "",
+        "short_desc": "Background writer maximum number of LRU pages to flush per round.",
+        "reset_val": "100"
+    },
+    {
+        "name": "bgwriter_lru_multiplier",
+        "setting": "2",
+        "unit": "",
+        "short_desc": "Multiple of the average buffer usage to free per round.",
+        "reset_val": "2"
+    },
+    {
+        "name": "block_size",
+        "setting": "8192",
+        "unit": "",
+        "short_desc": "Shows the size of a disk block.",
+        "reset_val": "8192"
+    },
+    {
+        "name": "bonjour",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Enables advertising the server via Bonjour.",
+        "reset_val": "off"
+    },
+    {
+        "name": "bonjour_name",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Sets the Bonjour service name.",
+        "reset_val": ""
+    },
+    {
+        "name": "bytea_output",
+        "setting": "hex",
+        "unit": "",
+        "short_desc": "Sets the output format for bytea.",
+        "reset_val": "hex"
+    },
+    {
+        "name": "check_function_bodies",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Check function bodies during CREATE FUNCTION.",
+        "reset_val": "on"
+    },
+    {
+        "name": "checkpoint_completion_target",
+        "setting": "0.9",
+        "unit": "",
+        "short_desc": "Time spent flushing dirty buffers during checkpoint, as fraction of checkpoint interval.",
+        "reset_val": "0.9"
+    },
+    {
+        "name": "checkpoint_flush_after",
+        "setting": "32",
+        "unit": "8kB",
+        "short_desc": "Number of pages after which previously performed writes are flushed to disk.",
+        "reset_val": "32"
+    },
+    {
+        "name": "checkpoint_timeout",
+        "setting": "300",
+        "unit": "s",
+        "short_desc": "Sets the maximum time between automatic WAL checkpoints.",
+        "reset_val": "300"
+    },
+    {
+        "name": "checkpoint_warning",
+        "setting": "30",
+        "unit": "s",
+        "short_desc": "Enables warnings if checkpoint segments are filled more frequently than this.",
+        "reset_val": "30"
+    },
+    {
+        "name": "client_encoding",
+        "setting": "UTF8",
+        "unit": "",
+        "short_desc": "Sets the client's character set encoding.",
+        "reset_val": "UTF8"
+    },
+    {
+        "name": "client_min_messages",
+        "setting": "notice",
+        "unit": "",
+        "short_desc": "Sets the message levels that are sent to the client.",
+        "reset_val": "notice"
+    },
+    {
+        "name": "cluster_name",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Sets the name of the cluster, which is included in the process title.",
+        "reset_val": ""
+    },
+    {
+        "name": "commit_delay",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "Sets the delay in microseconds between transaction commit and flushing WAL to disk.",
+        "reset_val": "0"
+    },
+    {
+        "name": "commit_siblings",
+        "setting": "5",
+        "unit": "",
+        "short_desc": "Sets the minimum concurrent open transactions before performing commit_delay.",
+        "reset_val": "5"
+    },
+    {
+        "name": "config_file",
+        "setting": "/home/postgres/tmp_master_dir_polardb_pg_1100_bld/postgresql.conf",
+        "unit": "",
+        "short_desc": "Sets the server's main configuration file.",
+        "reset_val": "/home/postgres/tmp_master_dir_polardb_pg_1100_bld/postgresql.conf"
+    },
+    {
+        "name": "constraint_exclusion",
+        "setting": "partition",
+        "unit": "",
+        "short_desc": "Enables the planner to use constraints to optimize queries.",
+        "reset_val": "partition"
+    },
+    {
+        "name": "cpu_index_tuple_cost",
+        "setting": "0.005",
+        "unit": "",
+        "short_desc": "Sets the planner's estimate of the cost of processing each index entry during an index scan.",
+        "reset_val": "0.005"
+    },
+    {
+        "name": "cpu_operator_cost",
+        "setting": "0.0025",
+        "unit": "",
+        "short_desc": "Sets the planner's estimate of the cost of processing each operator or function call.",
+        "reset_val": "0.0025"
+    },
+    {
+        "name": "cpu_tuple_cost",
+        "setting": "0.01",
+        "unit": "",
+        "short_desc": "Sets the planner's estimate of the cost of processing each tuple (row).",
+        "reset_val": "0.01"
+    },
+    {
+        "name": "cursor_tuple_fraction",
+        "setting": "0.1",
+        "unit": "",
+        "short_desc": "Sets the planner's estimate of the fraction of a cursor's rows that will be retrieved.",
+        "reset_val": "0.1"
+    },
+    {
+        "name": "data_checksums",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Shows whether data checksums are turned on for this cluster.",
+        "reset_val": "off"
+    },
+    {
+        "name": "data_directory",
+        "setting": "/home/postgres/tmp_master_dir_polardb_pg_1100_bld",
+        "unit": "",
+        "short_desc": "Sets the server's data directory.",
+        "reset_val": "/home/postgres/tmp_master_dir_polardb_pg_1100_bld"
+    },
+    {
+        "name": "data_directory_mode",
+        "setting": "0700",
+        "unit": "",
+        "short_desc": "Mode of the data directory.",
+        "reset_val": "448"
+    },
+    {
+        "name": "data_sync_retry",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Whether to continue running after a failure to sync data files.",
+        "reset_val": "off"
+    },
+    {
+        "name": "DateStyle",
+        "setting": "ISO, MDY",
+        "unit": "",
+        "short_desc": "Sets the display format for date and time values.",
+        "reset_val": "ISO, MDY"
+    },
+    {
+        "name": "db_user_namespace",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Enables per-database user names.",
+        "reset_val": "off"
+    },
+    {
+        "name": "deadlock_timeout",
+        "setting": "1000",
+        "unit": "ms",
+        "short_desc": "Sets the time to wait on a lock before checking for deadlock.",
+        "reset_val": "1000"
+    },
+    {
+        "name": "debug_assertions",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Shows whether the running server has assertion checks enabled.",
+        "reset_val": "off"
+    },
+    {
+        "name": "debug_deadlocks",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Dumps information about all current locks when a deadlock timeout occurs.",
+        "reset_val": "off"
+    },
+    {
+        "name": "debug_pretty_print",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Indents parse and plan tree displays.",
+        "reset_val": "on"
+    },
+    {
+        "name": "debug_print_parse",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Logs each query's parse tree.",
+        "reset_val": "off"
+    },
+    {
+        "name": "debug_print_plan",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Logs each query's execution plan.",
+        "reset_val": "off"
+    },
+    {
+        "name": "debug_print_rewritten",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Logs each query's rewritten parse tree.",
+        "reset_val": "off"
+    },
+    {
+        "name": "default_statistics_target",
+        "setting": "100",
+        "unit": "",
+        "short_desc": "Sets the default statistics target.",
+        "reset_val": "100"
+    },
+    {
+        "name": "default_tablespace",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Sets the default tablespace to create tables and indexes in.",
+        "reset_val": ""
+    },
+    {
+        "name": "default_text_search_config",
+        "setting": "pg_catalog.english",
+        "unit": "",
+        "short_desc": "Sets default text search configuration.",
+        "reset_val": "pg_catalog.english"
+    },
+    {
+        "name": "default_transaction_deferrable",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Sets the default deferrable status of new transactions.",
+        "reset_val": "off"
+    },
+    {
+        "name": "default_transaction_isolation",
+        "setting": "read committed",
+        "unit": "",
+        "short_desc": "Sets the transaction isolation level of each new transaction.",
+        "reset_val": "read committed"
+    },
+    {
+        "name": "default_transaction_read_only",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Sets the default read-only status of new transactions.",
+        "reset_val": "off"
+    },
+    {
+        "name": "default_with_oids",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Create new tables with OIDs by default.",
+        "reset_val": "off"
+    },
+    {
+        "name": "dynamic_library_path",
+        "setting": "$libdir",
+        "unit": "",
+        "short_desc": "Sets the path for dynamically loadable modules.",
+        "reset_val": "$libdir"
+    },
+    {
+        "name": "dynamic_shared_memory_type",
+        "setting": "posix",
+        "unit": "",
+        "short_desc": "Selects the dynamic shared memory implementation used.",
+        "reset_val": "posix"
+    },
+    {
+        "name": "effective_cache_size",
+        "setting": "262144",
+        "unit": "8kB",
+        "short_desc": "Sets the planner's assumption about the total size of the data caches.",
+        "reset_val": "262144"
+    },
+    {
+        "name": "effective_io_concurrency",
+        "setting": "1",
+        "unit": "",
+        "short_desc": "Number of simultaneous requests that can be handled efficiently by the disk subsystem.",
+        "reset_val": "1"
+    },
+    {
+        "name": "enable_bitmapscan",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of bitmap-scan plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "enable_gathermerge",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of gather merge plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "enable_hashagg",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of hashed aggregation plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "enable_hashjoin",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of hash join plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "enable_indexonlyscan",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of index-only-scan plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "enable_indexscan",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of index-scan plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "enable_material",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of materialization.",
+        "reset_val": "on"
+    },
+    {
+        "name": "enable_mergejoin",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of merge join plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "enable_nestloop",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of nested-loop join plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "enable_parallel_append",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of parallel append plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "enable_parallel_hash",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of parallel hash plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "enable_partition_pruning",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enable plan-time and run-time partition pruning.",
+        "reset_val": "on"
+    },
+    {
+        "name": "enable_partitionwise_aggregate",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Enables partitionwise aggregation and grouping.",
+        "reset_val": "off"
+    },
+    {
+        "name": "enable_partitionwise_join",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Enables partitionwise join.",
+        "reset_val": "off"
+    },
+    {
+        "name": "enable_seqscan",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of sequential-scan plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "enable_sort",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of explicit sort steps.",
+        "reset_val": "on"
+    },
+    {
+        "name": "enable_tidscan",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of TID scan plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "escape_string_warning",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Warn about backslash escapes in ordinary string literals.",
+        "reset_val": "on"
+    },
+    {
+        "name": "event_source",
+        "setting": "PostgreSQL",
+        "unit": "",
+        "short_desc": "Sets the application name used to identify PostgreSQL messages in the event log.",
+        "reset_val": "PostgreSQL"
+    },
+    {
+        "name": "exit_on_error",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Terminate session on any error.",
+        "reset_val": "off"
+    },
+    {
+        "name": "external_pid_file",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Writes the postmaster PID to the specified file.",
+        "reset_val": ""
+    },
+    {
+        "name": "extra_float_digits",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "Sets the number of digits displayed for floating-point values.",
+        "reset_val": "0"
+    },
+    {
+        "name": "force_parallel_mode",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Forces use of parallel query facilities.",
+        "reset_val": "off"
+    },
+    {
+        "name": "from_collapse_limit",
+        "setting": "8",
+        "unit": "",
+        "short_desc": "Sets the FROM-list size beyond which subqueries are not collapsed.",
+        "reset_val": "8"
+    },
+    {
+        "name": "fsync",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Forces synchronization of updates to disk.",
+        "reset_val": "off"
+    },
+    {
+        "name": "full_page_writes",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Writes full pages to WAL when first modified after a checkpoint.",
+        "reset_val": "on"
+    },
+    {
+        "name": "geqo",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables genetic query optimization.",
+        "reset_val": "on"
+    },
+    {
+        "name": "geqo_effort",
+        "setting": "5",
+        "unit": "",
+        "short_desc": "GEQO: effort is used to set the default for other GEQO parameters.",
+        "reset_val": "5"
+    },
+    {
+        "name": "geqo_generations",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "GEQO: number of iterations of the algorithm.",
+        "reset_val": "0"
+    },
+    {
+        "name": "geqo_pool_size",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "GEQO: number of individuals in the population.",
+        "reset_val": "0"
+    },
+    {
+        "name": "geqo_seed",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "GEQO: seed for random path selection.",
+        "reset_val": "0"
+    },
+    {
+        "name": "geqo_selection_bias",
+        "setting": "2",
+        "unit": "",
+        "short_desc": "GEQO: selective pressure within the population.",
+        "reset_val": "2"
+    },
+    {
+        "name": "geqo_threshold",
+        "setting": "12",
+        "unit": "",
+        "short_desc": "Sets the threshold of FROM items beyond which GEQO is used.",
+        "reset_val": "12"
+    },
+    {
+        "name": "gin_fuzzy_search_limit",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "Sets the maximum allowed result for exact search by GIN.",
+        "reset_val": "0"
+    },
+    {
+        "name": "gin_pending_list_limit",
+        "setting": "4096",
+        "unit": "kB",
+        "short_desc": "Sets the maximum size of the pending list for GIN index.",
+        "reset_val": "4096"
+    },
+    {
+        "name": "hba_file",
+        "setting": "/home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_hba.conf",
+        "unit": "",
+        "short_desc": "Sets the server's \"hba\" configuration file.",
+        "reset_val": "/home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_hba.conf"
+    },
+    {
+        "name": "hot_standby",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Allows connections and queries during recovery.",
+        "reset_val": "on"
+    },
+    {
+        "name": "hot_standby_feedback",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Allows feedback from a hot standby to the primary that will avoid query conflicts.",
+        "reset_val": "off"
+    },
+    {
+        "name": "huge_pages",
+        "setting": "try",
+        "unit": "",
+        "short_desc": "Use of huge pages on Linux or Windows.",
+        "reset_val": "try"
+    },
+    {
+        "name": "ident_file",
+        "setting": "/home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_ident.conf",
+        "unit": "",
+        "short_desc": "Sets the server's \"ident\" configuration file.",
+        "reset_val": "/home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_ident.conf"
+    },
+    {
+        "name": "idle_in_transaction_session_timeout",
+        "setting": "0",
+        "unit": "ms",
+        "short_desc": "Sets the maximum allowed duration of any idling transaction.",
+        "reset_val": "0"
+    },
+    {
+        "name": "ignore_checksum_failure",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Continues processing after a checksum failure.",
+        "reset_val": "off"
+    },
+    {
+        "name": "ignore_system_indexes",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Disables reading from system indexes.",
+        "reset_val": "off"
+    },
+    {
+        "name": "integer_datetimes",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Datetimes are integer based.",
+        "reset_val": "on"
+    },
+    {
+        "name": "IntervalStyle",
+        "setting": "postgres",
+        "unit": "",
+        "short_desc": "Sets the display format for interval values.",
+        "reset_val": "postgres"
+    },
+    {
+        "name": "jit",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Allow JIT compilation.",
+        "reset_val": "off"
+    },
+    {
+        "name": "jit_above_cost",
+        "setting": "100000",
+        "unit": "",
+        "short_desc": "Perform JIT compilation if query is more expensive.",
+        "reset_val": "100000"
+    },
+    {
+        "name": "jit_debugging_support",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Register JIT compiled function with debugger.",
+        "reset_val": "off"
+    },
+    {
+        "name": "jit_dump_bitcode",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Write out LLVM bitcode to facilitate JIT debugging.",
+        "reset_val": "off"
+    },
+    {
+        "name": "jit_expressions",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Allow JIT compilation of expressions.",
+        "reset_val": "on"
+    },
+    {
+        "name": "jit_inline_above_cost",
+        "setting": "500000",
+        "unit": "",
+        "short_desc": "Perform JIT inlining if query is more expensive.",
+        "reset_val": "500000"
+    },
+    {
+        "name": "jit_optimize_above_cost",
+        "setting": "500000",
+        "unit": "",
+        "short_desc": "Optimize JITed functions if query is more expensive.",
+        "reset_val": "500000"
+    },
+    {
+        "name": "jit_profiling_support",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Register JIT compiled function with perf profiler.",
+        "reset_val": "off"
+    },
+    {
+        "name": "jit_provider",
+        "setting": "llvmjit",
+        "unit": "",
+        "short_desc": "JIT provider to use.",
+        "reset_val": "llvmjit"
+    },
+    {
+        "name": "jit_tuple_deforming",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Allow JIT compilation of tuple deforming.",
+        "reset_val": "on"
+    },
+    {
+        "name": "join_collapse_limit",
+        "setting": "8",
+        "unit": "",
+        "short_desc": "Sets the FROM-list size beyond which JOIN constructs are not flattened.",
+        "reset_val": "8"
+    },
+    {
+        "name": "krb_caseins_users",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Sets whether Kerberos and GSSAPI user names should be treated as case-insensitive.",
+        "reset_val": "off"
+    },
+    {
+        "name": "krb_server_keyfile",
+        "setting": "FILE:/home/postgres/tmp_basedir_polardb_pg_1100_bld/etc/krb5.keytab",
+        "unit": "",
+        "short_desc": "Sets the location of the Kerberos server key file.",
+        "reset_val": "FILE:/home/postgres/tmp_basedir_polardb_pg_1100_bld/etc/krb5.keytab"
+    },
+    {
+        "name": "lc_collate",
+        "setting": "en_US.UTF-8",
+        "unit": "",
+        "short_desc": "Shows the collation order locale.",
+        "reset_val": "en_US.UTF-8"
+    },
+    {
+        "name": "lc_ctype",
+        "setting": "en_US.UTF-8",
+        "unit": "",
+        "short_desc": "Shows the character classification and case conversion locale.",
+        "reset_val": "en_US.UTF-8"
+    },
+    {
+        "name": "lc_messages",
+        "setting": "en_US.UTF-8",
+        "unit": "",
+        "short_desc": "Sets the language in which messages are displayed.",
+        "reset_val": "en_US.UTF-8"
+    },
+    {
+        "name": "lc_monetary",
+        "setting": "en_US.UTF-8",
+        "unit": "",
+        "short_desc": "Sets the locale for formatting monetary amounts.",
+        "reset_val": "en_US.UTF-8"
+    },
+    {
+        "name": "lc_numeric",
+        "setting": "en_US.UTF-8",
+        "unit": "",
+        "short_desc": "Sets the locale for formatting numbers.",
+        "reset_val": "en_US.UTF-8"
+    },
+    {
+        "name": "lc_time",
+        "setting": "en_US.UTF-8",
+        "unit": "",
+        "short_desc": "Sets the locale for formatting date and time values.",
+        "reset_val": "en_US.UTF-8"
+    },
+    {
+        "name": "listen_addresses",
+        "setting": "localhost",
+        "unit": "",
+        "short_desc": "Sets the host name or IP address(es) to listen to.",
+        "reset_val": "localhost"
+    },
+    {
+        "name": "lo_compat_privileges",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Enables backward compatibility mode for privilege checks on large objects.",
+        "reset_val": "off"
+    },
+    {
+        "name": "local_preload_libraries",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Lists unprivileged shared libraries to preload into each backend.",
+        "reset_val": ""
+    },
+    {
+        "name": "lock_timeout",
+        "setting": "0",
+        "unit": "ms",
+        "short_desc": "Sets the maximum allowed duration of any wait for a lock.",
+        "reset_val": "0"
+    },
+    {
+        "name": "log_autovacuum_min_duration",
+        "setting": "-1",
+        "unit": "ms",
+        "short_desc": "Sets the minimum execution time above which autovacuum actions will be logged.",
+        "reset_val": "-1"
+    },
+    {
+        "name": "log_checkpoints",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Logs each checkpoint.",
+        "reset_val": "off"
+    },
+    {
+        "name": "log_connections",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Logs each successful connection.",
+        "reset_val": "off"
+    },
+    {
+        "name": "log_destination",
+        "setting": "polar_multi_dest",
+        "unit": "",
+        "short_desc": "Sets the destination for server log output.",
+        "reset_val": "polar_multi_dest"
+    },
+    {
+        "name": "log_directory",
+        "setting": "log",
+        "unit": "",
+        "short_desc": "Sets the destination directory for log files.",
+        "reset_val": "log"
+    },
+    {
+        "name": "log_disconnections",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Logs end of a session, including duration.",
+        "reset_val": "off"
+    },
+    {
+        "name": "log_duration",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Logs the duration of each completed SQL statement.",
+        "reset_val": "off"
+    },
+    {
+        "name": "log_error_verbosity",
+        "setting": "default",
+        "unit": "",
+        "short_desc": "Sets the verbosity of logged messages.",
+        "reset_val": "default"
+    },
+    {
+        "name": "log_executor_stats",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Writes executor performance statistics to the server log.",
+        "reset_val": "off"
+    },
+    {
+        "name": "log_file_mode",
+        "setting": "0600",
+        "unit": "",
+        "short_desc": "Sets the file permissions for log files.",
+        "reset_val": "384"
+    },
+    {
+        "name": "log_filename",
+        "setting": "postgresql-%Y-%m-%d_%H%M%S.log",
+        "unit": "",
+        "short_desc": "Sets the file name pattern for log files.",
+        "reset_val": "postgresql-%Y-%m-%d_%H%M%S.log"
+    },
+    {
+        "name": "log_hostname",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Logs the host name in the connection logs.",
+        "reset_val": "off"
+    },
+    {
+        "name": "log_line_prefix",
+        "setting": "%m [%p] [%P] ",
+        "unit": "",
+        "short_desc": "Controls information prefixed to each log line.",
+        "reset_val": "%m [%p] [%P] "
+    },
+    {
+        "name": "log_lock_waits",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Logs long lock waits.",
+        "reset_val": "off"
+    },
+    {
+        "name": "log_min_duration_statement",
+        "setting": "-1",
+        "unit": "ms",
+        "short_desc": "Sets the minimum execution time above which statements will be logged.",
+        "reset_val": "-1"
+    },
+    {
+        "name": "log_min_error_statement",
+        "setting": "error",
+        "unit": "",
+        "short_desc": "Causes all statements generating error at or above this level to be logged.",
+        "reset_val": "error"
+    },
+    {
+        "name": "log_min_messages",
+        "setting": "warning",
+        "unit": "",
+        "short_desc": "Sets the message levels that are logged.",
+        "reset_val": "warning"
+    },
+    {
+        "name": "log_parser_stats",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Writes parser performance statistics to the server log.",
+        "reset_val": "off"
+    },
+    {
+        "name": "log_planner_stats",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Writes planner performance statistics to the server log.",
+        "reset_val": "off"
+    },
+    {
+        "name": "log_replication_commands",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Logs each replication command.",
+        "reset_val": "off"
+    },
+    {
+        "name": "log_rotation_age",
+        "setting": "1440",
+        "unit": "min",
+        "short_desc": "Automatic log file rotation will occur after N minutes.",
+        "reset_val": "1440"
+    },
+    {
+        "name": "log_rotation_size",
+        "setting": "10240",
+        "unit": "kB",
+        "short_desc": "Automatic log file rotation will occur after N kilobytes.",
+        "reset_val": "10240"
+    },
+    {
+        "name": "log_statement",
+        "setting": "ddl",
+        "unit": "",
+        "short_desc": "Sets the type of statements logged.",
+        "reset_val": "ddl"
+    },
+    {
+        "name": "log_statement_stats",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Writes cumulative performance statistics to the server log.",
+        "reset_val": "off"
+    },
+    {
+        "name": "log_temp_files",
+        "setting": "-1",
+        "unit": "kB",
+        "short_desc": "Log the use of temporary files larger than this number of kilobytes.",
+        "reset_val": "-1"
+    },
+    {
+        "name": "log_timezone",
+        "setting": "Asia/Shanghai",
+        "unit": "",
+        "short_desc": "Sets the time zone to use in log messages.",
+        "reset_val": "Asia/Shanghai"
+    },
+    {
+        "name": "log_truncate_on_rotation",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Truncate existing log files of same name during log rotation.",
+        "reset_val": "off"
+    },
+    {
+        "name": "logging_collector",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Start a subprocess to capture stderr output and/or csvlogs into log files.",
+        "reset_val": "off"
+    },
+    {
+        "name": "maintenance_work_mem",
+        "setting": "1048576",
+        "unit": "kB",
+        "short_desc": "Sets the maximum memory to be used for maintenance operations.",
+        "reset_val": "1048576"
+    },
+    {
+        "name": "max_connections",
+        "setting": "100",
+        "unit": "",
+        "short_desc": "Sets the maximum number of concurrent connections.",
+        "reset_val": "100"
+    },
+    {
+        "name": "max_files_per_process",
+        "setting": "1000",
+        "unit": "",
+        "short_desc": "Sets the maximum number of simultaneously open files for each server process.",
+        "reset_val": "1000"
+    },
+    {
+        "name": "max_function_args",
+        "setting": "100",
+        "unit": "",
+        "short_desc": "Shows the maximum number of function arguments.",
+        "reset_val": "100"
+    },
+    {
+        "name": "max_identifier_length",
+        "setting": "63",
+        "unit": "",
+        "short_desc": "Shows the maximum identifier length.",
+        "reset_val": "63"
+    },
+    {
+        "name": "max_index_keys",
+        "setting": "32",
+        "unit": "",
+        "short_desc": "Shows the maximum number of index keys.",
+        "reset_val": "32"
+    },
+    {
+        "name": "max_locks_per_transaction",
+        "setting": "64",
+        "unit": "",
+        "short_desc": "Sets the maximum number of locks per transaction.",
+        "reset_val": "64"
+    },
+    {
+        "name": "max_logical_replication_workers",
+        "setting": "32",
+        "unit": "",
+        "short_desc": "Maximum number of logical replication worker processes.",
+        "reset_val": "32"
+    },
+    {
+        "name": "max_parallel_maintenance_workers",
+        "setting": "2",
+        "unit": "",
+        "short_desc": "Sets the maximum number of parallel processes per maintenance operation.",
+        "reset_val": "2"
+    },
+    {
+        "name": "max_parallel_workers",
+        "setting": "8",
+        "unit": "",
+        "short_desc": "Sets the maximum number of parallel workers that can be active at one time.",
+        "reset_val": "8"
+    },
+    {
+        "name": "max_parallel_workers_per_gather",
+        "setting": "8",
+        "unit": "",
+        "short_desc": "Sets the maximum number of parallel processes per executor node.",
+        "reset_val": "8"
+    },
+    {
+        "name": "max_pred_locks_per_page",
+        "setting": "2",
+        "unit": "",
+        "short_desc": "Sets the maximum number of predicate-locked tuples per page.",
+        "reset_val": "2"
+    },
+    {
+        "name": "max_pred_locks_per_relation",
+        "setting": "-2",
+        "unit": "",
+        "short_desc": "Sets the maximum number of predicate-locked pages and tuples per relation.",
+        "reset_val": "-2"
+    },
+    {
+        "name": "max_pred_locks_per_transaction",
+        "setting": "64",
+        "unit": "",
+        "short_desc": "Sets the maximum number of predicate locks per transaction.",
+        "reset_val": "64"
+    },
+    {
+        "name": "max_prepared_transactions",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "Sets the maximum number of simultaneously prepared transactions.",
+        "reset_val": "0"
+    },
+    {
+        "name": "max_replication_slots",
+        "setting": "64",
+        "unit": "",
+        "short_desc": "Sets the maximum number of simultaneously defined replication slots.",
+        "reset_val": "64"
+    },
+    {
+        "name": "max_slot_wal_keep_size",
+        "setting": "-1",
+        "unit": "MB",
+        "short_desc": "Sets the maximum WAL size that can be reserved by replication slots.",
+        "reset_val": "-1"
+    },
+    {
+        "name": "max_stack_depth",
+        "setting": "2048",
+        "unit": "kB",
+        "short_desc": "Sets the maximum stack depth, in kilobytes.",
+        "reset_val": "2048"
+    },
+    {
+        "name": "max_standby_archive_delay",
+        "setting": "30000",
+        "unit": "ms",
+        "short_desc": "Sets the maximum delay before canceling queries when a hot standby server is processing archived WAL data.",
+        "reset_val": "30000"
+    },
+    {
+        "name": "max_standby_streaming_delay",
+        "setting": "30000",
+        "unit": "ms",
+        "short_desc": "Sets the maximum delay before canceling queries when a hot standby server is processing streamed WAL data.",
+        "reset_val": "30000"
+    },
+    {
+        "name": "max_sync_workers_per_subscription",
+        "setting": "2",
+        "unit": "",
+        "short_desc": "Maximum number of table synchronization workers per subscription.",
+        "reset_val": "2"
+    },
+    {
+        "name": "max_wal_senders",
+        "setting": "64",
+        "unit": "",
+        "short_desc": "Sets the maximum number of simultaneously running WAL sender processes.",
+        "reset_val": "64"
+    },
+    {
+        "name": "max_wal_size",
+        "setting": "1024",
+        "unit": "MB",
+        "short_desc": "Sets the WAL size that triggers a checkpoint.",
+        "reset_val": "1024"
+    },
+    {
+        "name": "max_worker_processes",
+        "setting": "24",
+        "unit": "",
+        "short_desc": "Maximum number of concurrent worker processes.",
+        "reset_val": "24"
+    },
+    {
+        "name": "min_parallel_index_scan_size",
+        "setting": "1024",
+        "unit": "8kB",
+        "short_desc": "Sets the minimum amount of index data for a parallel scan.",
+        "reset_val": "1024"
+    },
+    {
+        "name": "min_parallel_table_scan_size",
+        "setting": "1024",
+        "unit": "8kB",
+        "short_desc": "Sets the minimum amount of table data for a parallel scan.",
+        "reset_val": "1024"
+    },
+    {
+        "name": "min_wal_size",
+        "setting": "80",
+        "unit": "MB",
+        "short_desc": "Sets the minimum size to shrink the WAL to.",
+        "reset_val": "80"
+    },
+    {
+        "name": "old_snapshot_threshold",
+        "setting": "-1",
+        "unit": "min",
+        "short_desc": "Time before a snapshot is too old to read pages changed after the snapshot was taken.",
+        "reset_val": "-1"
+    },
+    {
+        "name": "operator_precedence_warning",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Emit a warning for constructs that changed meaning since PostgreSQL 9.4.",
+        "reset_val": "off"
+    },
+    {
+        "name": "parallel_leader_participation",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Controls whether Gather and Gather Merge also run subplans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "parallel_setup_cost",
+        "setting": "1000",
+        "unit": "",
+        "short_desc": "Sets the planner's estimate of the cost of starting up worker processes for parallel query.",
+        "reset_val": "1000"
+    },
+    {
+        "name": "parallel_tuple_cost",
+        "setting": "0.1",
+        "unit": "",
+        "short_desc": "Sets the planner's estimate of the cost of passing each tuple (row) from worker to master backend.",
+        "reset_val": "0.1"
+    },
+    {
+        "name": "password_encryption",
+        "setting": "md5",
+        "unit": "",
+        "short_desc": "Chooses the algorithm for encrypting passwords.",
+        "reset_val": "md5"
+    },
+    {
+        "name": "pg_stat_statements.enable_superuser_track",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Selects whether commands executed by superuser are tracked by pg_stat_statements.",
+        "reset_val": "off"
+    },
+    {
+        "name": "pg_stat_statements.max",
+        "setting": "5000",
+        "unit": "",
+        "short_desc": "Sets the maximum number of statements tracked by pg_stat_statements.",
+        "reset_val": "5000"
+    },
+    {
+        "name": "pg_stat_statements.save",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Save pg_stat_statements statistics across server shutdowns.",
+        "reset_val": "off"
+    },
+    {
+        "name": "pg_stat_statements.track",
+        "setting": "top",
+        "unit": "",
+        "short_desc": "Selects which statements are tracked by pg_stat_statements.",
+        "reset_val": "top"
+    },
+    {
+        "name": "pg_stat_statements.track_utility",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Selects whether utility commands are tracked by pg_stat_statements.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_async_buffer_slot_size",
+        "setting": "8",
+        "unit": "",
+        "short_desc": "polar_async_buffer_slot_size.",
+        "reset_val": "8"
+    },
+    {
+        "name": "polar_async_ddl_lock_replay_worker_num",
+        "setting": "1",
+        "unit": "",
+        "short_desc": "Async ddl lock replay worker count.",
+        "reset_val": "1"
+    },
+    {
+        "name": "polar_audit_log_flush_timeout",
+        "setting": "30000",
+        "unit": "ms",
+        "short_desc": "Sets the audit log timeout to flush.",
+        "reset_val": "30000"
+    },
+    {
+        "name": "polar_auditlog_max_query_length",
+        "setting": "8192",
+        "unit": "",
+        "short_desc": "polardb max audit log length",
+        "reset_val": "8192"
+    },
+    {
+        "name": "polar_auto_cascade_extensions",
+        "setting": "postgis, postgis_topology, postgis_sfcgal, address_standardizer, address_standardizer_data_us, postgis_tiger_geocoder, pgrouting",
+        "unit": "",
+        "short_desc": "Changes the list of extensions that are automatically cascaded.",
+        "reset_val": "postgis, postgis_topology, postgis_sfcgal, address_standardizer, address_standardizer_data_us, postgis_tiger_geocoder, pgrouting"
+    },
+    {
+        "name": "polar_available_extensions",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Changes the list of extensions that are allowed to create by polar users.",
+        "reset_val": ""
+    },
+    {
+        "name": "polar_bg_replay_batch_size",
+        "setting": "20000",
+        "unit": "",
+        "short_desc": "Batch size of each bgwriter replay run.",
+        "reset_val": "20000"
+    },
+    {
+        "name": "polar_bgwriter_batch_size_flushlist",
+        "setting": "100",
+        "unit": "",
+        "short_desc": "Sets the batch size when bgwriter get buffer from flush list",
+        "reset_val": "100"
+    },
+    {
+        "name": "polar_bgwriter_max_batch_size",
+        "setting": "5000",
+        "unit": "",
+        "short_desc": "Sets the maximum batch size when bgwriter flush buffer from flush list",
+        "reset_val": "5000"
+    },
+    {
+        "name": "polar_bgwriter_sleep_lsn_lag",
+        "setting": "100",
+        "unit": "MB",
+        "short_desc": "polar_bgwriter_sleep_lsn_lag",
+        "reset_val": "100"
+    },
+    {
+        "name": "polar_bt_write_page_buffer_size",
+        "setting": "0",
+        "unit": "8kB",
+        "short_desc": "Sets the size of btbuild index page write buffer size.",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_buffer_copy_lsn_lag_with_cons_lsn",
+        "setting": "100",
+        "unit": "MB",
+        "short_desc": "Sets the max lag between consistent lsn and oldest lsn when a buffer should be copied",
+        "reset_val": "100"
+    },
+    {
+        "name": "polar_buffer_copy_min_modified_count",
+        "setting": "5",
+        "unit": "",
+        "short_desc": "Sets the minimum modified count when a buffer should be copied",
+        "reset_val": "5"
+    },
+    {
+        "name": "polar_bulk_extend_size",
+        "setting": "512",
+        "unit": "8kB",
+        "short_desc": "Sets the size of preallocate file, 0 (turning this feature off).",
+        "reset_val": "512"
+    },
+    {
+        "name": "polar_bulk_read_size",
+        "setting": "16",
+        "unit": "8kB",
+        "short_desc": "Sets size of bulk read, 0 (turning this feature off).",
+        "reset_val": "16"
+    },
+    {
+        "name": "polar_check_checkpoint_legal_interval",
+        "setting": "100",
+        "unit": "ms",
+        "short_desc": "Sets the maximum interval between check the checkpoint legal or not.",
+        "reset_val": "100"
+    },
+    {
+        "name": "polar_clog_max_local_cache_segments",
+        "setting": "128",
+        "unit": "",
+        "short_desc": "Set the maximum number of local segment file cache for clog",
+        "reset_val": "128"
+    },
+    {
+        "name": "polar_clog_slot_size",
+        "setting": "512",
+        "unit": "",
+        "short_desc": "polar_clog_slot_size.",
+        "reset_val": "512"
+    },
+    {
+        "name": "polar_cluster_passphrase_command",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Command to obtain passphrases for database encryption.",
+        "reset_val": ""
+    },
+    {
+        "name": "polar_commit_ts_max_local_cache_segments",
+        "setting": "32",
+        "unit": "",
+        "short_desc": "Set the maximum number of local segment file cache for commit_ts",
+        "reset_val": "32"
+    },
+    {
+        "name": "polar_committs_buffer_slot_size",
+        "setting": "16",
+        "unit": "",
+        "short_desc": "polar_committs_buffer_slot_size.",
+        "reset_val": "16"
+    },
+    {
+        "name": "polar_copy_buffers",
+        "setting": "16384",
+        "unit": "8kB",
+        "short_desc": "Set the size of copy buffer.",
+        "reset_val": "16384"
+    },
+    {
+        "name": "polar_crash_recovery_rto",
+        "setting": "0",
+        "unit": "s",
+        "short_desc": "Sets the polar crash recovery rto.",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_crash_recovery_rto_delay_count",
+        "setting": "1",
+        "unit": "ms",
+        "short_desc": "Sets the polar crash recovery delay time.",
+        "reset_val": "1"
+    },
+    {
+        "name": "polar_crash_recovery_rto_threshold",
+        "setting": "0.8",
+        "unit": "",
+        "short_desc": "Sets the polar crash recovery threshold time to delay.",
+        "reset_val": "0.8"
+    },
+    {
+        "name": "polar_create_table_with_full_replica_identity",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "polar create table with full replica identity.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_csn_elog_panic_enable",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "enable polar csn ",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_csn_enable",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "enable polar csn snapshot",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_csn_xid_snapshot",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "enable polar xid snapshot under csn mode",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_csnlog_max_local_cache_segments",
+        "setting": "256",
+        "unit": "",
+        "short_desc": "Set the maximum number of local segment file cache for csnlog",
+        "reset_val": "256"
+    },
+    {
+        "name": "polar_csnlog_slot_size",
+        "setting": "8192",
+        "unit": "",
+        "short_desc": "polar_csnlog_slot_size.",
+        "reset_val": "8192"
+    },
+    {
+        "name": "polar_csnlog_upperbound_enable",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "enable polar csn upperbound cache",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_data_encryption_cipher",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Specify encryption algorithms to use.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_datadir",
+        "setting": "",
+        "unit": "",
+        "short_desc": "polardb datadir.",
+        "reset_val": ""
+    },
+    {
+        "name": "polar_datamax_archive_timeout",
+        "setting": "60000",
+        "unit": "ms",
+        "short_desc": "Time between archive wal",
+        "reset_val": "60000"
+    },
+    {
+        "name": "polar_datamax_prealloc_walfile_timeout",
+        "setting": "30000",
+        "unit": "ms",
+        "short_desc": "Time between prealloc wal file in datamax mode",
+        "reset_val": "30000"
+    },
+    {
+        "name": "polar_datamax_remove_archivedone_wal_timeout",
+        "setting": "60000",
+        "unit": "ms",
+        "short_desc": "Time between remove archive done wal",
+        "reset_val": "60000"
+    },
+    {
+        "name": "polar_datamax_save_replication_slots_timeout",
+        "setting": "300000",
+        "unit": "ms",
+        "short_desc": "Time between save replication slots in datamax mode",
+        "reset_val": "300000"
+    },
+    {
+        "name": "polar_delay_dml_lsn_lag_threshold",
+        "setting": "10485760",
+        "unit": "kB",
+        "short_desc": "Sets the polar dml delay size for replay.",
+        "reset_val": "10485760"
+    },
+    {
+        "name": "polar_delay_dml_option",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Delay DML for once or each tuple",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_disk_name",
+        "setting": "",
+        "unit": "",
+        "short_desc": "The virtual disk name privided by polarFS.",
+        "reset_val": ""
+    },
+    {
+        "name": "polar_dma_file",
+        "setting": "/home/postgres/tmp_master_dir_polardb_pg_1100_bld/polar_dma.conf",
+        "unit": "",
+        "short_desc": "Sets the server's \"polar_dma\" configuration file.",
+        "reset_val": "/home/postgres/tmp_master_dir_polardb_pg_1100_bld/polar_dma.conf"
+    },
+    {
+        "name": "polar_enable_create_table_as_bulk_insert",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enable CREATE MATERIALIZED VIEW / CREATE TALBE AS / SELECT INTO to buffer tuples and insert them in batch",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_enable_flashback_drop",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "whether to open flashback_drop",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_enable_inline_cte",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Enables the planner' to inline a CTE.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_enable_master_pbp",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enable master persisted buffer pool.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_enable_master_recovery_bulk_extend",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "A switch to control whether to use xlog bulk extend opt during recovery on master.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_enable_parallel_bgwriter",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the use of parallel background writer.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_enable_px",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Enable polar_enable_px.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_enable_semi_sync_optimization",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "enable semi-synchronous replication optimization under network jitter.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_enable_shared_server",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "polar enable shared server mode. Depend on global guc polar_enable_shm_aset.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_enable_shared_server_hang",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "polar enable shared server hang without abort.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_enable_shared_server_log",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "polar enable shared server log. If off, do not print log.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_enable_shared_server_testmode",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "polar enable shared server testmode for special case.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_enable_standby_pbp",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enable standby persisted buffer pool.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_enable_xact_split",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Switch to decide whether transactions rw-split support is on.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_fast_recovery_area_rotation",
+        "setting": "180",
+        "unit": "min",
+        "short_desc": "Sets the maximum time to keep fast recovery area include clog, xact snapshot and flashback point files.",
+        "reset_val": "180"
+    },
+    {
+        "name": "polar_flashback_log_bgwrite_delay",
+        "setting": "100",
+        "unit": "ms",
+        "short_desc": "Flashback log background writer sleep time between rounds.",
+        "reset_val": "100"
+    },
+    {
+        "name": "polar_flashback_log_flush_max_size",
+        "setting": "5120",
+        "unit": "kB",
+        "short_desc": "Flashback log background writer will flush log no more than N kilobytes.",
+        "reset_val": "5120"
+    },
+    {
+        "name": "polar_flashback_log_insert_list_delay",
+        "setting": "100",
+        "unit": "ms",
+        "short_desc": "Flashback log list background sleep time between rounds.",
+        "reset_val": "100"
+    },
+    {
+        "name": "polar_flashback_log_insert_list_max_num",
+        "setting": "10240",
+        "unit": "",
+        "short_desc": "Flashback log background inserter will insert no more than N records.",
+        "reset_val": "10240"
+    },
+    {
+        "name": "polar_flashback_log_insert_locks",
+        "setting": "8",
+        "unit": "",
+        "short_desc": "Set the number of locks for flashback log buffer insert",
+        "reset_val": "8"
+    },
+    {
+        "name": "polar_flashback_log_keep_segments",
+        "setting": "8",
+        "unit": "",
+        "short_desc": "Sets the number of flashback log files held, the files will be recycled.",
+        "reset_val": "8"
+    },
+    {
+        "name": "polar_flashback_log_sync_buf_timeout",
+        "setting": "0",
+        "unit": "ms",
+        "short_desc": "The process wait N ms before background worker inserting flashback log record into buffer.",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_flashback_logindex_bloom_blocks",
+        "setting": "512",
+        "unit": "",
+        "short_desc": "Set the number of blocks for flashback logindex bloom filter",
+        "reset_val": "512"
+    },
+    {
+        "name": "polar_flashback_logindex_mem_size",
+        "setting": "64",
+        "unit": "MB",
+        "short_desc": "Set the size for flashback logindex memory table",
+        "reset_val": "64"
+    },
+    {
+        "name": "polar_flashback_logindex_queue_buffers",
+        "setting": "8",
+        "unit": "MB",
+        "short_desc": "Sets the size (MB) of log queue buffer used to keep flashback logindex. 0 means disable flashback logindex queue",
+        "reset_val": "8"
+    },
+    {
+        "name": "polar_flashback_point_segments",
+        "setting": "16",
+        "unit": "",
+        "short_desc": "Sets the minimum WAL distance between automatic flashback point.",
+        "reset_val": "16"
+    },
+    {
+        "name": "polar_flashback_point_timeout",
+        "setting": "300",
+        "unit": "s",
+        "short_desc": "Sets the minimum time between automatic flashback point.",
+        "reset_val": "300"
+    },
+    {
+        "name": "polar_forbidden_extensions",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Changes the list of extensions that are't allowed to create by polar users.",
+        "reset_val": ""
+    },
+    {
+        "name": "polar_force_change_checkpoint",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Force to recovery from redo point set in pg_control",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_fullpage_keep_segments",
+        "setting": "16",
+        "unit": "",
+        "short_desc": "Sets the number of FULLPAGE files held for replica.",
+        "reset_val": "16"
+    },
+    {
+        "name": "polar_high_priority_replication_standby_names",
+        "setting": "standby1",
+        "unit": "",
+        "short_desc": "Comma-separated list of high priority replication standby names.",
+        "reset_val": "standby1"
+    },
+    {
+        "name": "polar_hostid",
+        "setting": "1",
+        "unit": "",
+        "short_desc": "polardb hostid.",
+        "reset_val": "1"
+    },
+    {
+        "name": "polar_huge_pages_reserved",
+        "setting": "512",
+        "unit": "8kB",
+        "short_desc": "Keep a bias with polar_shm_limit to avoid over-allocating.",
+        "reset_val": "512"
+    },
+    {
+        "name": "polar_index_bulk_extend_size",
+        "setting": "128",
+        "unit": "8kB",
+        "short_desc": "Sets the size of preallocate file for index, 0 (turning this feature off).",
+        "reset_val": "128"
+    },
+    {
+        "name": "polar_index_create_bulk_extend_size",
+        "setting": "512",
+        "unit": "8kB",
+        "short_desc": "Sets the size of preallocate file for index create, 0 (turning this feature off).",
+        "reset_val": "512"
+    },
+    {
+        "name": "polar_instance_name",
+        "setting": "",
+        "unit": "",
+        "short_desc": "PolarDB instance name, the max length is 63.",
+        "reset_val": ""
+    },
+    {
+        "name": "polar_internal_allowed_extensions",
+        "setting": "pg_stat_statements,btree_gin,btree_gist,citext,cube,dict_int,earthdistance,hstore,intagg,intarray,isn,ltree,pgcrypto,pgrowlocks,pg_prewarm,pg_trgm,sslinfo,tablefunc,unaccent,fuzzystrmatch,pgstattuple,pg_buffercache,\"uuid-ossp\",bloom,smlar,vector,plpgsql,plperl,postgis,postgis_raster,postgis_topology,postgis_sfcgal,fuzzystrmatch,address_standardizer,address_standardizer_data_us,postgis_tiger_geocoder,polar_csn,polar_monitor,polar_monitor_preload,polar_px",
+        "unit": "",
+        "short_desc": "Changes the list of internal extensions that are allowed to create by polar users.",
+        "reset_val": "pg_stat_statements,btree_gin,btree_gist,citext,cube,dict_int,earthdistance,hstore,intagg,intarray,isn,ltree,pgcrypto,pgrowlocks,pg_prewarm,pg_trgm,sslinfo,tablefunc,unaccent,fuzzystrmatch,pgstattuple,pg_buffercache,\"uuid-ossp\",bloom,smlar,vector,plpgsql,plperl,postgis,postgis_raster,postgis_topology,postgis_sfcgal,fuzzystrmatch,address_standardizer,address_standardizer_data_us,postgis_tiger_geocoder,polar_csn,polar_monitor,polar_monitor_preload,polar_px"
+    },
+    {
+        "name": "polar_internal_allowed_roles",
+        "setting": "pg_read_all_stats,pg_stat_scan_tables,pg_signal_backend,pg_polar_superuser",
+        "unit": "",
+        "short_desc": "Mark roles that polar_superuser has privs to.",
+        "reset_val": "pg_read_all_stats,pg_stat_scan_tables,pg_signal_backend,pg_polar_superuser"
+    },
+    {
+        "name": "polar_internal_shared_preload_libraries",
+        "setting": "polar_vfs,polar_worker,polar_resource_group,polar_monitor_preload,pg_stat_statements,polar_stat_sql",
+        "unit": "",
+        "short_desc": "Lists polardb internal shared libraries with high priority to preload into server.",
+        "reset_val": "polar_vfs,polar_worker,polar_resource_group,polar_monitor_preload,pg_stat_statements,polar_stat_sql"
+    },
+    {
+        "name": "polar_io_read_throughtput_userset",
+        "setting": "0",
+        "unit": "MB",
+        "short_desc": "Set the io read throughtput by users.",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_logical_repl_workers_reserved_for_superuser",
+        "setting": "16",
+        "unit": "",
+        "short_desc": "Sets the num of replication workers reserved for superuser.",
+        "reset_val": "16"
+    },
+    {
+        "name": "polar_logindex_bloom_blocks",
+        "setting": "1024",
+        "unit": "",
+        "short_desc": "Set the number of blocks for logindex bloom filter",
+        "reset_val": "1024"
+    },
+    {
+        "name": "polar_logindex_max_local_cache_segments",
+        "setting": "32",
+        "unit": "",
+        "short_desc": "Set the maximum number of local segment file cache for logindex",
+        "reset_val": "32"
+    },
+    {
+        "name": "polar_logindex_mem_size",
+        "setting": "512",
+        "unit": "MB",
+        "short_desc": "Set the size for logindex memory table",
+        "reset_val": "512"
+    },
+    {
+        "name": "polar_logindex_table_batch_size",
+        "setting": "100",
+        "unit": "",
+        "short_desc": "Set the batch size of logindex table to be flushed in background process.",
+        "reset_val": "100"
+    },
+    {
+        "name": "polar_low_priority_replication_standby_names",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Comma-separated list of low priority replication standby names.",
+        "reset_val": ""
+    },
+    {
+        "name": "polar_max_auditlog_files",
+        "setting": "20",
+        "unit": "",
+        "short_desc": "A switch to control number of max pg audit log files",
+        "reset_val": "20"
+    },
+    {
+        "name": "polar_max_dsm_request_size",
+        "setting": "0",
+        "unit": "kB",
+        "short_desc": "PolarDB max DSM memory.",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_max_hashagg_mem",
+        "setting": "0",
+        "unit": "kB",
+        "short_desc": "PolarDB max HashAggregation operator memory.",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_max_log_files",
+        "setting": "20",
+        "unit": "",
+        "short_desc": "A switch to control number of max pg sys log files",
+        "reset_val": "20"
+    },
+    {
+        "name": "polar_max_logindex_files",
+        "setting": "80",
+        "unit": "",
+        "short_desc": "A switch to control number of max logindex files.This param is used when truncate logindex file",
+        "reset_val": "80"
+    },
+    {
+        "name": "polar_max_non_super_conns",
+        "setting": "-1",
+        "unit": "",
+        "short_desc": "A switch to control number of max connections allowed for non-super users",
+        "reset_val": "-1"
+    },
+    {
+        "name": "polar_max_normal_backends_factor",
+        "setting": "1.2",
+        "unit": "",
+        "short_desc": "A switch to control max allowed normal backends based on max_connections",
+        "reset_val": "1.2"
+    },
+    {
+        "name": "polar_max_recursiveunion_mem",
+        "setting": "0",
+        "unit": "kB",
+        "short_desc": "PolarDB max RecursiveUnion operator memory.",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_max_setop_mem",
+        "setting": "0",
+        "unit": "kB",
+        "short_desc": "PolarDB max SetOp operator memory.",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_max_slowlog_files",
+        "setting": "20",
+        "unit": "",
+        "short_desc": "A switch to control number of max pg slow log files",
+        "reset_val": "20"
+    },
+    {
+        "name": "polar_max_subplan_mem",
+        "setting": "0",
+        "unit": "kB",
+        "short_desc": "PolarDB max Subplan operator memory.",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_max_super_conns",
+        "setting": "-1",
+        "unit": "",
+        "short_desc": "A switch to control number of max connections allowed for super users",
+        "reset_val": "-1"
+    },
+    {
+        "name": "polar_min_bulk_extend_table_size",
+        "setting": "1024",
+        "unit": "8kB",
+        "short_desc": "Sets the minimum amount of table data for bulk extend, bulk extend is enabled only when the table size >= polar_min_bulk_extend_table_size",
+        "reset_val": "1024"
+    },
+    {
+        "name": "polar_monitor.backend_type_max",
+        "setting": "1024",
+        "unit": "",
+        "short_desc": "Sets the maximum number of backend type.",
+        "reset_val": "1024"
+    },
+    {
+        "name": "polar_monitor.mcxt_timeout",
+        "setting": "1000",
+        "unit": "",
+        "short_desc": "configure for the polar_mcxt_view_hook waitting time",
+        "reset_val": "1000"
+    },
+    {
+        "name": "polar_monitor.mcxt_view",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "on/off the polar_mcxt_view_hook",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_multixact_max_local_cache_segments",
+        "setting": "32",
+        "unit": "",
+        "short_desc": "Set the maximum number of local segment file cache for multixact",
+        "reset_val": "32"
+    },
+    {
+        "name": "polar_mxact_member_buffer_slot_size",
+        "setting": "16",
+        "unit": "",
+        "short_desc": "polar_mxact_member_buffer_slot_size.",
+        "reset_val": "16"
+    },
+    {
+        "name": "polar_mxact_offset_buffer_slot_size",
+        "setting": "8",
+        "unit": "",
+        "short_desc": "polar_mxact_offset_buffer_slot_size.",
+        "reset_val": "8"
+    },
+    {
+        "name": "polar_nblocks_cache_mode",
+        "setting": "scan",
+        "unit": "",
+        "short_desc": "Number of Blocks cache mode",
+        "reset_val": "scan"
+    },
+    {
+        "name": "polar_num_of_sysloggers",
+        "setting": "3",
+        "unit": "",
+        "short_desc": "Sets the number of syslogger process.",
+        "reset_val": "3"
+    },
+    {
+        "name": "polar_oldserxid_buffer_slot_size",
+        "setting": "16",
+        "unit": "",
+        "short_desc": "polar_oldserxid_buffer_slot_size.",
+        "reset_val": "16"
+    },
+    {
+        "name": "polar_openfile_with_readonly_in_replica",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "open datafile with readonly mode in replica",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_parallel_bgwriter_check_interval",
+        "setting": "10",
+        "unit": "s",
+        "short_desc": "The interval to check whether the server has enough parallel background writers.",
+        "reset_val": "10"
+    },
+    {
+        "name": "polar_parallel_bgwriter_delay",
+        "setting": "10",
+        "unit": "ms",
+        "short_desc": "Parallel background writer sleep time between rounds.",
+        "reset_val": "10"
+    },
+    {
+        "name": "polar_parallel_bgwriter_enable_dynamic",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Start or stop extra parallel background writer dynamically.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_parallel_bgwriter_workers",
+        "setting": "5",
+        "unit": "",
+        "short_desc": "Set the max number of the parallel background workers.",
+        "reset_val": "5"
+    },
+    {
+        "name": "polar_parallel_new_bgwriter_threshold_lag",
+        "setting": "1024",
+        "unit": "MB",
+        "short_desc": "Set the threshold to add a new bgwriter, if the consistent lag greater than this lag #polar_parallel_new_bgwriter_threshold_time, we will add a new parallel background writer.",
+        "reset_val": "1024"
+    },
+    {
+        "name": "polar_parallel_new_bgwriter_threshold_time",
+        "setting": "10",
+        "unit": "s",
+        "short_desc": "Set the threshold to add a new bgwriter, if the consistent lag greater than this lag #polar_parallel_new_bgwriter_threshold_time, we will add a new parallel background writer.",
+        "reset_val": "10"
+    },
+    {
+        "name": "polar_parallel_replay_proc_num",
+        "setting": "8",
+        "unit": "",
+        "short_desc": "Set the number of processes to do parallel replay",
+        "reset_val": "8"
+    },
+    {
+        "name": "polar_parallel_replay_task_queue_depth",
+        "setting": "1024",
+        "unit": "",
+        "short_desc": "Set the task queue depth when do parallel replay",
+        "reset_val": "1024"
+    },
+    {
+        "name": "polar_partition_recursive_reloptions",
+        "setting": "px_workers",
+        "unit": "",
+        "short_desc": "Reloptions to be recursively set on partitioned tables.",
+        "reset_val": "px_workers"
+    },
+    {
+        "name": "polar_primary_dml_delay",
+        "setting": "1",
+        "unit": "ms",
+        "short_desc": "Sets the polar dml delay for replay.",
+        "reset_val": "1"
+    },
+    {
+        "name": "polar_priority_replication_force_wait",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "In priority replication, whether wait if all higher level standbys are down.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_priority_replication_mode",
+        "setting": "any",
+        "unit": "",
+        "short_desc": "Sets priority replication mode.",
+        "reset_val": "any"
+    },
+    {
+        "name": "polar_px_allow_pagemode_bitmapscan",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "This guc allows pagemode when heap bitmapscan in PX.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_allow_pagemode_seqscan",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "This guc allows pagemode when heap bitmapscan in PX.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_allow_strat_bitmapscan",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "This guc allows strat when heap bitmapscan in PX.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_allow_strat_seqscan",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "This guc allows strat when heap seqscan in PX.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_allow_sync_bitmapscan",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "This guc allows sync when heap bitmapscan in PX.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_allow_sync_seqscan",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "This guc allows sync when heap seqscan in PX.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_cached_px_workers",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "Sets the maximum number of px workers to cache between statements.",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_px_dop_per_node",
+        "setting": "1",
+        "unit": "",
+        "short_desc": "The degree of parallelism per dbid.",
+        "reset_val": "1"
+    },
+    {
+        "name": "polar_px_enable_adps",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Enable dynamic seqscan",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_enable_adps_explain_analyze",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Enable dynamic seqscan explain analyze details",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_enable_create_table_as",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "This GUC allows PX to support create table as in parallel.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_enable_cte",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enable px cte.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_enable_delete",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "This guc allows parallel delete.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_enable_dispatch_async",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "enable dispatch async mode",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_enable_executor",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enable px_enable_executor.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_enable_insert_from_tableless",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "This guc allows insert ... from tableless on px.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_enable_insert_order_sensitive",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "This guc allows parallel insert need ordered.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_enable_insert_partition_table",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "This guc allows Insert partition table select on px.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_enable_insert_select",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "This guc allows Insert....select on px.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_enable_join",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enable px_enable_join.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_enable_left_index_nestloop_join",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "This guc allows px support left outer index nestloop join.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_enable_opfamily_for_distribution",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Allow to use pg_opfamily for hash redistribute.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_enable_partitionwise_join",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "This guc allows partition wise join in PX.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_enable_print",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enable px print query string on px.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_enable_relsize_collection",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "This guc enables relsize collection when stats are not present. If disabled and stats are not present a default value is used.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_enable_result_hash_filter",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "This guc allows px support hash filter in result",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_enable_spi_read_all_namespaces",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Allow px workers to read all tables in SPI.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_enable_subquery",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enable px_enable_subquery.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_enable_update",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "This guc allows parallel update.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_enable_window_function",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enable px window function.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_explain_memory_verbosity",
+        "setting": "suppress",
+        "unit": "",
+        "short_desc": "Experimental feature: show memory account usage in EXPLAIN ANALYZE.",
+        "reset_val": "suppress"
+    },
+    {
+        "name": "polar_px_ignore_function",
+        "setting": "1574,1575,1576,1765,3078,4032",
+        "unit": "",
+        "short_desc": "Add the PolarDB PX functions oids that should be ignored.",
+        "reset_val": "1574,1575,1576,1765,3078,4032"
+    },
+    {
+        "name": "polar_px_ignore_unusable_nodes",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Whether PolarDB PX skip unusable nodes",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_log_dispatch_stats",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Writes dispatcher performance statistics to the server log.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_max_plan_size",
+        "setting": "0",
+        "unit": "kB",
+        "short_desc": "Sets the maximum size of a plan to be dispatched.",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_px_max_slices",
+        "setting": "50",
+        "unit": "",
+        "short_desc": "Maximum slices for a single query",
+        "reset_val": "50"
+    },
+    {
+        "name": "polar_px_motion_cost_per_row",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "Sets the planner's estimate of the cost of moving a row between worker processes.",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_px_nodes",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Sets px worker nodes, separated by comma",
+        "reset_val": ""
+    },
+    {
+        "name": "polar_px_optimizer_enable_bitmapscan",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of bitmap-scan plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_optimizer_enable_brinscan",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of brin index-scan plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_optimizer_enable_dynamicshareindexscan",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of partition share index scan plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_optimizer_enable_indexonlyscan",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of indexonly-scan plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_optimizer_enable_indexscan",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of index-scan plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_optimizer_enable_relsize_collection",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "This guc enables relsize collection when stats are not present. If disabled and stats are not present a default value is used.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_optimizer_enable_seqscan",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of sequential-scan plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_optimizer_enable_seqsharescan",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of sequential-share-scan plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_optimizer_enable_shareindexscan",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enables the planner's use of share index scan plans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_optimizer_remove_superfluous_order",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "This guc remove superfluous order",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_px_optimizer_use_px_allocators",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Enable px_optimizer_use_px_allocators.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_scan_unit_size",
+        "setting": "512",
+        "unit": "8kB",
+        "short_desc": "Sets size of scan unit when using Parallel Execution",
+        "reset_val": "512"
+    },
+    {
+        "name": "polar_px_udpic_enable_ipv6",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "enable udpic ipv6",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_use_master",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Whether PolarDB PX use master",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_use_standby",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Whether PolarDB PX use standby",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_px_version",
+        "setting": "PolarDB PX version 1.1",
+        "unit": "",
+        "short_desc": "Show the PolarDB PX version.",
+        "reset_val": "PolarDB PX version 1.1"
+    },
+    {
+        "name": "polar_px_wait_lock_timeout",
+        "setting": "3600000",
+        "unit": "ms",
+        "short_desc": "Sets the maximum time (in milliseconds) to wait on a lock held by PX process.",
+        "reset_val": "3600000"
+    },
+    {
+        "name": "polar_px_worker_connect_timeout",
+        "setting": "180",
+        "unit": "s",
+        "short_desc": "Maximum time (in seconds) allowed for a new worker process to start or a mirror to respond.",
+        "reset_val": "180"
+    },
+    {
+        "name": "polar_read_ahead_xlog_num",
+        "setting": "20",
+        "unit": "8kB",
+        "short_desc": "How many xlog pages are read ahead. A value of 0 turns off this feature.",
+        "reset_val": "20"
+    },
+    {
+        "name": "polar_recovery_bulk_extend_size",
+        "setting": "512",
+        "unit": "8kB",
+        "short_desc": "Sets the size for bulk file extension while replaying xlog on standby (0 turns this feature off).",
+        "reset_val": "512"
+    },
+    {
+        "name": "polar_rel_size_cache_blocks",
+        "setting": "2",
+        "unit": "",
+        "short_desc": "Set the number of blocks to record relation size cache",
+        "reset_val": "2"
+    },
+    {
+        "name": "polar_release_date",
+        "setting": "20240430",
+        "unit": "",
+        "short_desc": "Show the server release date.",
+        "reset_val": "20240430"
+    },
+    {
+        "name": "polar_rename_wal_ready_file",
+        "setting": "",
+        "unit": "",
+        "short_desc": "rename file under /pfs-disk/data/pg_wal/archive_status from .ready to .done",
+        "reset_val": ""
+    },
+    {
+        "name": "polar_repl_slots_reserved_for_superuser",
+        "setting": "32",
+        "unit": "",
+        "short_desc": "Sets the num of replication slots reserved for superuser.",
+        "reset_val": "32"
+    },
+    {
+        "name": "polar_replica_redo_gap_limit",
+        "setting": "1048576",
+        "unit": "kB",
+        "short_desc": "gap limit between local redoptr and shared redoptr for replica, copy base dirs and other trans status log files when gap exceeds the limit",
+        "reset_val": "1048576"
+    },
+    {
+        "name": "polar_reserved_polar_super_conns",
+        "setting": "8",
+        "unit": "",
+        "short_desc": "A switch to control number of max connections allowed for polar_super users",
+        "reset_val": "8"
+    },
+    {
+        "name": "polar_ring_buffer_vacuum",
+        "setting": "128",
+        "unit": "MB",
+        "short_desc": "polar_ring_buffer_vacuum",
+        "reset_val": "128"
+    },
+    {
+        "name": "polar_save_stack_info_level",
+        "setting": "fatal",
+        "unit": "",
+        "short_desc": "print stack info if error level is above stack info level.",
+        "reset_val": "fatal"
+    },
+    {
+        "name": "polar_semi_sync_max_backoff_window",
+        "setting": "1024000",
+        "unit": "ms",
+        "short_desc": "Sets the maximum value of semi-synchronous replication backoff window.",
+        "reset_val": "1024000"
+    },
+    {
+        "name": "polar_semi_sync_min_backoff_window",
+        "setting": "8000",
+        "unit": "ms",
+        "short_desc": "Sets the minimum initial value of the semi-synchronous replication backoff window.",
+        "reset_val": "8000"
+    },
+    {
+        "name": "polar_semi_sync_observation_window",
+        "setting": "300000",
+        "unit": "ms",
+        "short_desc": "The maximum window time to observe whether the network is healthy.",
+        "reset_val": "300000"
+    },
+    {
+        "name": "polar_shm_limit",
+        "setting": "0",
+        "unit": "8kB",
+        "short_desc": "Sets the size of hugepage used by the server.",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_ss_backend_idle_timeout",
+        "setting": "180",
+        "unit": "s",
+        "short_desc": "Sets the maximum allowed idle timeout of shared server(backend). If it reaches threshold, it is shut down peacefully.",
+        "reset_val": "180"
+    },
+    {
+        "name": "polar_ss_backend_keepalive_timeout",
+        "setting": "0",
+        "unit": "s",
+        "short_desc": "Sets the maximum allowed killalive timeout of shared server(backend) since created. If it reaches threshold, it is shut down peacefully.",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_ss_backend_max_count",
+        "setting": "-5",
+        "unit": "",
+        "short_desc": "Sets max count of total shared backend.",
+        "reset_val": "-5"
+    },
+    {
+        "name": "polar_ss_backend_pool_min_size",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "Sets min size of shared backend pool without idle timeout considering",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_ss_client_schedule_policy",
+        "setting": "load-balancing",
+        "unit": "",
+        "short_desc": "Client schedule policy between dispatchers: round-robin, random, load-balancing",
+        "reset_val": "load-balancing"
+    },
+    {
+        "name": "polar_ss_db_role_setting_max_size",
+        "setting": "100",
+        "unit": "",
+        "short_desc": "Sets max rolw count of pg_db_role_setting. Only valid when polar_enable_shared_server is on.",
+        "reset_val": "100"
+    },
+    {
+        "name": "polar_ss_dedicated_dbuser_names",
+        "setting": "",
+        "unit": "",
+        "short_desc": "db/user will use dedicated mode in shared server, format like 'd1/*,*/u1,d2/u2'",
+        "reset_val": ""
+    },
+    {
+        "name": "polar_ss_dedicated_extension_names",
+        "setting": "",
+        "unit": "",
+        "short_desc": "extension will use dedicated mode in shared server, extension name from pg_proc.probin",
+        "reset_val": ""
+    },
+    {
+        "name": "polar_ss_dedicated_guc_names",
+        "setting": "",
+        "unit": "",
+        "short_desc": "guc will not session cached in shared server",
+        "reset_val": ""
+    },
+    {
+        "name": "polar_ss_dispatcher_count",
+        "setting": "2",
+        "unit": "",
+        "short_desc": "Sets count of connection dispatcher.",
+        "reset_val": "2"
+    },
+    {
+        "name": "polar_ss_session_schedule_policy",
+        "setting": "fifo",
+        "unit": "",
+        "short_desc": "Session schedule policy between backend: fifo, random, disposable, dedicated",
+        "reset_val": "fifo"
+    },
+    {
+        "name": "polar_ss_session_wait_timeout",
+        "setting": "5000",
+        "unit": "ms",
+        "short_desc": "Sets the maximum allowed wait time(milliseconds) of any session for new backend.",
+        "reset_val": "5000"
+    },
+    {
+        "name": "polar_ss_shared_memory_size",
+        "setting": "1024",
+        "unit": "kB",
+        "short_desc": "Sets the shared memory for polar shared server",
+        "reset_val": "1024"
+    },
+    {
+        "name": "polar_standby_feedback",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "polar standby use this parameter to make hot_standby_feedback off",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_stat_sql.enable_gather_plan_info",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Whether to gather plan nodes info",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_stat_sql.enable_getrusage",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Whether to enable getuage",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_stat_sql.enable_plan_need_time",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Whether to gather plan nodes need time information",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_stat_sql.enable_qps_monitor",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Selects whether to monitor qps ",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_stat_sql.enable_stat",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Whether to enable the extension",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_stat_sql.linux_hz",
+        "setting": "500000",
+        "unit": "",
+        "short_desc": "Inform polar_stat_sql of the linux CONFIG_HZ config option",
+        "reset_val": "500000"
+    },
+    {
+        "name": "polar_stat_sql.sample_rate",
+        "setting": "0.5",
+        "unit": "",
+        "short_desc": "Sampling rate. 1 means every query, 0.2 means 1 in five queries",
+        "reset_val": "0.5"
+    },
+    {
+        "name": "polar_stat_sql.save",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Save polar statistics for across server shutdowns.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_stat_stale_cost",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "Add some extra cost to reduce the impact of stale statistics 0.01 should be a good value to start with",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_storage_cluster_name",
+        "setting": "",
+        "unit": "",
+        "short_desc": "polar storage cluster name",
+        "reset_val": ""
+    },
+    {
+        "name": "polar_subtrans_buffer_slot_size",
+        "setting": "32",
+        "unit": "",
+        "short_desc": "polar_subtrans_buffer_slot_size.",
+        "reset_val": "32"
+    },
+    {
+        "name": "polar_supported_extensions",
+        "setting": "pg_stat_statements\nbtree_gin\nbtree_gist\ncitext\ncube\ndict_int\nearthdistance\nhstore\nintagg\nintarray\nisn\nltree\npgcrypto\npgrowlocks\npg_prewarm\npg_trgm\nsslinfo\ntablefunc\nunaccent\nfuzzystrmatch\npgstattuple\npg_buffercache\n\"uuid-ossp\"\nbloom\nsmlar\nvector\nplpgsql\nplperl\npostgis\npostgis_raster\npostgis_topology\npostgis_sfcgal\nfuzzystrmatch\naddress_standardizer\naddress_standardizer_data_us\npostgis_tiger_geocoder\npolar_csn\npolar_monitor\npolar_monitor_preload\npolar_px",
+        "unit": "",
+        "short_desc": "The list of supported extensions that are allowed to create by polar users.",
+        "reset_val": ""
+    },
+    {
+        "name": "polar_sync_rep_timeout_break_lsn_lag",
+        "setting": "8192",
+        "unit": "B",
+        "short_desc": "Sets the minimal lag between each process and timeout synchronous replication flush or write or apply lsn, in bytes.",
+        "reset_val": "8192"
+    },
+    {
+        "name": "polar_sync_replication_timeout",
+        "setting": "0",
+        "unit": "ms",
+        "short_desc": "Sets the maximum time to wait for WAL synchronous replication.",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_temp_relation_file_in_shared_storage",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Force temp relation file in remote storage.",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_trace_heap_scan_flow",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Print heap scan debug log if necessary",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_trace_lock_flow",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Print all log when try to acquire or release lock",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_trace_logindex_messages",
+        "setting": "log",
+        "unit": "",
+        "short_desc": "Enables logging of logindex-related debugging information.",
+        "reset_val": "log"
+    },
+    {
+        "name": "polar_trace_system_table",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Trace locks set on system table",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_unit_test_mem_size",
+        "setting": "0",
+        "unit": "MB",
+        "short_desc": "Set additional shared memory size for unit test",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_version",
+        "setting": "1.1.20",
+        "unit": "",
+        "short_desc": "Show the PolarDB server version.",
+        "reset_val": "1.1.20"
+    },
+    {
+        "name": "polar_vfs.debug",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "turn on debug switch or not",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_vfs.enable_file_size_cache",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "enable file size cache",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_vfs.enable_io_time_stat",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "pfs force mount mode when ro switch rw",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_vfs.localfs_mode",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "enter localfs mode",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_vfs.localfs_test_mode",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "enter localfs mode",
+        "reset_val": "off"
+    },
+    {
+        "name": "polar_vfs.pfs_force_mount",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "pfs force mount mode when ro switch rw",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_wait_before_shutdown_timeout",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "PolarDB wait before shutdown timeout, in seconds.",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_wal_buffer_insert_locks",
+        "setting": "64",
+        "unit": "",
+        "short_desc": "Set the number of locks for wal buffer insert",
+        "reset_val": "64"
+    },
+    {
+        "name": "polar_wal_pipeline_advance_worker_spin_delay",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "Set spin delay of advance worker for wal pipeline",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_wal_pipeline_advance_worker_timeout",
+        "setting": "10",
+        "unit": "",
+        "short_desc": "Set timeout of advance worker for wal pipeline",
+        "reset_val": "10"
+    },
+    {
+        "name": "polar_wal_pipeline_advance_worker_write_max_size",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "Set max wal size per advance of advance worker for wal pipeline",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_wal_pipeline_commit_wait_spin_delay",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "Set commit wait spin delay for wal pipeline",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_wal_pipeline_commit_wait_timeout",
+        "setting": "10000",
+        "unit": "",
+        "short_desc": "Set commit wait timeout for wal pipeline",
+        "reset_val": "10000"
+    },
+    {
+        "name": "polar_wal_pipeline_flush_event_array_size",
+        "setting": "128",
+        "unit": "",
+        "short_desc": "Set flush event array size for wal pipeline",
+        "reset_val": "128"
+    },
+    {
+        "name": "polar_wal_pipeline_flush_event_slot_size",
+        "setting": "1024",
+        "unit": "",
+        "short_desc": "Set flush event slot size for wal pipeline",
+        "reset_val": "1024"
+    },
+    {
+        "name": "polar_wal_pipeline_flush_worker_spin_delay",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "Set spin delay of flush worker for wal pipeline",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_wal_pipeline_flush_worker_timeout",
+        "setting": "10000",
+        "unit": "",
+        "short_desc": "Set timeout of flush worker for wal pipeline",
+        "reset_val": "10000"
+    },
+    {
+        "name": "polar_wal_pipeline_mode",
+        "setting": "2",
+        "unit": "",
+        "short_desc": "Set mode for wal pipeline",
+        "reset_val": "2"
+    },
+    {
+        "name": "polar_wal_pipeline_notify_worker_num",
+        "setting": "1",
+        "unit": "",
+        "short_desc": "Set the number of notify worker for wal pipeline",
+        "reset_val": "1"
+    },
+    {
+        "name": "polar_wal_pipeline_notify_worker_spin_delay",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "Set spin delay of notify worker for wal pipeline",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_wal_pipeline_notify_worker_timeout",
+        "setting": "10",
+        "unit": "",
+        "short_desc": "Set timeout of notify worker for wal pipeline",
+        "reset_val": "10"
+    },
+    {
+        "name": "polar_wal_pipeline_recent_written_array_size",
+        "setting": "1048576",
+        "unit": "",
+        "short_desc": "Set recent written array size for wal pipeline",
+        "reset_val": "1048576"
+    },
+    {
+        "name": "polar_wal_pipeline_unflushed_xlog_array_size",
+        "setting": "1024",
+        "unit": "",
+        "short_desc": "Set unflushed xlog array size for wal pipeline",
+        "reset_val": "1024"
+    },
+    {
+        "name": "polar_wal_pipeline_wait_timeout",
+        "setting": "10",
+        "unit": "",
+        "short_desc": "Set default wait timeout for wal pipeline",
+        "reset_val": "10"
+    },
+    {
+        "name": "polar_wal_pipeline_write_worker_spin_delay",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "Set spin delay of write worker for wal pipeline",
+        "reset_val": "0"
+    },
+    {
+        "name": "polar_wal_pipeline_write_worker_timeout",
+        "setting": "10000",
+        "unit": "",
+        "short_desc": "Set timeout of write worker for wal pipeline",
+        "reset_val": "10000"
+    },
+    {
+        "name": "polar_wal_snd_reserved_for_superuser",
+        "setting": "32",
+        "unit": "",
+        "short_desc": "Sets the maximum number of walsenders reserved for superuser.",
+        "reset_val": "32"
+    },
+    {
+        "name": "polar_worker.core_file_outdate_time",
+        "setting": "-1",
+        "unit": "",
+        "short_desc": "outdate time of core file.",
+        "reset_val": "-1"
+    },
+    {
+        "name": "polar_worker.core_file_path",
+        "setting": ".",
+        "unit": "",
+        "short_desc": "path of core file",
+        "reset_val": "."
+    },
+    {
+        "name": "polar_worker.core_name_suffix",
+        "setting": "core",
+        "unit": "",
+        "short_desc": "To assign corefile name.",
+        "reset_val": "core"
+    },
+    {
+        "name": "polar_worker.enable_polar_worker",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Starts worker or not.",
+        "reset_val": "on"
+    },
+    {
+        "name": "polar_worker.num_corefile_reserved_new",
+        "setting": "32",
+        "unit": "",
+        "short_desc": "num of newest reserverd corefile.",
+        "reset_val": "32"
+    },
+    {
+        "name": "polar_worker.num_corefile_reserved_old",
+        "setting": "32",
+        "unit": "",
+        "short_desc": "num of oldest reserverd corefile.",
+        "reset_val": "32"
+    },
+    {
+        "name": "polar_worker.polar_worker_check_interval",
+        "setting": "5",
+        "unit": "s",
+        "short_desc": "Sets the interval between polar worker check",
+        "reset_val": "5"
+    },
+    {
+        "name": "polar_worker.prealloc_flashback_log_file_num",
+        "setting": "2",
+        "unit": "",
+        "short_desc": "Sets the num of how many prealloc flashback log file",
+        "reset_val": "2"
+    },
+    {
+        "name": "polar_worker.prealloc_wal_file_num",
+        "setting": "2",
+        "unit": "",
+        "short_desc": "Sets the num of how many prealloc wal file",
+        "reset_val": "2"
+    },
+    {
+        "name": "polar_worker.xlog_temp_outdate_time",
+        "setting": "-1",
+        "unit": "",
+        "short_desc": "outdate time of xlog temp.",
+        "reset_val": "-1"
+    },
+    {
+        "name": "polar_workers_per_flashback_table",
+        "setting": "5",
+        "unit": "",
+        "short_desc": "Set the max number of the background workers for each flashback table operation.",
+        "reset_val": "5"
+    },
+    {
+        "name": "polar_xact_split_wait_lsn",
+        "setting": "",
+        "unit": "",
+        "short_desc": "xact id of current split transaction.",
+        "reset_val": ""
+    },
+    {
+        "name": "polar_xact_split_xids",
+        "setting": "",
+        "unit": "",
+        "short_desc": "xact id of current split transaction.",
+        "reset_val": ""
+    },
+    {
+        "name": "polar_xlog_page_buffers",
+        "setting": "1024",
+        "unit": "MB",
+        "short_desc": "Sets the size of xlog buffer used by startup and backedn in replica and standby mode.",
+        "reset_val": "1024"
+    },
+    {
+        "name": "polar_xlog_queue_buffers",
+        "setting": "512",
+        "unit": "MB",
+        "short_desc": "Sets the size of xlog queue buffer used to keep xlog meta. 0 means disable xlog buffer",
+        "reset_val": "512"
+    },
+    {
+        "name": "port",
+        "setting": "5432",
+        "unit": "",
+        "short_desc": "Sets the TCP port the server listens on.",
+        "reset_val": "5432"
+    },
+    {
+        "name": "post_auth_delay",
+        "setting": "0",
+        "unit": "s",
+        "short_desc": "Waits N seconds on connection startup after authentication.",
+        "reset_val": "0"
+    },
+    {
+        "name": "pre_auth_delay",
+        "setting": "0",
+        "unit": "s",
+        "short_desc": "Waits N seconds on connection startup before authentication.",
+        "reset_val": "0"
+    },
+    {
+        "name": "quote_all_identifiers",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "When generating SQL fragments, quote all identifiers.",
+        "reset_val": "off"
+    },
+    {
+        "name": "random_page_cost",
+        "setting": "1.1",
+        "unit": "",
+        "short_desc": "Sets the planner's estimate of the cost of a nonsequentially fetched disk page.",
+        "reset_val": "1.1"
+    },
+    {
+        "name": "restart_after_crash",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Reinitialize server after backend crash.",
+        "reset_val": "on"
+    },
+    {
+        "name": "row_security",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enable row security.",
+        "reset_val": "on"
+    },
+    {
+        "name": "search_path",
+        "setting": "\"$user\", public",
+        "unit": "",
+        "short_desc": "Sets the schema search order for names that are not schema-qualified.",
+        "reset_val": "\"$user\", public"
+    },
+    {
+        "name": "segment_size",
+        "setting": "131072",
+        "unit": "8kB",
+        "short_desc": "Shows the number of pages per disk file.",
+        "reset_val": "131072"
+    },
+    {
+        "name": "seq_page_cost",
+        "setting": "0.2",
+        "unit": "",
+        "short_desc": "Sets the planner's estimate of the cost of a sequentially fetched disk page.",
+        "reset_val": "0.2"
+    },
+    {
+        "name": "server_encoding",
+        "setting": "UTF8",
+        "unit": "",
+        "short_desc": "Sets the server (database) character set encoding.",
+        "reset_val": "UTF8"
+    },
+    {
+        "name": "server_version",
+        "setting": "11.9",
+        "unit": "",
+        "short_desc": "Shows the server version.",
+        "reset_val": "11.9"
+    },
+    {
+        "name": "server_version_num",
+        "setting": "110009",
+        "unit": "",
+        "short_desc": "Shows the server version as an integer.",
+        "reset_val": "110009"
+    },
+    {
+        "name": "session_preload_libraries",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Lists shared libraries to preload into each backend.",
+        "reset_val": ""
+    },
+    {
+        "name": "session_replication_role",
+        "setting": "origin",
+        "unit": "",
+        "short_desc": "Sets the session's behavior for triggers and rewrite rules.",
+        "reset_val": "origin"
+    },
+    {
+        "name": "shared_buffers",
+        "setting": "131072",
+        "unit": "8kB",
+        "short_desc": "Sets the number of shared memory buffers used by the server.",
+        "reset_val": "131072"
+    },
+    {
+        "name": "shared_preload_libraries",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Lists shared libraries to preload into server.",
+        "reset_val": ""
+    },
+    {
+        "name": "smgr_pool_sweep_times",
+        "setting": "8",
+        "unit": "",
+        "short_desc": "Sets the times for smgr pool to clock sweep, 0 means always uses a random cache",
+        "reset_val": "8"
+    },
+    {
+        "name": "smgr_shared_relations",
+        "setting": "128",
+        "unit": "",
+        "short_desc": "Sets the number of shared relation objects in memory at one time.",
+        "reset_val": "128"
+    },
+    {
+        "name": "ssl",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Enables SSL connections.",
+        "reset_val": "off"
+    },
+    {
+        "name": "ssl_ca_file",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Location of the SSL certificate authority file.",
+        "reset_val": ""
+    },
+    {
+        "name": "ssl_cert_file",
+        "setting": "server.crt",
+        "unit": "",
+        "short_desc": "Location of the SSL server certificate file.",
+        "reset_val": "server.crt"
+    },
+    {
+        "name": "ssl_ciphers",
+        "setting": "HIGH:MEDIUM:+3DES:!aNULL",
+        "unit": "",
+        "short_desc": "Sets the list of allowed SSL ciphers.",
+        "reset_val": "HIGH:MEDIUM:+3DES:!aNULL"
+    },
+    {
+        "name": "ssl_crl_file",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Location of the SSL certificate revocation list file.",
+        "reset_val": ""
+    },
+    {
+        "name": "ssl_dh_params_file",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Location of the SSL DH parameters file.",
+        "reset_val": ""
+    },
+    {
+        "name": "ssl_ecdh_curve",
+        "setting": "prime256v1",
+        "unit": "",
+        "short_desc": "Sets the curve to use for ECDH.",
+        "reset_val": "prime256v1"
+    },
+    {
+        "name": "ssl_key_file",
+        "setting": "server.key",
+        "unit": "",
+        "short_desc": "Location of the SSL server private key file.",
+        "reset_val": "server.key"
+    },
+    {
+        "name": "ssl_passphrase_command",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Command to obtain passphrases for SSL.",
+        "reset_val": ""
+    },
+    {
+        "name": "ssl_passphrase_command_supports_reload",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Also use ssl_passphrase_command during server reload.",
+        "reset_val": "off"
+    },
+    {
+        "name": "ssl_prefer_server_ciphers",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Give priority to server ciphersuite order.",
+        "reset_val": "on"
+    },
+    {
+        "name": "standard_conforming_strings",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Causes '...' strings to treat backslashes literally.",
+        "reset_val": "on"
+    },
+    {
+        "name": "statement_timeout",
+        "setting": "0",
+        "unit": "ms",
+        "short_desc": "Sets the maximum allowed duration of any statement.",
+        "reset_val": "0"
+    },
+    {
+        "name": "stats_temp_directory",
+        "setting": "pg_stat_tmp",
+        "unit": "",
+        "short_desc": "Writes temporary statistics files to the specified directory.",
+        "reset_val": "pg_stat_tmp"
+    },
+    {
+        "name": "superuser_reserved_connections",
+        "setting": "3",
+        "unit": "",
+        "short_desc": "Sets the number of connection slots reserved for superusers.",
+        "reset_val": "3"
+    },
+    {
+        "name": "synchronize_seqscans",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Enable synchronized sequential scans.",
+        "reset_val": "on"
+    },
+    {
+        "name": "synchronous_commit",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Sets the current transaction's synchronization level.",
+        "reset_val": "on"
+    },
+    {
+        "name": "synchronous_standby_names",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Number of synchronous standbys and list of names of potential synchronous ones.",
+        "reset_val": ""
+    },
+    {
+        "name": "syslog_facility",
+        "setting": "local0",
+        "unit": "",
+        "short_desc": "Sets the syslog \"facility\" to be used when syslog enabled.",
+        "reset_val": "local0"
+    },
+    {
+        "name": "syslog_ident",
+        "setting": "postgres",
+        "unit": "",
+        "short_desc": "Sets the program name used to identify PostgreSQL messages in syslog.",
+        "reset_val": "postgres"
+    },
+    {
+        "name": "syslog_sequence_numbers",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Add sequence number to syslog messages to avoid duplicate suppression.",
+        "reset_val": "on"
+    },
+    {
+        "name": "syslog_split_messages",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Split messages sent to syslog by lines and to fit into 1024 bytes.",
+        "reset_val": "on"
+    },
+    {
+        "name": "tcp_keepalives_count",
+        "setting": "9",
+        "unit": "",
+        "short_desc": "Maximum number of TCP keepalive retransmits.",
+        "reset_val": "0"
+    },
+    {
+        "name": "tcp_keepalives_idle",
+        "setting": "7200",
+        "unit": "s",
+        "short_desc": "Time between issuing TCP keepalives.",
+        "reset_val": "0"
+    },
+    {
+        "name": "tcp_keepalives_interval",
+        "setting": "75",
+        "unit": "s",
+        "short_desc": "Time between TCP keepalive retransmits.",
+        "reset_val": "0"
+    },
+    {
+        "name": "temp_buffers",
+        "setting": "1024",
+        "unit": "8kB",
+        "short_desc": "Sets the maximum number of temporary buffers used by each session.",
+        "reset_val": "1024"
+    },
+    {
+        "name": "temp_file_limit",
+        "setting": "-1",
+        "unit": "kB",
+        "short_desc": "Limits the total size of all temporary files used by each process.",
+        "reset_val": "-1"
+    },
+    {
+        "name": "temp_tablespaces",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Sets the tablespace(s) to use for temporary tables and sort files.",
+        "reset_val": ""
+    },
+    {
+        "name": "TimeZone",
+        "setting": "Asia/Shanghai",
+        "unit": "",
+        "short_desc": "Sets the time zone for displaying and interpreting time stamps.",
+        "reset_val": "Asia/Shanghai"
+    },
+    {
+        "name": "timezone_abbreviations",
+        "setting": "Default",
+        "unit": "",
+        "short_desc": "Selects a file of time zone abbreviations.",
+        "reset_val": "Default"
+    },
+    {
+        "name": "trace_lock_oidmin",
+        "setting": "16384",
+        "unit": "",
+        "short_desc": "Sets the minimum OID of tables for tracking locks.",
+        "reset_val": "16384"
+    },
+    {
+        "name": "trace_lock_table",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "Sets the OID of the table with unconditionally lock tracing.",
+        "reset_val": "0"
+    },
+    {
+        "name": "trace_locks",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Emits information about lock usage.",
+        "reset_val": "off"
+    },
+    {
+        "name": "trace_notify",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Generates debugging output for LISTEN and NOTIFY.",
+        "reset_val": "off"
+    },
+    {
+        "name": "trace_recovery_messages",
+        "setting": "log",
+        "unit": "",
+        "short_desc": "Enables logging of recovery-related debugging information.",
+        "reset_val": "log"
+    },
+    {
+        "name": "trace_sort",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Emit information about resource usage in sorting.",
+        "reset_val": "off"
+    },
+    {
+        "name": "trace_userlocks",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Emits information about user lock usage.",
+        "reset_val": "off"
+    },
+    {
+        "name": "track_activities",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Collects information about executing commands.",
+        "reset_val": "on"
+    },
+    {
+        "name": "track_activity_query_size",
+        "setting": "1024",
+        "unit": "B",
+        "short_desc": "Sets the size reserved for pg_stat_activity.query, in bytes.",
+        "reset_val": "1024"
+    },
+    {
+        "name": "track_commit_timestamp",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Collects transaction commit time.",
+        "reset_val": "off"
+    },
+    {
+        "name": "track_counts",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Collects statistics on database activity.",
+        "reset_val": "on"
+    },
+    {
+        "name": "track_functions",
+        "setting": "none",
+        "unit": "",
+        "short_desc": "Collects function-level statistics on database activity.",
+        "reset_val": "none"
+    },
+    {
+        "name": "track_io_timing",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Collects timing statistics for database I/O activity.",
+        "reset_val": "off"
+    },
+    {
+        "name": "transaction_deferrable",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Whether to defer a read-only serializable transaction until it can be executed with no possible serialization failures.",
+        "reset_val": "off"
+    },
+    {
+        "name": "transaction_isolation",
+        "setting": "read committed",
+        "unit": "",
+        "short_desc": "Sets the current transaction's isolation level.",
+        "reset_val": "default"
+    },
+    {
+        "name": "transaction_read_only",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Sets the current transaction's read-only status.",
+        "reset_val": "off"
+    },
+    {
+        "name": "transform_null_equals",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Treats \"expr=NULL\" as \"expr IS NULL\".",
+        "reset_val": "off"
+    },
+    {
+        "name": "unix_socket_directories",
+        "setting": "/tmp",
+        "unit": "",
+        "short_desc": "Sets the directories where Unix-domain sockets will be created.",
+        "reset_val": "/tmp"
+    },
+    {
+        "name": "unix_socket_group",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Sets the owning group of the Unix-domain socket.",
+        "reset_val": ""
+    },
+    {
+        "name": "unix_socket_permissions",
+        "setting": "0777",
+        "unit": "",
+        "short_desc": "Sets the access permissions of the Unix-domain socket.",
+        "reset_val": "511"
+    },
+    {
+        "name": "update_process_title",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Updates the process title to show the active SQL command.",
+        "reset_val": "on"
+    },
+    {
+        "name": "vacuum_cleanup_index_scale_factor",
+        "setting": "0.1",
+        "unit": "",
+        "short_desc": "Number of tuple inserts prior to index cleanup as a fraction of reltuples.",
+        "reset_val": "0.1"
+    },
+    {
+        "name": "vacuum_cost_delay",
+        "setting": "0",
+        "unit": "ms",
+        "short_desc": "Vacuum cost delay in milliseconds.",
+        "reset_val": "0"
+    },
+    {
+        "name": "vacuum_cost_limit",
+        "setting": "200",
+        "unit": "",
+        "short_desc": "Vacuum cost amount available before napping.",
+        "reset_val": "200"
+    },
+    {
+        "name": "vacuum_cost_page_dirty",
+        "setting": "20",
+        "unit": "",
+        "short_desc": "Vacuum cost for a page dirtied by vacuum.",
+        "reset_val": "20"
+    },
+    {
+        "name": "vacuum_cost_page_hit",
+        "setting": "1",
+        "unit": "",
+        "short_desc": "Vacuum cost for a page found in the buffer cache.",
+        "reset_val": "1"
+    },
+    {
+        "name": "vacuum_cost_page_miss",
+        "setting": "10",
+        "unit": "",
+        "short_desc": "Vacuum cost for a page not found in the buffer cache.",
+        "reset_val": "10"
+    },
+    {
+        "name": "vacuum_defer_cleanup_age",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "Number of transactions by which VACUUM and HOT cleanup should be deferred, if any.",
+        "reset_val": "0"
+    },
+    {
+        "name": "vacuum_freeze_min_age",
+        "setting": "50000000",
+        "unit": "",
+        "short_desc": "Minimum age at which VACUUM should freeze a table row.",
+        "reset_val": "50000000"
+    },
+    {
+        "name": "vacuum_freeze_table_age",
+        "setting": "150000000",
+        "unit": "",
+        "short_desc": "Age at which VACUUM should scan whole table to freeze tuples.",
+        "reset_val": "150000000"
+    },
+    {
+        "name": "vacuum_multixact_freeze_min_age",
+        "setting": "5000000",
+        "unit": "",
+        "short_desc": "Minimum age at which VACUUM should freeze a MultiXactId in a table row.",
+        "reset_val": "5000000"
+    },
+    {
+        "name": "vacuum_multixact_freeze_table_age",
+        "setting": "150000000",
+        "unit": "",
+        "short_desc": "Multixact age at which VACUUM should scan whole table to freeze tuples.",
+        "reset_val": "150000000"
+    },
+    {
+        "name": "wal_block_size",
+        "setting": "8192",
+        "unit": "",
+        "short_desc": "Shows the block size in the write ahead log.",
+        "reset_val": "8192"
+    },
+    {
+        "name": "wal_buffers",
+        "setting": "2048",
+        "unit": "8kB",
+        "short_desc": "Sets the number of disk-page buffers in shared memory for WAL.",
+        "reset_val": "2048"
+    },
+    {
+        "name": "wal_compression",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Compresses full-page writes written in WAL file.",
+        "reset_val": "off"
+    },
+    {
+        "name": "wal_consistency_checking",
+        "setting": "",
+        "unit": "",
+        "short_desc": "Sets the WAL resource managers for which WAL consistency checks are done.",
+        "reset_val": ""
+    },
+    {
+        "name": "wal_keep_segments",
+        "setting": "0",
+        "unit": "",
+        "short_desc": "Sets the number of WAL files held for standby servers.",
+        "reset_val": "0"
+    },
+    {
+        "name": "wal_level",
+        "setting": "replica",
+        "unit": "",
+        "short_desc": "Set the level of information written to the WAL.",
+        "reset_val": "replica"
+    },
+    {
+        "name": "wal_log_hints",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Writes full pages to WAL when first modified after a checkpoint, even for a non-critical modifications.",
+        "reset_val": "off"
+    },
+    {
+        "name": "wal_receiver_status_interval",
+        "setting": "10",
+        "unit": "s",
+        "short_desc": "Sets the maximum interval between WAL receiver status reports to the primary.",
+        "reset_val": "10"
+    },
+    {
+        "name": "wal_receiver_timeout",
+        "setting": "60000",
+        "unit": "ms",
+        "short_desc": "Sets the maximum wait time to receive data from the primary.",
+        "reset_val": "60000"
+    },
+    {
+        "name": "wal_recycle",
+        "setting": "on",
+        "unit": "",
+        "short_desc": "Recycles WAL files by renaming them.",
+        "reset_val": "on"
+    },
+    {
+        "name": "wal_retrieve_retry_interval",
+        "setting": "5000",
+        "unit": "ms",
+        "short_desc": "Sets the time to wait before retrying to retrieve WAL after a failed attempt.",
+        "reset_val": "5000"
+    },
+    {
+        "name": "wal_segment_size",
+        "setting": "16777216",
+        "unit": "B",
+        "short_desc": "Shows the size of write ahead log segments.",
+        "reset_val": "16777216"
+    },
+    {
+        "name": "wal_sender_timeout",
+        "setting": "60000",
+        "unit": "ms",
+        "short_desc": "Sets the maximum time to wait for WAL replication.",
+        "reset_val": "60000"
+    },
+    {
+        "name": "wal_sync_method",
+        "setting": "fdatasync",
+        "unit": "",
+        "short_desc": "Selects the method used for forcing WAL updates to disk.",
+        "reset_val": "fdatasync"
+    },
+    {
+        "name": "wal_writer_delay",
+        "setting": "50",
+        "unit": "ms",
+        "short_desc": "Time between WAL flushes performed in the WAL writer.",
+        "reset_val": "50"
+    },
+    {
+        "name": "wal_writer_flush_after",
+        "setting": "128",
+        "unit": "8kB",
+        "short_desc": "Amount of WAL written out by WAL writer that triggers a flush.",
+        "reset_val": "128"
+    },
+    {
+        "name": "work_mem",
+        "setting": "65536",
+        "unit": "kB",
+        "short_desc": "Sets the maximum memory to be used for query workspaces.",
+        "reset_val": "65536"
+    },
+    {
+        "name": "xmlbinary",
+        "setting": "base64",
+        "unit": "",
+        "short_desc": "Sets how binary values are to be encoded in XML.",
+        "reset_val": "base64"
+    },
+    {
+        "name": "xmloption",
+        "setting": "content",
+        "unit": "",
+        "short_desc": "Sets whether XML data in implicit parsing and serialization operations is to be considered as documents or content fragments.",
+        "reset_val": "content"
+    },
+    {
+        "name": "zero_damaged_pages",
+        "setting": "off",
+        "unit": "",
+        "short_desc": "Continues processing past damaged page headers.",
+        "reset_val": "off"
+    }
+]

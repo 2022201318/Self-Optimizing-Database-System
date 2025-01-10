@@ -1,0 +1,614 @@
+name,setting,unit,short_desc,reset_val
+allow_system_table_mods,off,,Allows modifications of the structure of system tables.,off
+application_name,psql,,Sets the application name to be reported in statistics and logs.,psql
+archive_command,(disabled),,Sets the shell command that will be called to archive a WAL file.,""
+archive_mode,off,,Allows archiving of WAL files using archive_command.,off
+archive_timeout,0,s,Forces a switch to the next WAL file if a new file has not been started within N seconds.,0
+array_nulls,on,,Enable input of NULL elements in arrays.,on
+authentication_timeout,60,s,Sets the maximum allowed time to complete client authentication.,60
+autovacuum,on,,Starts the autovacuum subprocess.,on
+autovacuum_analyze_scale_factor,0.1,,"Number of tuple inserts, updates, or deletes prior to analyze as a fraction of reltuples.",0.1
+autovacuum_analyze_threshold,50,,"Minimum number of tuple inserts, updates, or deletes prior to analyze.",50
+autovacuum_freeze_max_age,200000000,,Age at which to autovacuum a table to prevent transaction ID wraparound.,200000000
+autovacuum_max_workers,4,,Sets the maximum number of simultaneously running autovacuum worker processes.,4
+autovacuum_multixact_freeze_max_age,400000000,,Multixact age at which to autovacuum a table to prevent multixact wraparound.,400000000
+autovacuum_naptime,60,s,Time to sleep between autovacuum runs.,60
+autovacuum_vacuum_cost_delay,20,ms,"Vacuum cost delay in milliseconds, for autovacuum.",20
+autovacuum_vacuum_cost_limit,-1,,"Vacuum cost amount available before napping, for autovacuum.",-1
+autovacuum_vacuum_scale_factor,0.2,,Number of tuple updates or deletes prior to vacuum as a fraction of reltuples.,0.2
+autovacuum_vacuum_threshold,50,,Minimum number of tuple updates or deletes prior to vacuum.,50
+autovacuum_work_mem,-1,kB,Sets the maximum memory to be used by each autovacuum worker process.,-1
+backend_flush_after,0,8kB,Number of pages after which previously performed writes are flushed to disk.,0
+backslash_quote,safe_encoding,,"Sets whether ""\'"" is allowed in string literals.",safe_encoding
+bgwriter_delay,50,ms,Background writer sleep time between rounds.,50
+bgwriter_flush_after,64,8kB,Number of pages after which previously performed writes are flushed to disk.,64
+bgwriter_lru_maxpages,100,,Background writer maximum number of LRU pages to flush per round.,100
+bgwriter_lru_multiplier,2,,Multiple of the average buffer usage to free per round.,2
+block_size,8192,,Shows the size of a disk block.,8192
+bonjour,off,,Enables advertising the server via Bonjour.,off
+bonjour_name,"",,Sets the Bonjour service name.,""
+bytea_output,hex,,Sets the output format for bytea.,hex
+check_function_bodies,on,,Check function bodies during CREATE FUNCTION.,on
+checkpoint_completion_target,0.9,,"Time spent flushing dirty buffers during checkpoint, as fraction of checkpoint interval.",0.9
+checkpoint_flush_after,32,8kB,Number of pages after which previously performed writes are flushed to disk.,32
+checkpoint_timeout,300,s,Sets the maximum time between automatic WAL checkpoints.,300
+checkpoint_warning,30,s,Enables warnings if checkpoint segments are filled more frequently than this.,30
+client_encoding,UTF8,,Sets the client's character set encoding.,UTF8
+client_min_messages,notice,,Sets the message levels that are sent to the client.,notice
+cluster_name,"",,"Sets the name of the cluster, which is included in the process title.",""
+commit_delay,0,,Sets the delay in microseconds between transaction commit and flushing WAL to disk.,0
+commit_siblings,5,,Sets the minimum concurrent open transactions before performing commit_delay.,5
+config_file,/home/postgres/tmp_master_dir_polardb_pg_1100_bld/postgresql.conf,,Sets the server's main configuration file.,/home/postgres/tmp_master_dir_polardb_pg_1100_bld/postgresql.conf
+constraint_exclusion,partition,,Enables the planner to use constraints to optimize queries.,partition
+cpu_index_tuple_cost,0.005,,Sets the planner's estimate of the cost of processing each index entry during an index scan.,0.005
+cpu_operator_cost,0.0025,,Sets the planner's estimate of the cost of processing each operator or function call.,0.0025
+cpu_tuple_cost,0.01,,Sets the planner's estimate of the cost of processing each tuple (row).,0.01
+cursor_tuple_fraction,0.1,,Sets the planner's estimate of the fraction of a cursor's rows that will be retrieved.,0.1
+data_checksums,off,,Shows whether data checksums are turned on for this cluster.,off
+data_directory,/home/postgres/tmp_master_dir_polardb_pg_1100_bld,,Sets the server's data directory.,/home/postgres/tmp_master_dir_polardb_pg_1100_bld
+data_directory_mode,0700,,Mode of the data directory.,448
+data_sync_retry,off,,Whether to continue running after a failure to sync data files.,off
+DateStyle,"ISO, MDY",,Sets the display format for date and time values.,"ISO, MDY"
+db_user_namespace,off,,Enables per-database user names.,off
+deadlock_timeout,1000,ms,Sets the time to wait on a lock before checking for deadlock.,1000
+debug_assertions,off,,Shows whether the running server has assertion checks enabled.,off
+debug_deadlocks,off,,Dumps information about all current locks when a deadlock timeout occurs.,off
+debug_pretty_print,on,,Indents parse and plan tree displays.,on
+debug_print_parse,off,,Logs each query's parse tree.,off
+debug_print_plan,off,,Logs each query's execution plan.,off
+debug_print_rewritten,off,,Logs each query's rewritten parse tree.,off
+default_statistics_target,100,,Sets the default statistics target.,100
+default_tablespace,"",,Sets the default tablespace to create tables and indexes in.,""
+default_text_search_config,pg_catalog.english,,Sets default text search configuration.,pg_catalog.english
+default_transaction_deferrable,off,,Sets the default deferrable status of new transactions.,off
+default_transaction_isolation,read committed,,Sets the transaction isolation level of each new transaction.,read committed
+default_transaction_read_only,off,,Sets the default read-only status of new transactions.,off
+default_with_oids,off,,Create new tables with OIDs by default.,off
+dynamic_library_path,$libdir,,Sets the path for dynamically loadable modules.,$libdir
+dynamic_shared_memory_type,posix,,Selects the dynamic shared memory implementation used.,posix
+effective_cache_size,262144,8kB,Sets the planner's assumption about the total size of the data caches.,262144
+effective_io_concurrency,1,,Number of simultaneous requests that can be handled efficiently by the disk subsystem.,1
+enable_bitmapscan,on,,Enables the planner's use of bitmap-scan plans.,on
+enable_gathermerge,on,,Enables the planner's use of gather merge plans.,on
+enable_hashagg,on,,Enables the planner's use of hashed aggregation plans.,on
+enable_hashjoin,on,,Enables the planner's use of hash join plans.,on
+enable_indexonlyscan,on,,Enables the planner's use of index-only-scan plans.,on
+enable_indexscan,on,,Enables the planner's use of index-scan plans.,on
+enable_material,on,,Enables the planner's use of materialization.,on
+enable_mergejoin,on,,Enables the planner's use of merge join plans.,on
+enable_nestloop,on,,Enables the planner's use of nested-loop join plans.,on
+enable_parallel_append,on,,Enables the planner's use of parallel append plans.,on
+enable_parallel_hash,on,,Enables the planner's use of parallel hash plans.,on
+enable_partition_pruning,on,,Enable plan-time and run-time partition pruning.,on
+enable_partitionwise_aggregate,off,,Enables partitionwise aggregation and grouping.,off
+enable_partitionwise_join,off,,Enables partitionwise join.,off
+enable_seqscan,on,,Enables the planner's use of sequential-scan plans.,on
+enable_sort,on,,Enables the planner's use of explicit sort steps.,on
+enable_tidscan,on,,Enables the planner's use of TID scan plans.,on
+escape_string_warning,on,,Warn about backslash escapes in ordinary string literals.,on
+event_source,PostgreSQL,,Sets the application name used to identify PostgreSQL messages in the event log.,PostgreSQL
+exit_on_error,off,,Terminate session on any error.,off
+external_pid_file,"",,Writes the postmaster PID to the specified file.,
+extra_float_digits,0,,Sets the number of digits displayed for floating-point values.,0
+force_parallel_mode,off,,Forces use of parallel query facilities.,off
+from_collapse_limit,8,,Sets the FROM-list size beyond which subqueries are not collapsed.,8
+fsync,off,,Forces synchronization of updates to disk.,off
+full_page_writes,on,,Writes full pages to WAL when first modified after a checkpoint.,on
+geqo,on,,Enables genetic query optimization.,on
+geqo_effort,5,,GEQO: effort is used to set the default for other GEQO parameters.,5
+geqo_generations,0,,GEQO: number of iterations of the algorithm.,0
+geqo_pool_size,0,,GEQO: number of individuals in the population.,0
+geqo_seed,0,,GEQO: seed for random path selection.,0
+geqo_selection_bias,2,,GEQO: selective pressure within the population.,2
+geqo_threshold,12,,Sets the threshold of FROM items beyond which GEQO is used.,12
+gin_fuzzy_search_limit,0,,Sets the maximum allowed result for exact search by GIN.,0
+gin_pending_list_limit,4096,kB,Sets the maximum size of the pending list for GIN index.,4096
+hba_file,/home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_hba.conf,,"Sets the server's ""hba"" configuration file.",/home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_hba.conf
+hot_standby,on,,Allows connections and queries during recovery.,on
+hot_standby_feedback,off,,Allows feedback from a hot standby to the primary that will avoid query conflicts.,off
+huge_pages,try,,Use of huge pages on Linux or Windows.,try
+ident_file,/home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_ident.conf,,"Sets the server's ""ident"" configuration file.",/home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_ident.conf
+idle_in_transaction_session_timeout,0,ms,Sets the maximum allowed duration of any idling transaction.,0
+ignore_checksum_failure,off,,Continues processing after a checksum failure.,off
+ignore_system_indexes,off,,Disables reading from system indexes.,off
+integer_datetimes,on,,Datetimes are integer based.,on
+IntervalStyle,postgres,,Sets the display format for interval values.,postgres
+jit,off,,Allow JIT compilation.,off
+jit_above_cost,100000,,Perform JIT compilation if query is more expensive.,100000
+jit_debugging_support,off,,Register JIT compiled function with debugger.,off
+jit_dump_bitcode,off,,Write out LLVM bitcode to facilitate JIT debugging.,off
+jit_expressions,on,,Allow JIT compilation of expressions.,on
+jit_inline_above_cost,500000,,Perform JIT inlining if query is more expensive.,500000
+jit_optimize_above_cost,500000,,Optimize JITed functions if query is more expensive.,500000
+jit_profiling_support,off,,Register JIT compiled function with perf profiler.,off
+jit_provider,llvmjit,,JIT provider to use.,llvmjit
+jit_tuple_deforming,on,,Allow JIT compilation of tuple deforming.,on
+join_collapse_limit,8,,Sets the FROM-list size beyond which JOIN constructs are not flattened.,8
+krb_caseins_users,off,,Sets whether Kerberos and GSSAPI user names should be treated as case-insensitive.,off
+krb_server_keyfile,FILE:/home/postgres/tmp_basedir_polardb_pg_1100_bld/etc/krb5.keytab,,Sets the location of the Kerberos server key file.,FILE:/home/postgres/tmp_basedir_polardb_pg_1100_bld/etc/krb5.keytab
+lc_collate,en_US.UTF-8,,Shows the collation order locale.,en_US.UTF-8
+lc_ctype,en_US.UTF-8,,Shows the character classification and case conversion locale.,en_US.UTF-8
+lc_messages,en_US.UTF-8,,Sets the language in which messages are displayed.,en_US.UTF-8
+lc_monetary,en_US.UTF-8,,Sets the locale for formatting monetary amounts.,en_US.UTF-8
+lc_numeric,en_US.UTF-8,,Sets the locale for formatting numbers.,en_US.UTF-8
+lc_time,en_US.UTF-8,,Sets the locale for formatting date and time values.,en_US.UTF-8
+listen_addresses,localhost,,Sets the host name or IP address(es) to listen to.,localhost
+lo_compat_privileges,off,,Enables backward compatibility mode for privilege checks on large objects.,off
+local_preload_libraries,"",,Lists unprivileged shared libraries to preload into each backend.,""
+lock_timeout,0,ms,Sets the maximum allowed duration of any wait for a lock.,0
+log_autovacuum_min_duration,-1,ms,Sets the minimum execution time above which autovacuum actions will be logged.,-1
+log_checkpoints,off,,Logs each checkpoint.,off
+log_connections,off,,Logs each successful connection.,off
+log_destination,polar_multi_dest,,Sets the destination for server log output.,polar_multi_dest
+log_directory,log,,Sets the destination directory for log files.,log
+log_disconnections,off,,"Logs end of a session, including duration.",off
+log_duration,off,,Logs the duration of each completed SQL statement.,off
+log_error_verbosity,default,,Sets the verbosity of logged messages.,default
+log_executor_stats,off,,Writes executor performance statistics to the server log.,off
+log_file_mode,0600,,Sets the file permissions for log files.,384
+log_filename,postgresql-%Y-%m-%d_%H%M%S.log,,Sets the file name pattern for log files.,postgresql-%Y-%m-%d_%H%M%S.log
+log_hostname,off,,Logs the host name in the connection logs.,off
+log_line_prefix,%m [%p] [%P] ,,Controls information prefixed to each log line.,%m [%p] [%P] 
+log_lock_waits,off,,Logs long lock waits.,off
+log_min_duration_statement,-1,ms,Sets the minimum execution time above which statements will be logged.,-1
+log_min_error_statement,error,,Causes all statements generating error at or above this level to be logged.,error
+log_min_messages,warning,,Sets the message levels that are logged.,warning
+log_parser_stats,off,,Writes parser performance statistics to the server log.,off
+log_planner_stats,off,,Writes planner performance statistics to the server log.,off
+log_replication_commands,off,,Logs each replication command.,off
+log_rotation_age,1440,min,Automatic log file rotation will occur after N minutes.,1440
+log_rotation_size,10240,kB,Automatic log file rotation will occur after N kilobytes.,10240
+log_statement,ddl,,Sets the type of statements logged.,ddl
+log_statement_stats,off,,Writes cumulative performance statistics to the server log.,off
+log_temp_files,-1,kB,Log the use of temporary files larger than this number of kilobytes.,-1
+log_timezone,Asia/Shanghai,,Sets the time zone to use in log messages.,Asia/Shanghai
+log_truncate_on_rotation,off,,Truncate existing log files of same name during log rotation.,off
+logging_collector,off,,Start a subprocess to capture stderr output and/or csvlogs into log files.,off
+maintenance_work_mem,1048576,kB,Sets the maximum memory to be used for maintenance operations.,1048576
+max_connections,100,,Sets the maximum number of concurrent connections.,100
+max_files_per_process,1000,,Sets the maximum number of simultaneously open files for each server process.,1000
+max_function_args,100,,Shows the maximum number of function arguments.,100
+max_identifier_length,63,,Shows the maximum identifier length.,63
+max_index_keys,32,,Shows the maximum number of index keys.,32
+max_locks_per_transaction,64,,Sets the maximum number of locks per transaction.,64
+max_logical_replication_workers,32,,Maximum number of logical replication worker processes.,32
+max_parallel_maintenance_workers,2,,Sets the maximum number of parallel processes per maintenance operation.,2
+max_parallel_workers,8,,Sets the maximum number of parallel workers that can be active at one time.,8
+max_parallel_workers_per_gather,8,,Sets the maximum number of parallel processes per executor node.,8
+max_pred_locks_per_page,2,,Sets the maximum number of predicate-locked tuples per page.,2
+max_pred_locks_per_relation,-2,,Sets the maximum number of predicate-locked pages and tuples per relation.,-2
+max_pred_locks_per_transaction,64,,Sets the maximum number of predicate locks per transaction.,64
+max_prepared_transactions,0,,Sets the maximum number of simultaneously prepared transactions.,0
+max_replication_slots,64,,Sets the maximum number of simultaneously defined replication slots.,64
+max_slot_wal_keep_size,-1,MB,Sets the maximum WAL size that can be reserved by replication slots.,-1
+max_stack_depth,2048,kB,"Sets the maximum stack depth, in kilobytes.",2048
+max_standby_archive_delay,30000,ms,Sets the maximum delay before canceling queries when a hot standby server is processing archived WAL data.,30000
+max_standby_streaming_delay,30000,ms,Sets the maximum delay before canceling queries when a hot standby server is processing streamed WAL data.,30000
+max_sync_workers_per_subscription,2,,Maximum number of table synchronization workers per subscription.,2
+max_wal_senders,64,,Sets the maximum number of simultaneously running WAL sender processes.,64
+max_wal_size,1024,MB,Sets the WAL size that triggers a checkpoint.,1024
+max_worker_processes,24,,Maximum number of concurrent worker processes.,24
+min_parallel_index_scan_size,1024,8kB,Sets the minimum amount of index data for a parallel scan.,1024
+min_parallel_table_scan_size,1024,8kB,Sets the minimum amount of table data for a parallel scan.,1024
+min_wal_size,80,MB,Sets the minimum size to shrink the WAL to.,80
+old_snapshot_threshold,-1,min,Time before a snapshot is too old to read pages changed after the snapshot was taken.,-1
+operator_precedence_warning,off,,Emit a warning for constructs that changed meaning since PostgreSQL 9.4.,off
+parallel_leader_participation,on,,Controls whether Gather and Gather Merge also run subplans.,on
+parallel_setup_cost,1000,,Sets the planner's estimate of the cost of starting up worker processes for parallel query.,1000
+parallel_tuple_cost,0.1,,Sets the planner's estimate of the cost of passing each tuple (row) from worker to master backend.,0.1
+password_encryption,md5,,Chooses the algorithm for encrypting passwords.,md5
+pg_stat_statements.enable_superuser_track,off,,Selects whether commands executed by superuser are tracked by pg_stat_statements.,off
+pg_stat_statements.max,5000,,Sets the maximum number of statements tracked by pg_stat_statements.,5000
+pg_stat_statements.save,off,,Save pg_stat_statements statistics across server shutdowns.,off
+pg_stat_statements.track,top,,Selects which statements are tracked by pg_stat_statements.,top
+pg_stat_statements.track_utility,off,,Selects whether utility commands are tracked by pg_stat_statements.,off
+polar_async_buffer_slot_size,8,,polar_async_buffer_slot_size.,8
+polar_async_ddl_lock_replay_worker_num,1,,Async ddl lock replay worker count.,1
+polar_audit_log_flush_timeout,30000,ms,Sets the audit log timeout to flush.,30000
+polar_auditlog_max_query_length,8192,,polardb max audit log length,8192
+polar_auto_cascade_extensions,"postgis, postgis_topology, postgis_sfcgal, address_standardizer, address_standardizer_data_us, postgis_tiger_geocoder, pgrouting",,Changes the list of extensions that are automatically cascaded.,"postgis, postgis_topology, postgis_sfcgal, address_standardizer, address_standardizer_data_us, postgis_tiger_geocoder, pgrouting"
+polar_available_extensions,"",,Changes the list of extensions that are allowed to create by polar users.,
+polar_bg_replay_batch_size,20000,,Batch size of each bgwriter replay run.,20000
+polar_bgwriter_batch_size_flushlist,100,,Sets the batch size when bgwriter get buffer from flush list,100
+polar_bgwriter_max_batch_size,5000,,Sets the maximum batch size when bgwriter flush buffer from flush list,5000
+polar_bgwriter_sleep_lsn_lag,100,MB,polar_bgwriter_sleep_lsn_lag,100
+polar_bt_write_page_buffer_size,0,8kB,Sets the size of btbuild index page write buffer size.,0
+polar_buffer_copy_lsn_lag_with_cons_lsn,100,MB,Sets the max lag between consistent lsn and oldest lsn when a buffer should be copied,100
+polar_buffer_copy_min_modified_count,5,,Sets the minimum modified count when a buffer should be copied,5
+polar_bulk_extend_size,512,8kB,"Sets the size of preallocate file, 0 (turning this feature off).",512
+polar_bulk_read_size,16,8kB,"Sets size of bulk read, 0 (turning this feature off).",16
+polar_check_checkpoint_legal_interval,100,ms,Sets the maximum interval between check the checkpoint legal or not.,100
+polar_clog_max_local_cache_segments,128,,Set the maximum number of local segment file cache for clog,128
+polar_clog_slot_size,512,,polar_clog_slot_size.,512
+polar_cluster_passphrase_command,"",,Command to obtain passphrases for database encryption.,""
+polar_commit_ts_max_local_cache_segments,32,,Set the maximum number of local segment file cache for commit_ts,32
+polar_committs_buffer_slot_size,16,,polar_committs_buffer_slot_size.,16
+polar_copy_buffers,16384,8kB,Set the size of copy buffer.,16384
+polar_crash_recovery_rto,0,s,Sets the polar crash recovery rto.,0
+polar_crash_recovery_rto_delay_count,1,ms,Sets the polar crash recovery delay time.,1
+polar_crash_recovery_rto_threshold,0.8,,Sets the polar crash recovery threshold time to delay.,0.8
+polar_create_table_with_full_replica_identity,on,,polar create table with full replica identity.,on
+polar_csn_elog_panic_enable,on,,enable polar csn ,on
+polar_csn_enable,on,,enable polar csn snapshot,on
+polar_csn_xid_snapshot,off,,enable polar xid snapshot under csn mode,off
+polar_csnlog_max_local_cache_segments,256,,Set the maximum number of local segment file cache for csnlog,256
+polar_csnlog_slot_size,8192,,polar_csnlog_slot_size.,8192
+polar_csnlog_upperbound_enable,off,,enable polar csn upperbound cache,off
+polar_data_encryption_cipher,off,,Specify encryption algorithms to use.,off
+polar_datadir,"",,polardb datadir.,""
+polar_datamax_archive_timeout,60000,ms,Time between archive wal,60000
+polar_datamax_prealloc_walfile_timeout,30000,ms,Time between prealloc wal file in datamax mode,30000
+polar_datamax_remove_archivedone_wal_timeout,60000,ms,Time between remove archive done wal,60000
+polar_datamax_save_replication_slots_timeout,300000,ms,Time between save replication slots in datamax mode,300000
+polar_delay_dml_lsn_lag_threshold,10485760,kB,Sets the polar dml delay size for replay.,10485760
+polar_delay_dml_option,off,,Delay DML for once or each tuple,off
+polar_disk_name,"",,The virtual disk name privided by polarFS.,""
+polar_dma_file,/home/postgres/tmp_master_dir_polardb_pg_1100_bld/polar_dma.conf,,"Sets the server's ""polar_dma"" configuration file.",/home/postgres/tmp_master_dir_polardb_pg_1100_bld/polar_dma.conf
+polar_enable_create_table_as_bulk_insert,on,,Enable CREATE MATERIALIZED VIEW / CREATE TALBE AS / SELECT INTO to buffer tuples and insert them in batch,on
+polar_enable_flashback_drop,off,,whether to open flashback_drop,off
+polar_enable_inline_cte,off,,Enables the planner' to inline a CTE.,off
+polar_enable_master_pbp,on,,Enable master persisted buffer pool.,on
+polar_enable_master_recovery_bulk_extend,on,,A switch to control whether to use xlog bulk extend opt during recovery on master.,on
+polar_enable_parallel_bgwriter,on,,Enables the use of parallel background writer.,on
+polar_enable_px,off,,Enable polar_enable_px.,off
+polar_enable_semi_sync_optimization,on,,enable semi-synchronous replication optimization under network jitter.,on
+polar_enable_shared_server,off,,polar enable shared server mode. Depend on global guc polar_enable_shm_aset.,off
+polar_enable_shared_server_hang,off,,polar enable shared server hang without abort.,off
+polar_enable_shared_server_log,off,,"polar enable shared server log. If off, do not print log.",off
+polar_enable_shared_server_testmode,off,,polar enable shared server testmode for special case.,off
+polar_enable_standby_pbp,on,,Enable standby persisted buffer pool.,on
+polar_enable_xact_split,on,,Switch to decide whether transactions rw-split support is on.,on
+polar_fast_recovery_area_rotation,180,min,"Sets the maximum time to keep fast recovery area include clog, xact snapshot and flashback point files.",180
+polar_flashback_log_bgwrite_delay,100,ms,Flashback log background writer sleep time between rounds.,100
+polar_flashback_log_flush_max_size,5120,kB,Flashback log background writer will flush log no more than N kilobytes.,5120
+polar_flashback_log_insert_list_delay,100,ms,Flashback log list background sleep time between rounds.,100
+polar_flashback_log_insert_list_max_num,10240,,Flashback log background inserter will insert no more than N records.,10240
+polar_flashback_log_insert_locks,8,,Set the number of locks for flashback log buffer insert,8
+polar_flashback_log_keep_segments,8,,"Sets the number of flashback log files held, the files will be recycled.",8
+polar_flashback_log_sync_buf_timeout,0,ms,The process wait N ms before background worker inserting flashback log record into buffer.,0
+polar_flashback_logindex_bloom_blocks,512,,Set the number of blocks for flashback logindex bloom filter,512
+polar_flashback_logindex_mem_size,64,MB,Set the size for flashback logindex memory table,64
+polar_flashback_logindex_queue_buffers,8,MB,Sets the size (MB) of log queue buffer used to keep flashback logindex. 0 means disable flashback logindex queue,8
+polar_flashback_point_segments,16,,Sets the minimum WAL distance between automatic flashback point.,16
+polar_flashback_point_timeout,300,s,Sets the minimum time between automatic flashback point.,300
+polar_forbidden_extensions,"",,Changes the list of extensions that are't allowed to create by polar users.,
+polar_force_change_checkpoint,off,,Force to recovery from redo point set in pg_control,off
+polar_fullpage_keep_segments,16,,Sets the number of FULLPAGE files held for replica.,16
+polar_high_priority_replication_standby_names,standby1,,Comma-separated list of high priority replication standby names.,standby1
+polar_hostid,1,,polardb hostid.,1
+polar_huge_pages_reserved,512,8kB,Keep a bias with polar_shm_limit to avoid over-allocating.,512
+polar_index_bulk_extend_size,128,8kB,"Sets the size of preallocate file for index, 0 (turning this feature off).",128
+polar_index_create_bulk_extend_size,512,8kB,"Sets the size of preallocate file for index create, 0 (turning this feature off).",512
+polar_instance_name,"",,"PolarDB instance name, the max length is 63.",""
+polar_internal_allowed_extensions,"pg_stat_statements,btree_gin,btree_gist,citext,cube,dict_int,earthdistance,hstore,intagg,intarray,isn,ltree,pgcrypto,pgrowlocks,pg_prewarm,pg_trgm,sslinfo,tablefunc,unaccent,fuzzystrmatch,pgstattuple,pg_buffercache,""uuid-ossp"",bloom,smlar,vector,plpgsql,plperl,postgis,postgis_raster,postgis_topology,postgis_sfcgal,fuzzystrmatch,address_standardizer,address_standardizer_data_us,postgis_tiger_geocoder,polar_csn,polar_monitor,polar_monitor_preload,polar_px",,Changes the list of internal extensions that are allowed to create by polar users.,"pg_stat_statements,btree_gin,btree_gist,citext,cube,dict_int,earthdistance,hstore,intagg,intarray,isn,ltree,pgcrypto,pgrowlocks,pg_prewarm,pg_trgm,sslinfo,tablefunc,unaccent,fuzzystrmatch,pgstattuple,pg_buffercache,""uuid-ossp"",bloom,smlar,vector,plpgsql,plperl,postgis,postgis_raster,postgis_topology,postgis_sfcgal,fuzzystrmatch,address_standardizer,address_standardizer_data_us,postgis_tiger_geocoder,polar_csn,polar_monitor,polar_monitor_preload,polar_px"
+polar_internal_allowed_roles,"pg_read_all_stats,pg_stat_scan_tables,pg_signal_backend,pg_polar_superuser",,Mark roles that polar_superuser has privs to.,"pg_read_all_stats,pg_stat_scan_tables,pg_signal_backend,pg_polar_superuser"
+polar_internal_shared_preload_libraries,"polar_vfs,polar_worker,polar_resource_group,polar_monitor_preload,pg_stat_statements,polar_stat_sql",,Lists polardb internal shared libraries with high priority to preload into server.,"polar_vfs,polar_worker,polar_resource_group,polar_monitor_preload,pg_stat_statements,polar_stat_sql"
+polar_io_read_throughtput_userset,0,MB,Set the io read throughtput by users.,0
+polar_logical_repl_workers_reserved_for_superuser,16,,Sets the num of replication workers reserved for superuser.,16
+polar_logindex_bloom_blocks,1024,,Set the number of blocks for logindex bloom filter,1024
+polar_logindex_max_local_cache_segments,32,,Set the maximum number of local segment file cache for logindex,32
+polar_logindex_mem_size,512,MB,Set the size for logindex memory table,512
+polar_logindex_table_batch_size,100,,Set the batch size of logindex table to be flushed in background process.,100
+polar_low_priority_replication_standby_names,"",,Comma-separated list of low priority replication standby names.,""
+polar_max_auditlog_files,20,,A switch to control number of max pg audit log files,20
+polar_max_dsm_request_size,0,kB,PolarDB max DSM memory.,0
+polar_max_hashagg_mem,0,kB,PolarDB max HashAggregation operator memory.,0
+polar_max_log_files,20,,A switch to control number of max pg sys log files,20
+polar_max_logindex_files,80,,A switch to control number of max logindex files.This param is used when truncate logindex file,80
+polar_max_non_super_conns,-1,,A switch to control number of max connections allowed for non-super users,-1
+polar_max_normal_backends_factor,1.2,,A switch to control max allowed normal backends based on max_connections,1.2
+polar_max_recursiveunion_mem,0,kB,PolarDB max RecursiveUnion operator memory.,0
+polar_max_setop_mem,0,kB,PolarDB max SetOp operator memory.,0
+polar_max_slowlog_files,20,,A switch to control number of max pg slow log files,20
+polar_max_subplan_mem,0,kB,PolarDB max Subplan operator memory.,0
+polar_max_super_conns,-1,,A switch to control number of max connections allowed for super users,-1
+polar_min_bulk_extend_table_size,1024,8kB,"Sets the minimum amount of table data for bulk extend, bulk extend is enabled only when the table size >= polar_min_bulk_extend_table_size",1024
+polar_monitor.backend_type_max,1024,,Sets the maximum number of backend type.,1024
+polar_monitor.mcxt_timeout,1000,,configure for the polar_mcxt_view_hook waitting time,1000
+polar_monitor.mcxt_view,on,,on/off the polar_mcxt_view_hook,on
+polar_multixact_max_local_cache_segments,32,,Set the maximum number of local segment file cache for multixact,32
+polar_mxact_member_buffer_slot_size,16,,polar_mxact_member_buffer_slot_size.,16
+polar_mxact_offset_buffer_slot_size,8,,polar_mxact_offset_buffer_slot_size.,8
+polar_nblocks_cache_mode,scan,,Number of Blocks cache mode,scan
+polar_num_of_sysloggers,3,,Sets the number of syslogger process.,3
+polar_oldserxid_buffer_slot_size,16,,polar_oldserxid_buffer_slot_size.,16
+polar_openfile_with_readonly_in_replica,off,,open datafile with readonly mode in replica,off
+polar_parallel_bgwriter_check_interval,10,s,The interval to check whether the server has enough parallel background writers.,10
+polar_parallel_bgwriter_delay,10,ms,Parallel background writer sleep time between rounds.,10
+polar_parallel_bgwriter_enable_dynamic,on,,Start or stop extra parallel background writer dynamically.,on
+polar_parallel_bgwriter_workers,5,,Set the max number of the parallel background workers.,5
+polar_parallel_new_bgwriter_threshold_lag,1024,MB,"Set the threshold to add a new bgwriter, if the consistent lag greater than this lag #polar_parallel_new_bgwriter_threshold_time, we will add a new parallel background writer.",1024
+polar_parallel_new_bgwriter_threshold_time,10,s,"Set the threshold to add a new bgwriter, if the consistent lag greater than this lag #polar_parallel_new_bgwriter_threshold_time, we will add a new parallel background writer.",10
+polar_parallel_replay_proc_num,8,,Set the number of processes to do parallel replay,8
+polar_parallel_replay_task_queue_depth,1024,,Set the task queue depth when do parallel replay,1024
+polar_partition_recursive_reloptions,px_workers,,Reloptions to be recursively set on partitioned tables.,px_workers
+polar_primary_dml_delay,1,ms,Sets the polar dml delay for replay.,1
+polar_priority_replication_force_wait,off,,"In priority replication, whether wait if all higher level standbys are down.",off
+polar_priority_replication_mode,any,,Sets priority replication mode.,any
+polar_px_allow_pagemode_bitmapscan,on,,This guc allows pagemode when heap bitmapscan in PX.,on
+polar_px_allow_pagemode_seqscan,on,,This guc allows pagemode when heap bitmapscan in PX.,on
+polar_px_allow_strat_bitmapscan,off,,This guc allows strat when heap bitmapscan in PX.,off
+polar_px_allow_strat_seqscan,on,,This guc allows strat when heap seqscan in PX.,on
+polar_px_allow_sync_bitmapscan,off,,This guc allows sync when heap bitmapscan in PX.,off
+polar_px_allow_sync_seqscan,on,,This guc allows sync when heap seqscan in PX.,on
+polar_px_cached_px_workers,0,,Sets the maximum number of px workers to cache between statements.,0
+polar_px_dop_per_node,1,,The degree of parallelism per dbid.,1
+polar_px_enable_adps,off,,Enable dynamic seqscan,off
+polar_px_enable_adps_explain_analyze,off,,Enable dynamic seqscan explain analyze details,off
+polar_px_enable_create_table_as,on,,This GUC allows PX to support create table as in parallel.,on
+polar_px_enable_cte,on,,Enable px cte.,on
+polar_px_enable_delete,off,,This guc allows parallel delete.,off
+polar_px_enable_dispatch_async,on,,enable dispatch async mode,on
+polar_px_enable_executor,on,,Enable px_enable_executor.,on
+polar_px_enable_insert_from_tableless,off,,This guc allows insert ... from tableless on px.,off
+polar_px_enable_insert_order_sensitive,on,,This guc allows parallel insert need ordered.,on
+polar_px_enable_insert_partition_table,off,,This guc allows Insert partition table select on px.,off
+polar_px_enable_insert_select,off,,This guc allows Insert....select on px.,off
+polar_px_enable_join,on,,Enable px_enable_join.,on
+polar_px_enable_left_index_nestloop_join,off,,This guc allows px support left outer index nestloop join.,off
+polar_px_enable_opfamily_for_distribution,on,,Allow to use pg_opfamily for hash redistribute.,on
+polar_px_enable_partitionwise_join,off,,This guc allows partition wise join in PX.,off
+polar_px_enable_print,on,,Enable px print query string on px.,on
+polar_px_enable_relsize_collection,off,,This guc enables relsize collection when stats are not present. If disabled and stats are not present a default value is used.,off
+polar_px_enable_result_hash_filter,on,,This guc allows px support hash filter in result,on
+polar_px_enable_spi_read_all_namespaces,off,,Allow px workers to read all tables in SPI.,off
+polar_px_enable_subquery,on,,Enable px_enable_subquery.,on
+polar_px_enable_update,off,,This guc allows parallel update.,off
+polar_px_enable_window_function,on,,Enable px window function.,on
+polar_px_explain_memory_verbosity,suppress,,Experimental feature: show memory account usage in EXPLAIN ANALYZE.,suppress
+polar_px_ignore_function,"1574,1575,1576,1765,3078,4032",,Add the PolarDB PX functions oids that should be ignored.,"1574,1575,1576,1765,3078,4032"
+polar_px_ignore_unusable_nodes,off,,Whether PolarDB PX skip unusable nodes,off
+polar_px_log_dispatch_stats,off,,Writes dispatcher performance statistics to the server log.,off
+polar_px_max_plan_size,0,kB,Sets the maximum size of a plan to be dispatched.,0
+polar_px_max_slices,50,,Maximum slices for a single query,50
+polar_px_motion_cost_per_row,0,,Sets the planner's estimate of the cost of moving a row between worker processes.,0
+polar_px_nodes,"",,"Sets px worker nodes, separated by comma",""
+polar_px_optimizer_enable_bitmapscan,on,,Enables the planner's use of bitmap-scan plans.,on
+polar_px_optimizer_enable_brinscan,on,,Enables the planner's use of brin index-scan plans.,on
+polar_px_optimizer_enable_dynamicshareindexscan,on,,Enables the planner's use of partition share index scan plans.,on
+polar_px_optimizer_enable_indexonlyscan,on,,Enables the planner's use of indexonly-scan plans.,on
+polar_px_optimizer_enable_indexscan,on,,Enables the planner's use of index-scan plans.,on
+polar_px_optimizer_enable_relsize_collection,off,,This guc enables relsize collection when stats are not present. If disabled and stats are not present a default value is used.,off
+polar_px_optimizer_enable_seqscan,on,,Enables the planner's use of sequential-scan plans.,on
+polar_px_optimizer_enable_seqsharescan,on,,Enables the planner's use of sequential-share-scan plans.,on
+polar_px_optimizer_enable_shareindexscan,on,,Enables the planner's use of share index scan plans.,on
+polar_px_optimizer_remove_superfluous_order,on,,This guc remove superfluous order,on
+polar_px_optimizer_use_px_allocators,off,,Enable px_optimizer_use_px_allocators.,off
+polar_px_scan_unit_size,512,8kB,Sets size of scan unit when using Parallel Execution,512
+polar_px_udpic_enable_ipv6,off,,enable udpic ipv6,off
+polar_px_use_master,off,,Whether PolarDB PX use master,off
+polar_px_use_standby,off,,Whether PolarDB PX use standby,off
+polar_px_version,PolarDB PX version 1.1,,Show the PolarDB PX version.,PolarDB PX version 1.1
+polar_px_wait_lock_timeout,3600000,ms,Sets the maximum time (in milliseconds) to wait on a lock held by PX process.,3600000
+polar_px_worker_connect_timeout,180,s,Maximum time (in seconds) allowed for a new worker process to start or a mirror to respond.,180
+polar_read_ahead_xlog_num,20,8kB,How many xlog pages are read ahead. A value of 0 turns off this feature.,20
+polar_recovery_bulk_extend_size,512,8kB,Sets the size for bulk file extension while replaying xlog on standby (0 turns this feature off).,512
+polar_rel_size_cache_blocks,2,,Set the number of blocks to record relation size cache,2
+polar_release_date,20240430,,Show the server release date.,20240430
+polar_rename_wal_ready_file,"",,rename file under /pfs-disk/data/pg_wal/archive_status from .ready to .done,""
+polar_repl_slots_reserved_for_superuser,32,,Sets the num of replication slots reserved for superuser.,32
+polar_replica_redo_gap_limit,1048576,kB,"gap limit between local redoptr and shared redoptr for replica, copy base dirs and other trans status log files when gap exceeds the limit",1048576
+polar_reserved_polar_super_conns,8,,A switch to control number of max connections allowed for polar_super users,8
+polar_ring_buffer_vacuum,128,MB,polar_ring_buffer_vacuum,128
+polar_save_stack_info_level,fatal,,print stack info if error level is above stack info level.,fatal
+polar_semi_sync_max_backoff_window,1024000,ms,Sets the maximum value of semi-synchronous replication backoff window.,1024000
+polar_semi_sync_min_backoff_window,8000,ms,Sets the minimum initial value of the semi-synchronous replication backoff window.,8000
+polar_semi_sync_observation_window,300000,ms,The maximum window time to observe whether the network is healthy.,300000
+polar_shm_limit,0,8kB,Sets the size of hugepage used by the server.,0
+polar_ss_backend_idle_timeout,180,s,"Sets the maximum allowed idle timeout of shared server(backend). If it reaches threshold, it is shut down peacefully.",180
+polar_ss_backend_keepalive_timeout,0,s,"Sets the maximum allowed killalive timeout of shared server(backend) since created. If it reaches threshold, it is shut down peacefully.",0
+polar_ss_backend_max_count,-5,,Sets max count of total shared backend.,-5
+polar_ss_backend_pool_min_size,0,,Sets min size of shared backend pool without idle timeout considering,0
+polar_ss_client_schedule_policy,load-balancing,,"Client schedule policy between dispatchers: round-robin, random, load-balancing",load-balancing
+polar_ss_db_role_setting_max_size,100,,Sets max rolw count of pg_db_role_setting. Only valid when polar_enable_shared_server is on.,100
+polar_ss_dedicated_dbuser_names,"",,"db/user will use dedicated mode in shared server, format like 'd1/*,*/u1,d2/u2'",""
+polar_ss_dedicated_extension_names,"",,"extension will use dedicated mode in shared server, extension name from pg_proc.probin",""
+polar_ss_dedicated_guc_names,"",,guc will not session cached in shared server,""
+polar_ss_dispatcher_count,2,,Sets count of connection dispatcher.,2
+polar_ss_session_schedule_policy,fifo,,"Session schedule policy between backend: fifo, random, disposable, dedicated",fifo
+polar_ss_session_wait_timeout,5000,ms,Sets the maximum allowed wait time(milliseconds) of any session for new backend.,5000
+polar_ss_shared_memory_size,1024,kB,Sets the shared memory for polar shared server,1024
+polar_standby_feedback,off,,polar standby use this parameter to make hot_standby_feedback off,off
+polar_stat_sql.enable_gather_plan_info,off,,Whether to gather plan nodes info,off
+polar_stat_sql.enable_getrusage,off,,Whether to enable getuage,off
+polar_stat_sql.enable_plan_need_time,off,,Whether to gather plan nodes need time information,off
+polar_stat_sql.enable_qps_monitor,off,,Selects whether to monitor qps ,off
+polar_stat_sql.enable_stat,off,,Whether to enable the extension,off
+polar_stat_sql.linux_hz,500000,,Inform polar_stat_sql of the linux CONFIG_HZ config option,500000
+polar_stat_sql.sample_rate,0.5,,"Sampling rate. 1 means every query, 0.2 means 1 in five queries",0.5
+polar_stat_sql.save,off,,Save polar statistics for across server shutdowns.,off
+polar_stat_stale_cost,0,,Add some extra cost to reduce the impact of stale statistics 0.01 should be a good value to start with,0
+polar_storage_cluster_name,"",,polar storage cluster name,
+polar_subtrans_buffer_slot_size,32,,polar_subtrans_buffer_slot_size.,32
+polar_supported_extensions,"pg_stat_statements
+btree_gin
+btree_gist
+citext
+cube
+dict_int
+earthdistance
+hstore
+intagg
+intarray
+isn
+ltree
+pgcrypto
+pgrowlocks
+pg_prewarm
+pg_trgm
+sslinfo
+tablefunc
+unaccent
+fuzzystrmatch
+pgstattuple
+pg_buffercache
+""uuid-ossp""
+bloom
+smlar
+vector
+plpgsql
+plperl
+postgis
+postgis_raster
+postgis_topology
+postgis_sfcgal
+fuzzystrmatch
+address_standardizer
+address_standardizer_data_us
+postgis_tiger_geocoder
+polar_csn
+polar_monitor
+polar_monitor_preload
+polar_px",,The list of supported extensions that are allowed to create by polar users.,
+polar_sync_rep_timeout_break_lsn_lag,8192,B,"Sets the minimal lag between each process and timeout synchronous replication flush or write or apply lsn, in bytes.",8192
+polar_sync_replication_timeout,0,ms,Sets the maximum time to wait for WAL synchronous replication.,0
+polar_temp_relation_file_in_shared_storage,off,,Force temp relation file in remote storage.,off
+polar_trace_heap_scan_flow,off,,Print heap scan debug log if necessary,off
+polar_trace_lock_flow,off,,Print all log when try to acquire or release lock,off
+polar_trace_logindex_messages,log,,Enables logging of logindex-related debugging information.,log
+polar_trace_system_table,off,,Trace locks set on system table,off
+polar_unit_test_mem_size,0,MB,Set additional shared memory size for unit test,0
+polar_version,1.1.20,,Show the PolarDB server version.,1.1.20
+polar_vfs.debug,off,,turn on debug switch or not,off
+polar_vfs.enable_file_size_cache,on,,enable file size cache,on
+polar_vfs.enable_io_time_stat,on,,pfs force mount mode when ro switch rw,on
+polar_vfs.localfs_mode,off,,enter localfs mode,off
+polar_vfs.localfs_test_mode,off,,enter localfs mode,off
+polar_vfs.pfs_force_mount,on,,pfs force mount mode when ro switch rw,on
+polar_wait_before_shutdown_timeout,0,,"PolarDB wait before shutdown timeout, in seconds.",0
+polar_wal_buffer_insert_locks,64,,Set the number of locks for wal buffer insert,64
+polar_wal_pipeline_advance_worker_spin_delay,0,,Set spin delay of advance worker for wal pipeline,0
+polar_wal_pipeline_advance_worker_timeout,10,,Set timeout of advance worker for wal pipeline,10
+polar_wal_pipeline_advance_worker_write_max_size,0,,Set max wal size per advance of advance worker for wal pipeline,0
+polar_wal_pipeline_commit_wait_spin_delay,0,,Set commit wait spin delay for wal pipeline,0
+polar_wal_pipeline_commit_wait_timeout,10000,,Set commit wait timeout for wal pipeline,10000
+polar_wal_pipeline_flush_event_array_size,128,,Set flush event array size for wal pipeline,128
+polar_wal_pipeline_flush_event_slot_size,1024,,Set flush event slot size for wal pipeline,1024
+polar_wal_pipeline_flush_worker_spin_delay,0,,Set spin delay of flush worker for wal pipeline,0
+polar_wal_pipeline_flush_worker_timeout,10000,,Set timeout of flush worker for wal pipeline,10000
+polar_wal_pipeline_mode,2,,Set mode for wal pipeline,2
+polar_wal_pipeline_notify_worker_num,1,,Set the number of notify worker for wal pipeline,1
+polar_wal_pipeline_notify_worker_spin_delay,0,,Set spin delay of notify worker for wal pipeline,0
+polar_wal_pipeline_notify_worker_timeout,10,,Set timeout of notify worker for wal pipeline,10
+polar_wal_pipeline_recent_written_array_size,1048576,,Set recent written array size for wal pipeline,1048576
+polar_wal_pipeline_unflushed_xlog_array_size,1024,,Set unflushed xlog array size for wal pipeline,1024
+polar_wal_pipeline_wait_timeout,10,,Set default wait timeout for wal pipeline,10
+polar_wal_pipeline_write_worker_spin_delay,0,,Set spin delay of write worker for wal pipeline,0
+polar_wal_pipeline_write_worker_timeout,10000,,Set timeout of write worker for wal pipeline,10000
+polar_wal_snd_reserved_for_superuser,32,,Sets the maximum number of walsenders reserved for superuser.,32
+polar_worker.core_file_outdate_time,-1,,outdate time of core file.,-1
+polar_worker.core_file_path,.,,path of core file,.
+polar_worker.core_name_suffix,core,,To assign corefile name.,core
+polar_worker.enable_polar_worker,on,,Starts worker or not.,on
+polar_worker.num_corefile_reserved_new,32,,num of newest reserverd corefile.,32
+polar_worker.num_corefile_reserved_old,32,,num of oldest reserverd corefile.,32
+polar_worker.polar_worker_check_interval,5,s,Sets the interval between polar worker check,5
+polar_worker.prealloc_flashback_log_file_num,2,,Sets the num of how many prealloc flashback log file,2
+polar_worker.prealloc_wal_file_num,2,,Sets the num of how many prealloc wal file,2
+polar_worker.xlog_temp_outdate_time,-1,,outdate time of xlog temp.,-1
+polar_workers_per_flashback_table,5,,Set the max number of the background workers for each flashback table operation.,5
+polar_xact_split_wait_lsn,"",,xact id of current split transaction.,
+polar_xact_split_xids,"",,xact id of current split transaction.,
+polar_xlog_page_buffers,1024,MB,Sets the size of xlog buffer used by startup and backedn in replica and standby mode.,1024
+polar_xlog_queue_buffers,512,MB,Sets the size of xlog queue buffer used to keep xlog meta. 0 means disable xlog buffer,512
+port,5432,,Sets the TCP port the server listens on.,5432
+post_auth_delay,0,s,Waits N seconds on connection startup after authentication.,0
+pre_auth_delay,0,s,Waits N seconds on connection startup before authentication.,0
+quote_all_identifiers,off,,"When generating SQL fragments, quote all identifiers.",off
+random_page_cost,1.1,,Sets the planner's estimate of the cost of a nonsequentially fetched disk page.,1.1
+restart_after_crash,on,,Reinitialize server after backend crash.,on
+row_security,on,,Enable row security.,on
+search_path,"""$user"", public",,Sets the schema search order for names that are not schema-qualified.,"""$user"", public"
+segment_size,131072,8kB,Shows the number of pages per disk file.,131072
+seq_page_cost,0.2,,Sets the planner's estimate of the cost of a sequentially fetched disk page.,0.2
+server_encoding,UTF8,,Sets the server (database) character set encoding.,UTF8
+server_version,11.9,,Shows the server version.,11.9
+server_version_num,110009,,Shows the server version as an integer.,110009
+session_preload_libraries,"",,Lists shared libraries to preload into each backend.,""
+session_replication_role,origin,,Sets the session's behavior for triggers and rewrite rules.,origin
+shared_buffers,131072,8kB,Sets the number of shared memory buffers used by the server.,131072
+shared_preload_libraries,"",,Lists shared libraries to preload into server.,""
+smgr_pool_sweep_times,8,,"Sets the times for smgr pool to clock sweep, 0 means always uses a random cache",8
+smgr_shared_relations,128,,Sets the number of shared relation objects in memory at one time.,128
+ssl,off,,Enables SSL connections.,off
+ssl_ca_file,"",,Location of the SSL certificate authority file.,""
+ssl_cert_file,server.crt,,Location of the SSL server certificate file.,server.crt
+ssl_ciphers,HIGH:MEDIUM:+3DES:!aNULL,,Sets the list of allowed SSL ciphers.,HIGH:MEDIUM:+3DES:!aNULL
+ssl_crl_file,"",,Location of the SSL certificate revocation list file.,""
+ssl_dh_params_file,"",,Location of the SSL DH parameters file.,""
+ssl_ecdh_curve,prime256v1,,Sets the curve to use for ECDH.,prime256v1
+ssl_key_file,server.key,,Location of the SSL server private key file.,server.key
+ssl_passphrase_command,"",,Command to obtain passphrases for SSL.,""
+ssl_passphrase_command_supports_reload,off,,Also use ssl_passphrase_command during server reload.,off
+ssl_prefer_server_ciphers,on,,Give priority to server ciphersuite order.,on
+standard_conforming_strings,on,,Causes '...' strings to treat backslashes literally.,on
+statement_timeout,0,ms,Sets the maximum allowed duration of any statement.,0
+stats_temp_directory,pg_stat_tmp,,Writes temporary statistics files to the specified directory.,pg_stat_tmp
+superuser_reserved_connections,3,,Sets the number of connection slots reserved for superusers.,3
+synchronize_seqscans,on,,Enable synchronized sequential scans.,on
+synchronous_commit,on,,Sets the current transaction's synchronization level.,on
+synchronous_standby_names,"",,Number of synchronous standbys and list of names of potential synchronous ones.,""
+syslog_facility,local0,,"Sets the syslog ""facility"" to be used when syslog enabled.",local0
+syslog_ident,postgres,,Sets the program name used to identify PostgreSQL messages in syslog.,postgres
+syslog_sequence_numbers,on,,Add sequence number to syslog messages to avoid duplicate suppression.,on
+syslog_split_messages,on,,Split messages sent to syslog by lines and to fit into 1024 bytes.,on
+tcp_keepalives_count,9,,Maximum number of TCP keepalive retransmits.,0
+tcp_keepalives_idle,7200,s,Time between issuing TCP keepalives.,0
+tcp_keepalives_interval,75,s,Time between TCP keepalive retransmits.,0
+temp_buffers,1024,8kB,Sets the maximum number of temporary buffers used by each session.,1024
+temp_file_limit,-1,kB,Limits the total size of all temporary files used by each process.,-1
+temp_tablespaces,"",,Sets the tablespace(s) to use for temporary tables and sort files.,""
+TimeZone,Asia/Shanghai,,Sets the time zone for displaying and interpreting time stamps.,Asia/Shanghai
+timezone_abbreviations,Default,,Selects a file of time zone abbreviations.,Default
+trace_lock_oidmin,16384,,Sets the minimum OID of tables for tracking locks.,16384
+trace_lock_table,0,,Sets the OID of the table with unconditionally lock tracing.,0
+trace_locks,off,,Emits information about lock usage.,off
+trace_notify,off,,Generates debugging output for LISTEN and NOTIFY.,off
+trace_recovery_messages,log,,Enables logging of recovery-related debugging information.,log
+trace_sort,off,,Emit information about resource usage in sorting.,off
+trace_userlocks,off,,Emits information about user lock usage.,off
+track_activities,on,,Collects information about executing commands.,on
+track_activity_query_size,1024,B,"Sets the size reserved for pg_stat_activity.query, in bytes.",1024
+track_commit_timestamp,off,,Collects transaction commit time.,off
+track_counts,on,,Collects statistics on database activity.,on
+track_functions,none,,Collects function-level statistics on database activity.,none
+track_io_timing,off,,Collects timing statistics for database I/O activity.,off
+transaction_deferrable,off,,Whether to defer a read-only serializable transaction until it can be executed with no possible serialization failures.,off
+transaction_isolation,read committed,,Sets the current transaction's isolation level.,default
+transaction_read_only,off,,Sets the current transaction's read-only status.,off
+transform_null_equals,off,,"Treats ""expr=NULL"" as ""expr IS NULL"".",off
+unix_socket_directories,/tmp,,Sets the directories where Unix-domain sockets will be created.,/tmp
+unix_socket_group,"",,Sets the owning group of the Unix-domain socket.,""
+unix_socket_permissions,0777,,Sets the access permissions of the Unix-domain socket.,511
+update_process_title,on,,Updates the process title to show the active SQL command.,on
+vacuum_cleanup_index_scale_factor,0.1,,Number of tuple inserts prior to index cleanup as a fraction of reltuples.,0.1
+vacuum_cost_delay,0,ms,Vacuum cost delay in milliseconds.,0
+vacuum_cost_limit,200,,Vacuum cost amount available before napping.,200
+vacuum_cost_page_dirty,20,,Vacuum cost for a page dirtied by vacuum.,20
+vacuum_cost_page_hit,1,,Vacuum cost for a page found in the buffer cache.,1
+vacuum_cost_page_miss,10,,Vacuum cost for a page not found in the buffer cache.,10
+vacuum_defer_cleanup_age,0,,"Number of transactions by which VACUUM and HOT cleanup should be deferred, if any.",0
+vacuum_freeze_min_age,50000000,,Minimum age at which VACUUM should freeze a table row.,50000000
+vacuum_freeze_table_age,150000000,,Age at which VACUUM should scan whole table to freeze tuples.,150000000
+vacuum_multixact_freeze_min_age,5000000,,Minimum age at which VACUUM should freeze a MultiXactId in a table row.,5000000
+vacuum_multixact_freeze_table_age,150000000,,Multixact age at which VACUUM should scan whole table to freeze tuples.,150000000
+wal_block_size,8192,,Shows the block size in the write ahead log.,8192
+wal_buffers,2048,8kB,Sets the number of disk-page buffers in shared memory for WAL.,2048
+wal_compression,off,,Compresses full-page writes written in WAL file.,off
+wal_consistency_checking,"",,Sets the WAL resource managers for which WAL consistency checks are done.,""
+wal_keep_segments,0,,Sets the number of WAL files held for standby servers.,0
+wal_level,replica,,Set the level of information written to the WAL.,replica
+wal_log_hints,off,,"Writes full pages to WAL when first modified after a checkpoint, even for a non-critical modifications.",off
+wal_receiver_status_interval,10,s,Sets the maximum interval between WAL receiver status reports to the primary.,10
+wal_receiver_timeout,60000,ms,Sets the maximum wait time to receive data from the primary.,60000
+wal_recycle,on,,Recycles WAL files by renaming them.,on
+wal_retrieve_retry_interval,5000,ms,Sets the time to wait before retrying to retrieve WAL after a failed attempt.,5000
+wal_segment_size,16777216,B,Shows the size of write ahead log segments.,16777216
+wal_sender_timeout,60000,ms,Sets the maximum time to wait for WAL replication.,60000
+wal_sync_method,fdatasync,,Selects the method used for forcing WAL updates to disk.,fdatasync
+wal_writer_delay,50,ms,Time between WAL flushes performed in the WAL writer.,50
+wal_writer_flush_after,128,8kB,Amount of WAL written out by WAL writer that triggers a flush.,128
+work_mem,65536,kB,Sets the maximum memory to be used for query workspaces.,65536
+xmlbinary,base64,,Sets how binary values are to be encoded in XML.,base64
+xmloption,content,,Sets whether XML data in implicit parsing and serialization operations is to be considered as documents or content fragments.,content
+zero_damaged_pages,off,,Continues processing past damaged page headers.,off
