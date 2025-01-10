@@ -177,7 +177,7 @@ We welcome suggestions and contributions to improve the self-optimizing database
 This project is based on **PolarDB for PostgreSQL 11**, modified from the repository provided by Digoal on GitHub. For more information, visit:  
 [PolarDB-for-PostgreSQL on Gitee](https://gitee.com/digoal/PolarDB-for-PostgreSQL).
 
-Special thanks to Professor Bian Haoqiong and Professor Zhang Jing from Renmin University of China and expert Digoal from Alibaba Cloud for their support and guidance.
+Special thanks to Professor Haoqiong Bian and Professor Jing Zhang from Renmin University of China and expert Digoal from Alibaba Cloud for their support and guidance.
 
 This project is open-sourced under the Apache 2.0 License. See LICENSE for details.
 
