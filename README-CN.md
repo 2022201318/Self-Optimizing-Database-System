@@ -7,7 +7,7 @@
 
 ---
 
-### [English](README.md) | 中文
+### [English](README.md) | [中文](README-CN.md)
 
 [![github-license](https://img.shields.io/github/license/polardbpg/polardb-self-optimizer?style=for-the-badge&logo=github)](LICENSE)
 [![github-issues](https://img.shields.io/github/issues/polardbpg/polardb-self-optimizer?style=for-the-badge&logo=github)](https://github.com/polardbpg/polardb-self-optimizer/issues)
