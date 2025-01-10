@@ -45,12 +45,15 @@ The Self-Optimizing Database System is a tool based on **PolarDB for PostgreSQL*
 - A virtual machine or server with **8-core CPU**, **16 GB memory**, running **Ubuntu OS**, and at least **100 GB disk space**.
 - Install and configure Docker, Git, and other common tools. Steps are omitted here.
 
-### 2. Download Database Development Image, Start Container, and Enter Container
+### 2. Download Database Development Image, Start Container , Enter Container and pull the code
 
 ```bash
 docker pull registry.cn-hangzhou.aliyuncs.com/polardb_pg/polardb_pg_devel:ubuntu20.04
 docker run -d -it -P --shm-size=1g --cap-add=SYS_PTRACE --cap-add SYS_ADMIN --privileged=true --name my_new registry.cn-hangzhou.aliyuncs.com/polardb_pg/polardb_pg_devel:ubuntu20.04 bash
 docker exec -ti my_new bash
+cd polardb_pg
+git clone https://github.com/2022201318/Self-Optimizing-Database-System
+mv Self-Optimizing-Database-System PolarDB-for-PostgreSQL
 ```
 
 ### 3. Environment and Dependency Preparation
